@@ -1,0 +1,40 @@
+{
+    "version": "3.8.0",
+    "description": "Highly available and scalable multi-model database to natively work with graphs, documents and fulltext search with one engine & query language.",
+    "homepage": "https://www.arangodb.com/",
+    "license": {
+        "identifier": "Apache-2.0",
+        "url": "https://raw.githubusercontent.com/arangodb/arangodb/devel/LICENSE"
+    },
+    "suggest": {
+        "java": [
+            "java/oraclejdk",
+            "java/oraclejre8",
+            "java/openjdk11"
+        ]
+    },
+    "url": "https://download.arangodb.com/arangodb38/Community/Windows/ArangoDB3-3.8.0_win64.zip",
+    "hash": "8b509c353ed2123ba1e54f6fa71fd51a9df62f237631498fcd48064af6c6098b",
+    "extract_dir": "ArangoDB3-3.8.0_win64",
+    "persist": [
+        "etc/arangodb3",
+        "var/lib/arangodb3-apps"
+    ],
+    "env_add_path": "usr/bin",
+    "env_set": {
+        "ICU_DATA": "$dir\\usr\\share\\arangodb3"
+    },
+    "checkver": {
+        "url": "https://www.arangodb.com/download-major/windows/",
+        "re": "Server\\W*(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)",
+        "replace": "${major}.${minor}.${patch}"
+    },
+    "autoupdate": {
+        "url": "https://download.arangodb.com/arangodb$matchMajor$matchMinor/Community/Windows/ArangoDB$matchMajor-$version_win64.zip",
+        "extract_dir": "ArangoDB$matchMajor-$version_win64",
+        "hash": {
+            "url": "https://www.arangodb.com/download-major/windows/",
+            "find": "Zip\\s+package$.*Server.*$.*SHA256$(\\w+)\\)"
+        }
+    }
+}
