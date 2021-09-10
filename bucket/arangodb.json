@@ -26,15 +26,15 @@
     },
     "checkver": {
         "url": "https://www.arangodb.com/download-major/windows/",
-        "re": "Server\\W*(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)",
+        "regex": "Server\\W*(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)",
         "replace": "${major}.${minor}.${patch}"
     },
     "autoupdate": {
         "url": "https://download.arangodb.com/arangodb$matchMajor$matchMinor/Community/Windows/ArangoDB$matchMajor-$version_win64.zip",
         "extract_dir": "ArangoDB$matchMajor-$version_win64",
         "hash": {
-            "url": "https://www.arangodb.com/download-major/windows/",
-            "find": "Zip\\s+package$.*Server.*$.*SHA256$(\\w+)\\)"
+            "url": "https://download.arangodb.com/arangodb$matchMajor$matchMinor/Community/Windows/ArangoDB$matchMajor-$version_win64.zip.clamav",
+            "regex": "([a-fA-F\\d]{64})"
         }
     }
 }
