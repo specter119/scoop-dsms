@@ -1,5 +1,5 @@
 {
-    "version": "3.8.2",
+    "version": "3.9.0",
     "description": "An open source software platform for visualizing complex networks and integrating these with any type of attribute data.",
     "homepage": "https://cytoscape.org/index.html",
     "license": {
@@ -13,9 +13,9 @@
             "java/openjdk11"
         ]
     },
-    "url": "https://github.com/cytoscape/cytoscape/releases/download/3.8.2/cytoscape-windows-3.8.2.zip",
-    "hash": "216031232839e50cef46e5f62fc0478029faa1d9df032289ec4abfd8647c4851",
-    "extract_dir": "cytoscape-windows-3.8.2",
+    "url": "https://github.com/cytoscape/cytoscape/releases/download/3.9.0/cytoscape-windows-3.9.0.zip",
+    "hash": "a8ce194704a11968abc7ac556c733cc85cd3ad2d081757f9f9ca101ae4d8415a",
+    "extract_dir": "cytoscape-windows-3.9.0",
     "shortcuts": [
         [
             "cytoscape.bat",
