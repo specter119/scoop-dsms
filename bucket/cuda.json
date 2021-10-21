@@ -14,7 +14,6 @@
     },
     "installer": {
         "script": [
-            "& \"$dir\\setup.exe\" -s Display.Driver",
             "$names = @(Get-ChildItem -Path \"$dir\" -Directory -Name -Depth 2 | Where-Object {$_ -match \".*(?<!cuda_samples)\\\\.*\\\\(?:bin|compute-sanitizer|extras|include|lib|libnvvp|nvml|nvvm|nvvm-prev|src)$\"})",
             "foreach ($name in $names) {",
             "    Copy-Item \"$dir\\$name\" \"$dir\" -Recurse -Force",
