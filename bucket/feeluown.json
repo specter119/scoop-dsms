@@ -9,9 +9,6 @@
     "url": "https://github.com/feeluown/distribution/releases/download/v3.7.13/FeelUOwn-Win64.zip",
     "hash": "6269a5bbff30df471a92176ed0a90de1ee2775ad787697fad03216db09b6e03d",
     "extract_dir": "feeluown",
-    "env_add_path": [
-        "."
-    ],
     "bin": [
         [
             "feeluown.exe",
