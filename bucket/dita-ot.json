@@ -10,7 +10,7 @@
         "64bit": {
             "url": "https://github.com/dita-ot/dita-ot/releases/download/3.7/dita-ot-3.7.zip",
             "hash": "dbbc9f8dfea51300e707307b5d65e7945b9357d5fa2d484fbb9264268771abc7",
-            "extract_dir": "dita-ot-3.6.1"
+            "extract_dir": "dita-ot-3.7"
         }
     },
     "bin": [
@@ -23,7 +23,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/dita-ot/dita-ot/releases/download/$version/dita-ot-$version.zip"
+                "url": "https://github.com/dita-ot/dita-ot/releases/download/$version/dita-ot-$version.zip",
+                "extract_dir": "dita-ot-$version"
             }
         }
     }
