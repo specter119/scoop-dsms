@@ -9,7 +9,8 @@
     "architecture": {
         "64bit": {
             "url": "https://itefix.net/dl/free-software/cwrsync_6.2.4_x64_free.zip",
-            "hash": "31ac735aa958e06883b9a44154a7397350e565ddc9adcbc8bf548a09cbf40e3e"
+            "hash": "31ac735aa958e06883b9a44154a7397350e565ddc9adcbc8bf548a09cbf40e3e",
+            "extract_dir": "cwrsync_6.2.4_x64_free"
         }
     },
     "bin": "bin\\rsync.exe",
@@ -21,7 +22,8 @@
         "architecture": {
             "64bit": {
                 "url": "https://itefix.net/dl/free-software/cwrsync_$version_x64_free.zip",
-                "hash": "https://itefix.net/dl/free-software/cwrsync_$version_x64_free.zip.sha256.asc"
+                "hash": "https://itefix.net/dl/free-software/cwrsync_$version_x64_free.zip.sha256.asc",
+                "extract_dir": "cwrsync_$version_x64_free"
             }
         }
     }
