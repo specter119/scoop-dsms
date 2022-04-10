@@ -1,0 +1,35 @@
+{
+    "version": "5.10.1",
+    "description": "open-source, multi-platform data analysis and visualization application",
+    "homepage": "https://www.paraview.org/",
+    "license": {
+        "identifier": "BSD-3-Clause",
+        "url": "https://raw.githubusercontent.com/Kitware/ParaView/master/Copyright.txt"
+    },
+    "architecture": {
+        "64bit":{
+            "url": "https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v5.10&type=binary&os=Windows&downloadFile=ParaView-5.10.1-Windows-Python3.9-msvc2017-AMD64.zip#/dl.7z",
+            "hash": "7b1511a7e6a515ccad26571e2e04a23f9fa04fbd46774dfcd99af4aef8299818",
+            "extract_dir": "ParaView-5.10.1-Windows-Python3.9-msvc2017-AMD64"
+        }
+    },
+    "shortcuts": [
+        [
+            "bin/paraview.exe",
+            "ParaView"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.paraview.org/download/",
+        "regex": "ParaView-([\\d._]+)-Windows-([a-zA-Z\\d.-]+).zip",
+        "replace": "${1}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit":{
+                "url": "https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v$matachHead&type=binary&os=Windows&downloadFile=ParaView-$version-Windows-$match2.zip#/dl.7z",
+                "extract_dir": "ParaView-$version-Windows-$match2"
+            }
+        }
+    }
+}
