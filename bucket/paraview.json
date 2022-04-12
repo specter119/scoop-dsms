@@ -20,7 +20,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.paraview.org/download/",
+        "url": "https://www.paraview.org/download/?filter=Windows",
         "regex": "ParaView-([\\d._]+)-Windows-([a-zA-Z\\d.-]+).zip",
         "replace": "${1}"
     },
