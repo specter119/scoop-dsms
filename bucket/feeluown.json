@@ -18,9 +18,7 @@
     "shortcuts": [
         [
             "feeluown.exe",
-            "FeelUOwn",
-            "",
-            "feeluown\\icons\\feeluown.ico"
+            "FeelUOwn"
         ]
     ],
     "checkver": {
