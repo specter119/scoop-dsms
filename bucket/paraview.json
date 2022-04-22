@@ -21,7 +21,7 @@
     ],
     "checkver": {
         "url": "https://www.paraview.org/download/?filter=Windows",
-        "regex": "ParaView-([\\d._]+)-Windows-([a-zA-Z\\d.-]+).zip",
+        "regex": "ParaView-([\\d.]+)-Windows-([\\w.]+)\\.zip",
         "replace": "${1}"
     },
     "autoupdate": {

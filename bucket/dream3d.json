@@ -21,7 +21,7 @@
     ],
     "checkver": {
         "url": "http://dream3d.bluequartz.net/Download/",
-        "regex": "\\d[\\d.]+\\d"
+        "regex": "Windows - DREAM3D-(\\d+\\.\\d+\\.\\d+)-Win64\\.zip"
     },
     "autoupdate": {
         "architecture": {
