@@ -8,7 +8,7 @@
     },
     "url": "https://www.apache.org/dist/spark/spark-3.3.0/spark-3.3.0-bin-hadoop2.tgz",
     "hash": "sha512:ab4b7f6fde7f57183801652b5e6a5c522a51d67362a29f777b441408e89c0c5821d8c308c69201360105e00891a564384ba1dfb8769cb546d0567c91583c2a88",
-    "extract_dir": "spark-3.3.0-bin-hadoop2.7",
+    "extract_dir": "spark-3.3.0-bin-hadoop2",
     "env_add_path": "bin",
     "env_set": {
         "SPARK_HOME": "$dir"
