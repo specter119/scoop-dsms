@@ -1,5 +1,5 @@
 {
-    "version": "6.5.163",
+    "version": "6.5.167",
     "description": "an open source, cross-platform and modular software package that allows users to reconstruct, instantiate, quantify, mesh, handle and visualize multidimensional, multimodal data.",
     "homepage": "http://dream3d.bluequartz.net/",
     "license": {
@@ -8,9 +8,9 @@
     },
     "architecture": {
         "64bit": {
-            "url": "http://dream3d.bluequartz.net/binaries/DREAM3D-6.5.163-Win64.zip",
-            "hash": "45e174c693fe256b76ff60b6ff3e5309c01a172ae71dbe8a701d7e13e84575e6",
-            "extract_dir": "DREAM3D-6.5.163-Win64"
+            "url": "http://dream3d.bluequartz.net/binaries/DREAM3D-6.5.167-Win64.zip",
+            "hash": "61209722f6608541fd63ea595c2a90a2b5da1f6c1e1dfb2d90b06a6d7f9ce76c",
+            "extract_dir": "DREAM3D-6.5.167-Win64"
         }
     },
     "shortcuts": [
