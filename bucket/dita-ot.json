@@ -1,5 +1,5 @@
 {
-    "version": "4.0",
+    "version": "4.0.1",
     "description": "An open-source publishing engine for XML content authored in the Darwin Information Typing Architecture.",
     "homepage": "https://www.dita-ot.org/",
     "license": {
@@ -8,9 +8,9 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dita-ot/dita-ot/releases/download/4.0/dita-ot-4.0.zip",
-            "hash": "750245693b2b6acd581f81e1174b0339bd9e79d665fa2c237c1d7d90fdec3206",
-            "extract_dir": "dita-ot-4.0"
+            "url": "https://github.com/dita-ot/dita-ot/releases/download/4.0.1/dita-ot-4.0.1.zip",
+            "hash": "a2f5ecd58b6f069cb5e45444e44e1a32acd51819921065f655667467cac2f3a4",
+            "extract_dir": "dita-ot-4.0.1"
         }
     },
     "bin": [
