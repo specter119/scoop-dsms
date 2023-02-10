@@ -14,7 +14,6 @@
         "micromamba.exe"
     ],
     "env_set": {
-        "MAMBA_ROOT_PREFIX": "%UserProfile%\\.conda",
         "MAMBA_EXE": "$dir\\micromamba.exe"
     },
     "post_install": "Remove-Item \"$dir\\Library\" -Force",
