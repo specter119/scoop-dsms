@@ -4,7 +4,7 @@
     "homepage": "https://www.paraview.org/",
     "license": {
         "identifier": "BSD-3-Clause",
-        "url": "https://raw.githubusercontent.com/Kitware/ParaView/master/Copyright.txt"
+        "url": "https://www.paraview.org/license/"
     },
     "architecture": {
         "64bit":{
