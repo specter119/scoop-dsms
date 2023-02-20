@@ -23,7 +23,7 @@
     "checkver": {
         "url": "https://sourceforge.net/p/goldendict/activity/feed",
         "regex": "Qt5-based/64bit/GoldenDict-([\\w.-]+)_\\(QT_(\\d+)\\)\\(64bit\\)\\.7z",
-        "replace": "{1}.{2}"
+        "replace": "${1}.${2}"
     },
     "autoupdate": {
         "url": "https://downloads.sourceforge.net/project/goldendict/early access builds/GoldenDict-$majorVersion_(QT_$minorVersion)(64bit).7z"

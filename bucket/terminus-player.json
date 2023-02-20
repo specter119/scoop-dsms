@@ -27,12 +27,13 @@
     },
     "checkver": {
         "url": "https://github.com/Terminus-Media/jellyfin-media-player/releases/latest",
-        "regex": "TerminusPlayer-(?<pmpversion>[\\d.]+)-windows-x64_release_(\\d+).exe"
+        "regex": "TerminusPlayer-([\\d.]+)-windows-x64([a-z._]*)(\\d+).exe",
+        "replace": "${1}.${3}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Terminus-Media/jellyfin-media-player/releases/download/v$version/TerminusPlayer-1.6.1-windows-x64_release_$version.exe"
+                "url": "https://github.com/Terminus-Media/jellyfin-media-player/releases/download/v$version/TerminusPlayer-$matach1-windows-x64$match2$match3.exe"
             }
         }
     }
