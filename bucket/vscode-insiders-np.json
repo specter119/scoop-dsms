@@ -52,14 +52,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://update.code.visualstudio.com/latest/win32-x64-archive/insider#/dl.7z",
                 "hash": {
                     "url": "https://update.code.visualstudio.com/api/update/win32-x64-archive/insider/latest",
                     "jsonpath": "$.sha256hash"
                 }
             },
             "32bit": {
-                "url": "https://update.code.visualstudio.com/latest/win32-archive/insider#/dl.7z",
                 "hash": {
                     "url": "https://update.code.visualstudio.com/api/update/win32-archive/insider/latest",
                     "jsonpath": "$.sha256hash"
