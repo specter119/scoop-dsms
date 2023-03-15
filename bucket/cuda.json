@@ -6,12 +6,8 @@
         "identifier": "Freeware",
         "url": "https://docs.nvidia.com/cuda/eula/index.html"
     },
-    "architecture": {
-        "64bit": {
-            "url": "http://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda_12.1.0_531.14_windows.exe#/dl.7z",
-            "hash": "md5:f9ce2affc49b82a220c292f734a57af5"
-        }
-    },
+    "url": "http://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda_12.1.0_531.14_windows.exe#/dl.7z",
+    "hash": "md5:f9ce2affc49b82a220c292f734a57af5",
     "installer": {
         "script": [
             "$names = @(Get-ChildItem -Path \"$dir\" -Directory -Name -Depth 2 | Where-Object {$_ -match \".*(?<!cuda_samples)\\\\.*\\\\(?:bin|compute-sanitizer|extras|include|lib|libnvvp|nvml|nvvm|nvvm-prev|src)$\"})",
@@ -33,11 +29,7 @@
         "regex": "/cuda_([\\d._]+)_windows\\.exe"
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "http://developer.download.nvidia.com/compute/cuda/$matchHead/local_installers/cuda_$version_windows.exe#/dl.7z"
-            }
-        },
+        "url": "http://developer.download.nvidia.com/compute/cuda/$matchHead/local_installers/cuda_$version_windows.exe#/dl.7z",
         "hash": {
             "url": "https://developer.download.nvidia.com/compute/cuda/$matchHead/docs/sidebar/md5sum.txt"
         }
