@@ -7,7 +7,8 @@
         "url": "https://github.com/mamba-org/mamba/blob/main/LICENSE"
     },
     "url": "https://anaconda.org/conda-forge/micromamba/1.3.1/download/win-64/micromamba-1.3.1-0.tar.bz2",
-    "hash": "md5:2aa4443804ce94234a3e47ecb25d60ba""extract_dir": "Library\\bin",
+    "hash": "md5:2aa4443804ce94234a3e47ecb25d60ba",
+    "extract_dir": "Library\\bin",
     "bin": "micromamba.exe",
     "env_set": {
         "MAMBA_EXE": "$dir\\micromamba.exe"
