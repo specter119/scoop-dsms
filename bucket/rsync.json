@@ -14,8 +14,7 @@
         "regex": "cwRsync client ([\\d.]+)"
     },
     "autoupdate": {
-        "64bit": {
-            "url": "https://itefix.net/dl/free-software/cwrsync_$version_x64_free.zip",
-            "hash": "https://itefix.net/dl/free-software/cwrsync_$version_x64_free.zip.sha256.asc"
-        }
+        "url": "https://itefix.net/dl/free-software/cwrsync_$version_x64_free.zip",
+        "hash": "https://itefix.net/dl/free-software/cwrsync_$version_x64_free.zip.sha256.asc"
     }
+}
