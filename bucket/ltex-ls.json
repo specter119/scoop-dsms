@@ -8,7 +8,8 @@
     },
     "url": "https://github.com/valentjn/ltex-ls/releases/download/15.2.0/ltex-ls-15.2.0-windows-x64.zip",
     "hash": "66a8449840fd09d7cde27c1e23ecfe94c0cbe6622769c19d36b007965c0c0124",
-    "extract_dir": "ltex-ls-15.2.0""checkver": {
+    "extract_dir": "ltex-ls-15.2.0",
+    "checkver": {
         "github": "https://github.com/valentjn/ltex-ls",
         "checkver": "github"
     },
