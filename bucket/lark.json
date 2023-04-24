@@ -1,0 +1,30 @@
+{
+    "homepage": "https://www.larksuite.com",
+    "description": "Productivity super-app for teams to get more work done. Whenever, wherever.",
+    "license": {
+        "identifier": "EULA",
+        "url": "https://www.larksuite.com/en_us/user-terms-of-service"
+    },
+    "version": "6.2.8",
+    "url": "https://sf16-va.larksuitecdn.com/obj/lark-artifact-storage/db0a3078/Lark-win32_ia32-6.2.8-signed.exe#/lark.7z",
+    "hash": "md5:25d4143aac282141b297d27c45d8ddd4",
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app/lark.json",
+            "Lark"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.larksuite.com/api/downloads",
+        "jsonpath": "$.versions.Windows.download_link",
+        "regex": "https://(?<prefix>[\\w./_-]+)-(?<version>[\\d.]+)-(?<suffix>[\\w]+).exe"
+    },
+    "autoupdate": {
+        "url": "https://$matchPrefix-$version-$matchSuffix.exe#/lark.7z",
+        "hash": {
+            "url": "https://www.larksuite.com/api/downloads",
+            "jsonpath": "$.versions.Windows.hash"
+        }
+    }
+}
