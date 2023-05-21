@@ -1,12 +1,12 @@
 {
-    "version": "15.2.2",
+    "version": "15.2.0",
     "description": "LTEX LS — LTEX Language Server",
     "homepage": "https://github.com/valentjn/ltex-ls",
     "license": {
         "identifier": "MPL-2.0",
         "url": "https://github.com/valentjn/ltex-ls/blob/develop/LICENSE.md"
     },
-    "url": "https://github.com/valentjn/ltex-ls/releases/download/15.2.2/ltex-ls-15.2.2-windows-x64.zip",
+    "url": "https://github.com/valentjn/ltex-ls/releases/download/15.2.0/ltex-ls-15.2.0-windows-x64.zip",
     "hash": "66a8449840fd09d7cde27c1e23ecfe94c0cbe6622769c19d36b007965c0c0124",
-    "extract_dir": "ltex-ls-15.2.2"
+    "extract_dir": "ltex-ls-15.2.0"
 }
