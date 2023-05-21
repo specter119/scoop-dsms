@@ -20,11 +20,5 @@
             "feeluown.exe",
             "FeelUOwn"
         ]
-    ],
-    "checkver": {
-        "github": "https://github.com/feeluown/distribution"
-    },
-    "autoupdate": {
-        "url": "https://github.com/feeluown/distribution/releases/download/v$version/FeelUOwn-Win64.zip"
-    }
+    ]
 }
