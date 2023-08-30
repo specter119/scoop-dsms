@@ -46,6 +46,12 @@
         "bin\\code-insiders.cmd",
         "bin\\code-tunnel-insiders.exe"
     ],
+    "shortcuts": [
+        [
+            "Code - Insiders.exe",
+            "Visual Studio Code - Insiders"
+        ]
+    ],
     "uninstaller": {
         "script": "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-context.reg\" }"
     },
