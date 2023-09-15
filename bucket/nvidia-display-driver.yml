@@ -18,12 +18,9 @@ pre_install:
 - Move-Item ($srcdir + "\setup.cfg") -Destination "$dir" | Out-Null
 - Move-Item ($srcdir + "\setup.exe") -Destination "$dir" | Out-Null
 - New-Item "$dir\GFExperience" -Type Directory | Out-Null
-- Move-Item ($srcdir + "\GFExperience\PrivacyPolicy") -Destination "$dir\GFExperience"
-  | Out-Null
-- Move-Item ($srcdir + "\GFExperience\EULA.html") -Destination "$dir\GFExperience"
-  | Out-Null
-- Move-Item ($srcdir + "\GFExperience\FunctionalConsent_*") -Destination "$dir\GFExperience"
-  | Out-Null
+- Move-Item ($srcdir + "\GFExperience\PrivacyPolicy") -Destination "$dir\GFExperience" | Out-Null
+- Move-Item ($srcdir + "\GFExperience\EULA.html") -Destination "$dir\GFExperience" | Out-Null
+- Move-Item ($srcdir + "\GFExperience\FunctionalConsent_*") -Destination "$dir\GFExperience" | Out-Null
 - Remove-Item $srcdir -Recurse -Force | Out-Null
 post_install: Remove-Item "$dir\*" -Recurse -Force | Out-Null
 installer:

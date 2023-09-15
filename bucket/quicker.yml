@@ -11,7 +11,7 @@ architecture:
 extract_dir: Quicker
 checkver:
   url: https://getquicker.net/Download
-  regex: "\u5FEB\u901F\u901A\u9053[\\w\\W]*?(\\d.[\\d.]+)"
+  regex: 快速通道[\\w\\W]*?(\\d.[\\d.]+)
 installer:
   script:
   - New-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker -Force -ItemType
