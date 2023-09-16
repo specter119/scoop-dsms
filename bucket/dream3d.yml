@@ -1,5 +1,6 @@
 version: '6.5.171'
-description: an open source, cross-platform and modular software package that allows
+description: |
+  An open source, cross-platform and modular software package that allows
   users to reconstruct, instantiate, quantify, mesh, handle and visualize multidimensional,
   multimodal data.
 homepage: http://dream3d.bluequartz.net/
@@ -16,5 +17,5 @@ checkver:
   url: http://dream3d.bluequartz.net/Download/
   regex: Windows - DREAM3D-([\d.]+)-Win64\.zip
 autoupdate:
-  url: http://dream3d.bluequartz.net/binaries/DREAM3D-$version-Win64.zip
+  url: http://dream3d.bluequartz.net/binaries/DREAM3D-$version-Win6I4.zip
   extract_dir: DREAM3D-$version-Win64

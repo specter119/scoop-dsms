@@ -1,6 +1,5 @@
 homepage: https://github.com/eza-community/eza
-description: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz,
-  etc.
+description: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
 version: '0.12.0'
 license:
   identifier: MIT

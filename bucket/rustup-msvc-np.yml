@@ -21,10 +21,10 @@ autoupdate:
   hash:
     url: $url.sha256
 installer:
-  script:
-  - add_first_in_path "$env:USERPROFILE\.cargo\bin" $global
-  - '# Install Rustup'
-  - '& "$dir\rustup-init.exe" -y --no-modify-path --default-toolchain stable-msvc'
+  script: |
+    add_first_in_path "$env:USERPROFILE\.cargo\bin" $global
+    # Install Rustup
+    & "$dir\rustup-init.exe" -y --no-modify-path --default-toolchain stable-msvc
 uninstaller:
   script: remove_from_path "$env:USERPROFILE\.cargo\bin" $global
 notes: 'To use the MSVC ABI without Visual Studio 2015 (or higher) installed, you

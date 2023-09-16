@@ -1,6 +1,6 @@
 version: '3.11.3'
-description: Highly available and scalable multi-model database to natively work with
-  graphs, documents and fulltext search with one engine & query language.
+description: |
+  Highly available and scalable multi-model database to natively work with graphs, documents and fulltext search with one engine & query language.
 homepage: https://www.arangodb.com/
 license:
   identifier: Apache-2.0

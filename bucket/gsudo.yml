@@ -2,10 +2,10 @@ version: '2.4.0'
 description: A Sudo for Windows
 homepage: https://gerardog.github.io/gsudo
 license: MIT
-notes:
-- gsudo has a PowerShell module that adds `gsudo !!` to elevate the last command.
-- 'Use the module by running: ''Import-Module gsudoModule''.'
-- Add it to your $PROFILE to make it permanent.
+notes: |
+  gsudo has a PowerShell module that adds `gsudo !!` to elevate the last command.
+  Use the module by running: 'Import-Module gsudoModule'.
+  Add it to your $PROFILE to make it permanent.
 architecture:
   64bit:
     url: https://github.com/gerardog/gsudo/releases/download/v2.4.0/gsudo.setup.x64.msi
@@ -24,8 +24,7 @@ bin:
   - sudo
 psmodule:
   name: gsudoModule
-post_install: try { & "$dir\gsudo.exe" -k 2>&1 | Out-Null } catch { info $_.Exception.Message
-  }
+post_install: try { & "$dir\gsudo.exe" -k 2>&1 | Out-Null } catch { info $_.Exception.Message}
 checkver:
   github: https://github.com/gerardog/gsudo
 autoupdate:

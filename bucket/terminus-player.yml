@@ -10,13 +10,13 @@ shortcuts:
 - - TerminusPlayer.exe
   - Terminus Player
 installer:
-  script:
-  - $extracted = "$dir\extracted"
-  - $msi = "$dir\msi"
-  - Expand-DarkArchive "$dir\$fname" "$extracted"
-  - Expand-MsiArchive "$extracted\AttachedContainer\PMP.msi" "$msi"
-  - Move-Item "$msi\Msi\*" "$dir" -Force
-  - Remove-Item $extracted, $msi, "$dir\$fname" -Force -Recurse
+  script: |
+    $extracted = "$dir\extracted"
+    $msi = "$dir\msi"
+    Expand-DarkArchive "$dir\$fname" "$extracted"
+    Expand-MsiArchive "$extracted\AttachedContainer\PMP.msi" "$msi"
+    Move-Item "$msi\Msi\*" "$dir" -Force
+    Remove-Item $extracted, $msi, "$dir\$fname" -Force -Recurse
 checkver:
   github: https://github.com/Terminus-Media/jellyfin-media-player
   regex: TerminusPlayer-([\d.]+)-windows-x64([a-z._]*)(\d+).exe

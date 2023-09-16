@@ -1,5 +1,5 @@
 homepage: https://github.com/mstorsjo/llvm-mingw
-description: An LLVM/Clang/LLD based mingw-w64 GNU toolchain
+description: An LLVM/Clang/LLD based mingw-w64 GNU toolchain.
 version: '20230614'
 license: ISC
 architecture:

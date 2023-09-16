@@ -13,25 +13,24 @@ checkver:
   url: https://getquicker.net/Download
   regex: 快速通道[\\w\\W]*?(\\d.[\\d.]+)
 installer:
-  script:
-  - New-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker -Force -ItemType
+  script: |
+    New-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker -Force -ItemType
     String -Value 'URL:Quicker Protocol' | Out-Null
-  - New-ItemProperty Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker -Force -PropertyType
-    string -Name 'URL Protocol' -Value '' | Out-Null
-  - New-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker\DefaultIcon -Force
+    New-ItemProperty Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker -Force -PropertyType
+    string -Name 'URL Protocol' -Value ' | Out-Null
+    New-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker\DefaultIcon -Force
     -ItemType String -Value 'Quicker.exe' | Out-Null
-  - New-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker\shell\open\command
+    New-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker\shell\open\command
     -Force -ItemType String -Value "`"$dir\QuickerStarter.exe`" `"%1`"" | Out-Null
 uninstaller:
-  script:
-  - if (Test-Path Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker) {
-  - '    Remove-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker -Force -Recurse
-    | Out-Null'
-  - '}'
+  script: |
+    if (Test-Path Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker) {
+      Remove-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker -Force -Recurse | Out-Null
+    }
 bin: Quicker.exe
 shortcuts:
-- - Quicker.exe
-  - Quicker
+  - - Quicker.exe
+    - Quicker
 autoupdate:
   architecture:
     64bit:
