@@ -15,7 +15,7 @@ persist: portable_config
 suggest:
   yt-dlp: yt-dlp
 checkver:
-  sourceforge: mpv-player-windows/64bit-v3
-  regex: mpv-x86_64-v3-([\w]+)
+  url: https://sourceforge.net/p/mpv-player-windows/activity/feed
+  regex: mpv-x86_64-v3-([-\w]+)
 autoupdate:
   url: https://sourceforge.net/projects/mpv-player-windows/files/64bit-v3/mpv-x86_64-v3-$version.7z

@@ -1,5 +1,5 @@
 homepage: https://getquicker.net/
-version: '1.39.31.0'
+version: 1.39.31
 license: Freeware
 architecture:
   64bit:
@@ -11,7 +11,7 @@ architecture:
 extract_dir: Quicker
 checkver:
   url: https://getquicker.net/Download
-  regex: 快速通道[\\w\\W]*?(\\d.[\\d.]+)
+  regex: 快速通道\s*v(\d[\d.]+)
 installer:
   script: |
     New-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker -Force -ItemType
@@ -29,8 +29,8 @@ uninstaller:
     }
 bin: Quicker.exe
 shortcuts:
-  - - Quicker.exe
-    - Quicker
+- - Quicker.exe
+  - Quicker
 autoupdate:
   architecture:
     64bit:

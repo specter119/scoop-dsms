@@ -13,7 +13,9 @@ bin:
 - rga-preproc.exe
 suggest:
   PDF: poppler
-checkver: github
+checkver:
+  github: https://github.com/phiresky/ripgrep-all
+  regex: v(\d[\d.]+[.\-\w]*)
 autoupdate:
   url: https://github.com/phiresky/ripgrep-all/releases/download/v$version/ripgrep_all-v$version-x86_64-pc-windows-msvc.zip
   extract_dir: ripgrep_all-v$version-x86_64-pc-windows-msvc
