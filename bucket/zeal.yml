@@ -21,7 +21,7 @@ shortcuts:
   - Zeal
 persist:
 - cache
-- docset
+- docsets
 checkver:
   github: https://github.com/zealdocs/zeal
 autoupdate:
