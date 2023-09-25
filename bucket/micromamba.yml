@@ -1,6 +1,6 @@
+version: 1.5.1-0
 homepage: https://github.com/mamba-org/mamba
 description: Micromamba is a tiny version of mamba, the fast conda package installer.
-version: 1.5.1-0
 license:
   identifier: BSD-3-Clause
   url: https://github.com/mamba-org/mamba/blob/main/LICENSE

@@ -1,4 +1,4 @@
-version: '3.5.8'
+version: 3.5.8
 description: A 3D visualization program for structural models, volumetric data such
   as electron/nuclear densities, and crystal morphologies.
 homepage: https://jp-minerals.org/en/

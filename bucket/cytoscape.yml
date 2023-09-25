@@ -1,4 +1,4 @@
-version: '3.10.1'
+version: 3.10.1
 description: |
   An open source software platform for visualizing complex networks and integrating these with any type of attribute data.
 homepage: https://cytoscape.org/index.html

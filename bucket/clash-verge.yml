@@ -1,6 +1,6 @@
+version: 1.3.7
 homepage: https://github.com/zzzgydi/clash-verge
 description: A Clash GUI based on tauri.
-version: '1.3.7'
 license:
   identifier: GPL-3.0-only
   url: https://github.com/zzzgydi/clash-verge/blob/main/LICENSE

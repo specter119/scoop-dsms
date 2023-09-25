@@ -1,4 +1,4 @@
-version: '4.1.1'
+version: 4.1.1
 description: |
   An open-source publishing engine for XML content authored in the Darwin Information Typing Architecture.
 homepage: https://www.dita-ot.org/

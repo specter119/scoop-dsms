@@ -1,4 +1,4 @@
-version: '6.5.171'
+version: 6.5.171
 description: |
   An open source, cross-platform and modular software package that allows
   users to reconstruct, instantiate, quantify, mesh, handle and visualize multidimensional,

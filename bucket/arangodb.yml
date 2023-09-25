@@ -1,4 +1,4 @@
-version: '3.11.3'
+version: 3.11.3
 description: |
   Highly available and scalable multi-model database to natively work with graphs, documents and fulltext search with one engine & query language.
 homepage: https://www.arangodb.com/

@@ -1,4 +1,4 @@
-version: '16.0.0'
+version: 16.0.0
 description: LTEX LS — LTEX Language Server
 homepage: https://github.com/valentjn/ltex-ls
 license:
