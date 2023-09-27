@@ -13,7 +13,8 @@ architecture:
     url: https://github.com/volllly/rotz/releases/download/v0.9.5/rotz-aarch64-pc-windows-msvc.zip
     hash: c415e1bc212328def8c86844933fbc45931e3878c0399facdad2817fe73f1475
 bin: rotz.exe
-checkver: github
+checkver:
+  github: https://github.com/volllly/rotz
 autoupdate:
   architecture:
     64bit:
