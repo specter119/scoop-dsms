@@ -1,4 +1,4 @@
-version: 1.83.0-8ecf5453e8e8f98cca0f9a661d3a6457d8a0e703
+version: 1.83.0-254b455d8f1f02b3621e1c7c6c19798ea58945b9
 description: Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).
 homepage: https://code.visualstudio.com/
 license:
@@ -12,13 +12,13 @@ notes: |
 architecture:
   64bit:
     url: https://update.code.visualstudio.com/latest/win32-x64-archive/insider#/dl.7z
-    hash: 0c81bed794aeea8562cec2d5c8fcda6bca951a9338b2d9332dd6484ba66a0af7
+    hash: 9b533e9f778b62e12a6f0b98e75a53dcc4341d966c4d96f121f86d92da9443ac
   32bit:
     url: https://update.code.visualstudio.com/latest/win32-archive/insider#/dl.7z
-    hash: 814f6c18894592da660b5fc2ef0a1362d092e1e35240cd47cd9c6082f15299e3
+    hash: 690ae0b486791da94b5943d894d415cdb2dc6c2362621d1298826e357eda158b
   arm64:
     url: https://update.code.visualstudio.com/latest/win32-arm64-archive/insider#/dl.7z
-    hash: f6b00d1d019672569a2f80724d0537cdbed2e8b8a2169b53618c9c9859871193
+    hash: 6237d126708c631b1b47928173661ff42d8e3d2a045e0dc31a391165febc8741
 post_install: |
   $dirpath = "$dir".Replace('\', '\\')
   $exepath = "$dir\Code - Insiders.exe".Replace('\', '\\')
