@@ -11,7 +11,7 @@ architecture:
 extract_dir: Quicker
 checkver:
   url: https://getquicker.net/Download
-  regex: 快速通道\s*v(\d[\d.]+)
+  regex: 快速通道.*v(\d[\d.]+)
 installer:
   script: |
     New-Item Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\quicker -Force -ItemType
