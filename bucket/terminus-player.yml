@@ -19,7 +19,7 @@ installer:
     Remove-Item $extracted, $msi, "$dir\$fname" -Force -Recurse
 checkver:
   github: https://github.com/Terminus-Media/jellyfin-media-player
-  regex: TerminusPlayer-([\d.]+)-windows-x64([\w._]*)(\d+).exe
+  regex: TerminusPlayer-([\d.]+)-windows-x64([\w._]*\D)(\d+).exe
   replace: ${1}-${3}
 autoupdate:
   url: https://github.com/Terminus-Media/jellyfin-media-player/releases/download/v$match3/TerminusPlayer-$match1-windows-x64$match2$match3.exe
