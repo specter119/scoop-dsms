@@ -20,7 +20,7 @@ env_add_path: usr/bin
 env_set:
   ICU_DATA: $dir\usr\share\arangodb3
 checkver:
-  url: https://www.arangodb.com/download-major/windows/
+  url: https://arangodb.com/download-major/windows/
   regex: Server\W*(\d+\.\d+\.\d+)
 autoupdate:
   url: https://download.arangodb.com/arangodb$majorVersion$minorVersion/Community/Windows/ArangoDB$majorVersion-$version_win64.zip
