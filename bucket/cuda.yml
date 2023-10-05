@@ -21,7 +21,7 @@ env_set:
   CUDA_PATH: $dir
 checkver:
   url: https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
-  regex: /cuda_([\d._]+)_windows\.exe
+  regex: cuda_([\d._]+)_windows\.exe
 autoupdate:
   url: http://developer.download.nvidia.com/compute/cuda/$matchHead/local_installers/cuda_$version_windows.exe#/dl.7z
   hash:
