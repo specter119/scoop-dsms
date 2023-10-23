@@ -1,4 +1,4 @@
-version: 1.84.0-8e11b537e3b091a8b52c7179fb623ecdeecaf4ea
+version: 1.84.0-cbd09078e6221fa1553c5a59dd25e63ad767911a
 description: Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).
 homepage: https://code.visualstudio.com/
 license:
@@ -12,13 +12,13 @@ notes: |
 architecture:
   64bit:
     url: https://update.code.visualstudio.com/latest/win32-x64-archive/insider#/dl.7z
-    hash: 6e478afef7b440cf4fbfbff8e827da60531e78ed5a24509f654a7729928b4e82
+    hash: bbf26f7a284c38316678fe29b1c9728b4f00c5d7aa58d6842b22b87ff2d3923c
   32bit:
     url: https://update.code.visualstudio.com/latest/win32-archive/insider#/dl.7z
     hash: 08878b83355b78174eb0d631af8e99b610a3c5661ff52d8e3ff1c76181d6eed8
   arm64:
     url: https://update.code.visualstudio.com/latest/win32-arm64-archive/insider#/dl.7z
-    hash: c7526f6e4872530cd9a56026867b0ce803d8353873edebded85ae16f83b6e10f
+    hash: 7637dc9c55c478a0169cd439a5a666f79985dd7d770c24f69a8808a0a6b6a94a
 post_install: |
   $dirpath = "$dir".Replace('\', '\\')
   $exepath = "$dir\Code - Insiders.exe".Replace('\', '\\')
