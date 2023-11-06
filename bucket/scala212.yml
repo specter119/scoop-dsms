@@ -11,10 +11,10 @@ url: https://downloads.lightbend.com/scala/2.12.18/scala-2.12.18.zip
 hash: d0688ba23206be6899d14fcae7ba621e431ee6443c9288dd5ce133627bf9aa2e
 extract_dir: scala-2.12.18
 bin:
-  - bin/fsc.bat,
-  - bin/scala.bat,
-  - bin/scalac.bat,
-  - bin/scaladoc.bat,
+  - bin/fsc.bat
+  - bin/scala.bat
+  - bin/scalac.bat
+  - bin/scaladoc.bat
   - bin/scalap.bat
 env_set:
   - SCALA_HOME: $dir
