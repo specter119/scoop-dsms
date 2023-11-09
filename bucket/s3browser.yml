@@ -1,0 +1,20 @@
+version: 11.4.5
+description: A freeware Windows client for Amazon S3 and Amazon CloudFront.
+homepage: https://s3browser.com/
+license:
+  identifier: Apache-2.0
+  url: https://github.com/anthunt/aws-s3-browser/blob/master/LICENSE
+url: https://s3browser.com/download/s3browser-11-4-5.zip
+hash: 4e052ba563bcfbca291f19bf718361d11f4b36f9344e454d02cc8668b1ab74f0
+extract_dir: S3 Browser
+shortcuts:
+- - s3browser-win32.exe
+  - S3 Browser
+checkver:
+  url: https://s3browser.com/download.aspx
+  regex: S3 Browser Version (\d[\d.]+\d)
+autoupdate:
+  url: https://s3browser.com/download/s3browser-$dashVersion.zip
+  hash:
+    url: https://s3browser.com/download.aspx
+    regex: (?ms)\(ZIP Package\).*SHA256:\s+$sha256
