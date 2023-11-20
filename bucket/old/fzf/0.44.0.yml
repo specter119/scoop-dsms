@@ -1,0 +1,14 @@
+version: 0.44.0
+description: A general-purpose command-line fuzzy finder
+homepage: https://github.com/junegunn/fzf
+license:
+  identifier: MIT
+  url: https://github.com/junegunn/fzf/blob/master/LICENSE
+architecture:
+  64bit:
+    url: https://github.com/junegunn/fzf/releases/download/0.44.0/fzf-0.44.0-windows_amd64.zip
+    hash: d1c3f874ac712e5ce274d72158ed77f35d957d8425e2c09df36bd10948e1446a
+  arm64:
+    url: https://github.com/junegunn/fzf/releases/download/0.44.0/fzf-0.44.0-windows_arm64.zip
+    hash: 0ee7c4bbb0d5008c6dbdeb2b3e5d8046435ee8dab55f9e898af0a5fda8be267
+bin: fzf.exe
