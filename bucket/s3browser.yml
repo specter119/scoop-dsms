@@ -7,6 +7,7 @@ license:
 url: https://s3browser.com/download/s3browser-11-4-5.zip
 hash: 4e052ba563bcfbca291f19bf718361d11f4b36f9344e454d02cc8668b1ab74f0
 extract_dir: S3 Browser
+bin: s3browser-cli.exe
 shortcuts:
 - - s3browser-win32.exe
   - S3 Browser
