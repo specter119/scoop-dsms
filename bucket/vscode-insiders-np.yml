@@ -11,7 +11,7 @@ notes: |
   reg import "$dir\install-associations.reg"
 architecture:
   64bit:
-    url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/46a233646602c378c2168fa2a104dff8e8551558/VSCode-win32-x64-1.86.0-insider.zip
+    url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/46a233646602c378c2168fa2a104dff8e8551558/VSCode-win32-x64-1.86.0-insider.zip#/dl.7z
     hash: 3d24e88becc4dd78848283950ff84f275ebc1bf590422a4d101eec294499875a
   arm64:
     url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/46a233646602c378c2168fa2a104dff8e8551558/VSCode-win32-arm64-1.86.0-insider.zip#/dl.7z
@@ -47,7 +47,7 @@ checkver:
 autoupdate:
   architecture:
     64bit:
-      url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/$match1/VSCode-win32-x64-$match2-insider.zip
+      url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/$match1/VSCode-win32-x64-$match2-insider.zip#/dl.7z
       hash:
         url: https://update.code.visualstudio.com/api/update/win32-x64-archive/insider/latest
         jsonpath: $.sha256hash
