@@ -1,0 +1,15 @@
+version: 0.17.0
+description: LTEX LS — LTEX Language Server
+homepage: https://github.com/containers/podman-tui
+license:
+  identifier: Apache-2.0
+  url: https://github.com/containers/podman-tui/blob/main/LICENSE
+url: https://github.com/containers/podman-tui/releases/download/v0.17.0/podman-tui-release-windows_amd64.zip
+hash: a365d995cf49b7d0f4719f8a7903db1f2355a217dea4eb4037b45956333f40f0
+extract_dir: podman-tui-release-windows_amd64\podman-tui-0.17.0
+post_install: Remove-Item "$dir\podman-tui-release-windows_amd64" -Force
+bin: podman-tui.exe
+checkver: github
+autoupdate:
+  url: https://github.com/containers/podman-tui/releases/download/v$version/podman-tui-release-windows_amd64.zip
+  extract_dir: podman-tui-release-windows_amd64\podman-tui-$version
