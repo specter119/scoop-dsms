@@ -1,14 +1,14 @@
-version: 1.26.0
+version: 1.27.0
 homepage: https://github.com/rust-lang-nursery/rustup.rs
 description: The Rust toolchain installer
 license: MIT|Apache-2.0
 architecture:
   64bit:
-    url: https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-pc-windows-msvc/rustup-init.exe
-    hash: 365d072ac4ef47f8774f4d2094108035e2291a0073702db25fa7797a30861fc9
+    url: https://static.rust-lang.org/rustup/archive/1.27.0/x86_64-pc-windows-msvc/rustup-init.exe
+    hash: 743bbd6b5a622ddc5c5234ce0fd3eab6ca74499a119fbf484dc55755a6a7e443
   32bit:
-    url: https://static.rust-lang.org/rustup/archive/1.26.0/i686-pc-windows-msvc/rustup-init.exe
-    hash: 3fcfaf0018c12b96c49dc7e13e8638bd8de686ab27dd14238c3f11d0a936c003
+    url: https://static.rust-lang.org/rustup/archive/1.27.0/i686-pc-windows-msvc/rustup-init.exe
+    hash: 6f9ad11abd642a7cba4ee6f386b84d56045ee12f921c5d9832913d937e0f3547
 checkver:
   url: https://raw.githubusercontent.com/rust-lang-nursery/rustup.rs/master/Cargo.toml
   regex: version = "([\d.]+)"
@@ -27,5 +27,4 @@ installer:
     & "$dir\rustup-init.exe" -y --no-modify-path --default-toolchain stable-msvc
 uninstaller:
   script: remove_from_path "$env:USERPROFILE\.cargo\bin" $global
-notes: 'To use the MSVC ABI without Visual Studio 2015 (or higher) installed, you
-  will need the Visual Studio 2019 Build Tools: https://www.visualstudio.com/downloads/'
+notes: 'To use the MSVC ABI without Visual Studio 2015 (or higher) installed, you will need the Visual Studio 2019 Build Tools: https://www.visualstudio.com/downloads/'
