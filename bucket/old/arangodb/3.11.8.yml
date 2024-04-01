@@ -1,7 +1,7 @@
-version: 3.11.4
+version: 3.11.8
 description: |
   Highly available and scalable multi-model database to natively work with graphs, documents and fulltext search with one engine & query language.
-homepage: https://www.arangodb.com/
+homepage: https://arangodb.com/
 license:
   identifier: Apache-2.0
   url: https://raw.githubusercontent.com/arangodb/arangodb/devel/LICENSE
@@ -10,9 +10,9 @@ suggest:
   - java/oraclejdk
   - java/oraclejre8
   - java/openjdk11
-url: https://download.arangodb.com/arangodb311/Community/Windows/ArangoDB3-3.11.4_win64.zip
-hash: 2e9f33409ee9c28695910644160a9864b536d45b87a2ae6632932e5e44640b59
-extract_dir: ArangoDB3-3.11.4_win64
+url: https://download.arangodb.com/arangodb311/Community/Windows/ArangoDB3-3.11.8_win64.zip
+hash: 9d819a2575a5c57a5876148556e604e491f2d6dae488b00b58413ee3e5ebeb50
+extract_dir: ArangoDB3-3.11.8_win64
 persist:
 - etc/arangodb3
 - var/lib/arangodb3-apps
@@ -21,7 +21,7 @@ env_set:
   ICU_DATA: $dir\usr\share\arangodb3
 checkver:
   url: https://arangodb.com/download-major/windows/
-  regex: Server\W*(\d+\.\d+\.\d+)
+  regex: Server.*(\d+\.\d+\.\d+)
 autoupdate:
   url: https://download.arangodb.com/arangodb$majorVersion$minorVersion/Community/Windows/ArangoDB$majorVersion-$version_win64.zip
   extract_dir: ArangoDB$majorVersion-$version_win64

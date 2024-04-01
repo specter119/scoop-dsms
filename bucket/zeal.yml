@@ -1,6 +1,6 @@
 version: 0.7.0
-homepage: https://zealdocs.org
 description: An offline documentation browser for software developers
+homepage: https://zealdocs.org
 license:
   identifier: GPL-3.0-only
   url: https://github.com/zealdocs/zeal/blob/main/COPYING

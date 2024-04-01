@@ -1,7 +1,9 @@
 version: 2.4.4
 description: A Sudo for Windows
 homepage: https://gerardog.github.io/gsudo
-license: MIT
+license:
+  identifier: MIT
+  url: https://github.com/gerardog/gsudo?tab=MIT-1-ov-file
 notes: |
   gsudo has a PowerShell module that adds `gsudo !!` to elevate the last command.
   Use the module by running: 'Import-Module gsudoModule'.

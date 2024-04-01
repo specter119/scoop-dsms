@@ -1,8 +1,8 @@
 version: 6.2.12
-homepage: https://www.itefix.net/cwrsync
 description: |
   rsync is an open source utility that provides fast incremental file transfer.
   cwRsync is a packaging of Rsync (link is external) for Windows.
+homepage: https://www.itefix.net/cwrsync
 license:
   identifier: GPL-3.0-or-later
   url: https://rsync.samba.org/GPL.html
