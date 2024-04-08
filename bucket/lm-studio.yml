@@ -10,6 +10,7 @@ installer:
   script: |
     Get-ChildItem -Path "$dir" | Where-Object { $_.Name -ne "LM-Studio-0.2.18-full.nupkg" } | Remove-Item -Force -Recurse
     Expand-7zipArchive -Path "$dir\LM-Studio-0.2.18-full.nupkg" -DestinationPath "$dir" -ExtractDir "lib\net45"
+    Remove-Item -Path "$dir\LM-Studio-0.2.18-full.nupkg" -Force
 shortcuts:
 - - LM Studio.exe
   - LM Studio
