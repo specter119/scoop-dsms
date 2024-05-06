@@ -1,0 +1,41 @@
+version: 1.90.0-816c6f7d7bc4da9796cd19ac6b122b6e26f50d7f
+description: Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).
+homepage: https://code.visualstudio.com/
+license:
+  identifier: Freeware
+  url: https://code.visualstudio.com/License/
+notes: |
+  Add Visual Studio Code as a context menu option by running:
+  reg import "$dir\install-context.reg"
+  For file associations, run:'
+  reg import "$dir\install-associations.reg"
+architecture:
+  64bit:
+    url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/816c6f7d7bc4da9796cd19ac6b122b6e26f50d7f/VSCode-win32-x64-1.90.0-insider.zip#/dl.7z
+    hash: 8f06d52fac461af9b7d6ac96144be52b4d46dc7158d8bbe7fdb64415173f07e2
+  arm64:
+    url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/816c6f7d7bc4da9796cd19ac6b122b6e26f50d7f/VSCode-win32-arm64-1.90.0-insider.zip#/dl.7z
+    hash: 3e0bd7add6e47c4522d13961f07d180644b961b24a1883d1e8f17071fe10b229
+post_install: |
+  $dirpath = "$dir".Replace('\', '\\')
+  $exepath = "$dir\Code - Insiders.exe".Replace('\', '\\')
+  'install-associations', 'uninstall-associations', 'install-context', 'uninstall-context' | ForEach-Object {
+    if (Test-Path "$bucketsdir\extras\scripts\vscode\$_.reg") {
+      $content = Get-Content "$bucketsdir\extras\scripts\vscode\$_.reg"
+      $content = $content.Replace('$codedir', $dirpath)
+      $content = $content.Replace('$code', $exepath)
+      $content = $content.Replace('&Code', 'Code &Insiders')
+      if ($global) {
+        $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')
+      }
+      $content | Set-Content -Path "$dir\$_.reg"
+    }
+  }
+bin:
+- bin\code-insiders.cmd
+- bin\code-tunnel-insiders.exe
+shortcuts:
+- - Code - Insiders.exe
+  - Visual Studio Code - Insiders
+uninstaller:
+  script: if ($cmd -eq 'uninstall') { reg import "$dir\uninstall-context.reg" }
