@@ -1,5 +1,5 @@
 version: 1.0.0
-description: LTEX LS — LTEX Language Server
+description: Podman Terminal UI
 homepage: https://github.com/containers/podman-tui
 license:
   identifier: Apache-2.0
