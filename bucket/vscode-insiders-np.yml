@@ -1,4 +1,4 @@
-version: 1.90.0-60468916e48fe8293e7641f0fc4ada80d79117b3
+version: 1.90.0-5f78b58b57b7cf84d28d801fed6bb4a48f908601
 description: Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).
 homepage: https://code.visualstudio.com/
 license:
@@ -11,11 +11,11 @@ notes: |
   reg import "$dir\install-associations.reg"
 architecture:
   64bit:
-    url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/60468916e48fe8293e7641f0fc4ada80d79117b3/VSCode-win32-x64-1.90.0-insider.zip#/dl.7z
-    hash: 6bcf25de18bc9d5a448d709d0330c0909a44957899ed3316da07563e7bfba528
+    url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/5f78b58b57b7cf84d28d801fed6bb4a48f908601/VSCode-win32-x64-1.90.0-insider.zip#/dl.7z
+    hash: 2f2d4990347f1cb42f9eeb98a87fe0e6a23d299377ed4561ee54aa18e9b81782
   arm64:
-    url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/60468916e48fe8293e7641f0fc4ada80d79117b3/VSCode-win32-arm64-1.90.0-insider.zip#/dl.7z
-    hash: d531f120f3c20c65d8ae1a4bfbdd3e711339d78e8df6ca39eabf7e07d5aacbd7
+    url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/5f78b58b57b7cf84d28d801fed6bb4a48f908601/VSCode-win32-arm64-1.90.0-insider.zip#/dl.7z
+    hash: 0d5233f5c867cdbd75707c3b0515f68b1a43f5f27cef3f97bb53b9ac0250c718
 post_install: |
   $dirpath = "$dir".Replace('\', '\\')
   $exepath = "$dir\Code - Insiders.exe".Replace('\', '\\')
@@ -47,12 +47,12 @@ checkver:
 autoupdate:
   architecture:
     64bit:
-      url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/$matchTail/VSCode-win32-x64-$matchHead-insider.zip#/dl.7z
+      url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/$preReleaseVersion/VSCode-win32-x64-$matchHead-insider.zip#/dl.7z
       hash:
         url: https://update.code.visualstudio.com/api/update/win32-x64-archive/insider/latest
         jsonpath: $.sha256hash
     arm64:
-      url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/$matchTail/VSCode-win32-arm64-$matchHead-insider.zip#/dl.7z
+      url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/$preReleaseVersion/VSCode-win32-arm64-$matchHead-insider.zip#/dl.7z
       hash:
         url: https://update.code.visualstudio.com/api/update/win32-arm64-archive/insider/latest
         jsonpath: $.sha256hash
