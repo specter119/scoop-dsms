@@ -83,10 +83,5 @@
         "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/github-workflow.json": [
             ".github/workflows/*.y*ml",
         ],
-    },
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#402815",
-        "titleBar.activeBackground": "#59391E",
-        "titleBar.activeForeground": "#FCF9F7"
-    },
+    }
 }
