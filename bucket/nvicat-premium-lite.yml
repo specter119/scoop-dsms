@@ -1,0 +1,22 @@
+version: "17"
+description: Navicat Premium Lite is a compact version of Navicat, packed with the core features needed for users who primarily need to perform basic database operations. It allows you to simultaneously connect to a variety of database platforms, including MySQL, PostgreSQL, SQL Server, Oracle, MariaDB, as well as NoSQL databases like Redis and MongoDB, all from a single application.
+homepage: https://www.navicat.com/en/products/navicat-premium-lite
+license:
+  identifier: Proprietary
+  url: https://www.navicat.com/en/products/navicat-premium-lite
+architecture:
+  64bit:
+    url: https://dn.navicat.com.cn/download/navicat170_premium_lite_cs_x64.exe
+    hash: dfe58ed4ec3fb819b91e88461b1e6b142df5c6fc8ac8e3b697422721382d8a72
+innosetup: true
+bin: navicat.exe
+shortcuts:
+- - navicat.exe
+  - Navicat Premium Lite
+checkver:
+  url: https://www.navicat.com/en/download/navicat-premium-lite
+  regex: Navicat Premium Lite (\d+)
+autoupdate:
+  architecture:
+    64bit:
+      url: https://dn.navicat.com.cn/download/navicat$version0_premium_lite_cs_x64.exe
