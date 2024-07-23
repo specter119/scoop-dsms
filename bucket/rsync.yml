@@ -9,6 +9,8 @@ license:
 url: https://itefix.net/dl/free-software/cwrsync_6.3.0_x64_free.zip
 hash: d1a0622f9c4dc50b661b9114945eaf4f9deda7187130284e15acfe8299d788ca
 bin: bin\rsync.exe
+env_set:
+  RSYHNC_RSH: $dir\bin\ssh.exe
 checkver:
   url: https://www.itefix.net/cwrsync?qt-cwrsync_client=3#qt-cwrsync_client
   regex: cwRsync client ([\d.]+)
