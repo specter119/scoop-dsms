@@ -9,7 +9,7 @@ hash: e2e54352e822a795589d8081c4ca0e2c0896ff444a91c31f6d870f18fc929e2c
 extract_dir: S3 Browser
 bin: s3browser-cli.exe
 shortcuts:
-- - s3browser-win32.exe
+- - s3browser-ui.exe
   - S3 Browser
 checkver:
   url: https://s3browser.com/download.aspx
