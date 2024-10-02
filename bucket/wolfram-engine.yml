@@ -1,12 +1,12 @@
-version: 14.0.0
+version: 14.1.0
 description: Locally downloadable Wolfram Engine to put computational intelligence into your applications.
 homepage: https://www.wolfram.com/engine
 license:
   identifier: Proprietary
   url: https://www.wolfram.com/legal/terms/wolfram-engine.html
-url: http://files.wolframcdn.com/packages/winget/14.0.0.0/WolframEngine_14.0.0_WIN.msi
-hash: 97a67dfe172dc1f9ef6fa8256a57fb31046bb78844ffbe69a01fb5d390a2c095
-extract_dir: Wolfram Research\Wolfram Engine\14.0
+url: http://files.wolframcdn.com/packages/winget/14.1.0.0/WolframEngine_14.1.0_WIN.msi
+hash: 9c92ab0b4f60678b847f592b4c496add4ba3992db3735306f8693d94a337e5fe
+extract_dir: Wolfram Research\Wolfram Engine\14.1
 bin: wolframscript.exe
 checkver:
   url: https://winstall.app/apps/WolframResearch.WolframEngine
