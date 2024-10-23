@@ -1,12 +1,12 @@
-version: 5.2.4
+version: 5.2.5
 description: A tool for managing OCI containers and pods.
 homepage: https://podman.io/
 license: Apache-2.0
 architecture:
   64bit:
-    url: https://github.com/containers/podman/releases/download/v5.2.4/podman-remote-release-windows_amd64.zip
-    hash: c2c83c7cad6bd4ae7349b5512deebbf3a29fb99b72dba1e7fe18281de5c99c16
-extract_dir: podman-5.2.4
+    url: https://github.com/containers/podman/releases/download/v5.2.5/podman-remote-release-windows_amd64.zip
+    hash: ec14bd2f64140854b8a92194c5fc6aad3be04b20e5468d70ddf1a4264c14c102
+extract_dir: podman-5.2.5
 bin: usr/bin/podman.exe
 checkver:
   github: https://github.com/containers/podman
