@@ -42,8 +42,7 @@ uninstaller:
 checkver:
   url: https://update.code.visualstudio.com/api/update/win32-x64-archive/insider/latest
   jsonpath: $.url
-  regex: insider/([a-f\d]+)/VSCode-win32-x64-([.\d]+)-insider.zip
-  replace: ${2}-${1}
+  regex: insider/([a-f\d]+)/VSCode-win32-x64-([\d.]+)-insider
 autoupdate:
   architecture:
     64bit:

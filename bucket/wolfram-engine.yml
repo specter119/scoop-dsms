@@ -9,11 +9,13 @@ hash: 9c92ab0b4f60678b847f592b4c496add4ba3992db3735306f8693d94a337e5fe
 extract_dir: Wolfram Research\Wolfram Engine\14.1
 bin: wolframscript.exe
 checkver:
-  url: https://winstall.app/apps/WolframResearch.WolframEngine
+  url: https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/w/WolframResearch/WolframEngine
+  jsonpath: $..[?(@.name)].name
   regex: (\d+\.\d+\.\d+)
+  reverse: true
 autoupdate:
   url: http://files.wolframcdn.com/packages/winget/$majorVersion.$minorVersion.0.0/WolframEngine_$majorVersion.$minorVersion.0_WIN.msi
   extract_dir: Wolfram Research\Wolfram Engine\$majorVersion.$minorVersion
   hash:
-    url: https://github.com/microsoft/winget-pkgs/blob/master/manifests/w/WolframResearch/WolframEngine/$version/WolframResearch.WolframEngine.installer.yaml
-    regex: 'InstallerSha256: ([a-fA-F\d]{64})'
+    url: https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/w/WolframResearch/WolframEngine/$version/WolframResearch.WolframEngine.installer.yaml
+    regex: InstallerSha256:\s*([a-fA-F\d]{64})

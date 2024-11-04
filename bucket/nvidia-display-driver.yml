@@ -31,7 +31,7 @@ installer:
 uninstaller:
   script: Write-Host "To remove this driver, please use Display Driver Uninstaller 'scoop install ddu' -ForegroundColor Magenta"
 checkver:
-  url: https://community.chocolatey.org/packages/nvidia-display-driver
-  regex: NVidia Display Driver ([\d.]+)
+  url: https://www.techpowerup.com/download/nvidia-geforce-graphics-drivers/
+  regex: Version History[\s\S]*?(\d+\.\d+)\s+WHQL
 autoupdate:
   url: https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
