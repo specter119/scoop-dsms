@@ -7,7 +7,19 @@ architecture:
     url: https://github.com/containers/podman/releases/download/v5.3.1/podman-remote-release-windows_amd64.zip
     hash: 975b54832daec8536caad066538f9270e16b5561c4da344cfc0eecb5127f0a06
 extract_dir: podman-5.3.1
-bin: usr/bin/podman.exe
+pre_install: |
+  if (Test-Path "$dir\usr\bin") {
+    Move-Item "$dir\usr\bin\*" "$dir" -Force
+    Remove-Item "$dir\usr" -Recurse -Force
+  }
+  if (Test-Path "$dir\docs") {
+    Move-Item "$dir\docs\*" "$dir" -Force
+    Remove-Item "$dir\docs" -Recurse -Force
+  }
+bin:
+  - gvproxy.exe
+  - podman.exe
+  - win-sshproxy.exe
 checkver:
   github: https://github.com/containers/podman
 autoupdate:
