@@ -12,7 +12,9 @@ pre_install: |
   Remove-Item "$dir\usr" -Recurse -Force
   Move-Item "$dir\docs\*" "$dir" -Force
   Remove-Item "$dir\docs" -Recurse -Force
-env_add_path: .
+bin: podman.exe
+notes: |
+  Please add the Podman installation directory to your system level PATH environment variable for the docker socket creation features working.
 checkver:
   github: https://github.com/containers/podman
 autoupdate:
