@@ -1,0 +1,32 @@
+version: "566.14"
+description: Display driver for Nvidia graphics cards
+homepage: https://www.nvidia.com
+license:
+  identifier: Proprietary
+  url: https://www.nvidia.com/en-us/about-nvidia/eula-agreement/
+url: https://us.download.nvidia.com/Windows/566.14/566.14-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
+hash: 5a2c5cbcbed161c7e55b7861895791867afa56f07a1d6a5630c2091902898a16
+extract_to: _FullPackage
+pre_install: |
+  $srcdir = "$dir\_FullPackage"
+  Move-Item ($srcdir + "\Display.Driver") -Destination "$dir" | Out-Null
+  Move-Item ($srcdir + "\Display.Optimus") -Destination "$dir" | Out-Null
+  Move-Item ($srcdir + "\NVI2") -Destination "$dir" | Out-Null
+  Move-Item ($srcdir + "\PhysX") -Destination "$dir" | Out-Null
+  Move-Item ($srcdir + "\EULA.txt") -Destination "$dir" | Out-Null
+  Move-Item ($srcdir + "\ListDevices.txt") -Destination "$dir" | Out-Null
+  Move-Item ($srcdir + "\setup.cfg") -Destination "$dir" | Out-Null
+  Move-Item ($srcdir + "\setup.exe") -Destination "$dir" | Out-Null
+  New-Item "$dir\GFExperience" -Type Directory | Out-Null
+  Move-Item ($srcdir + "\GFExperience\PrivacyPolicy") -Destination "$dir\GFExperience" | Out-Null
+  Move-Item ($srcdir + "\GFExperience\EULA.html") -Destination "$dir\GFExperience" | Out-Null
+  Move-Item ($srcdir + "\GFExperience\FunctionalConsent_*") -Destination "$dir\GFExperience" | Out-Null
+  Remove-Item $srcdir -Recurse -Force | Out-Null
+post_install: Remove-Item "$dir\*" -Recurse -Force | Out-Null
+installer:
+  file: setup.exe
+  args:
+  - /s
+  - /noreboot
+uninstaller:
+  script: Write-Host "To remove this driver, please use Display Driver Uninstaller 'scoop install ddu' -ForegroundColor Magenta"
