@@ -1,11 +1,11 @@
-version: 0.8.0
+version: 0.8.1
 description: A free and open source note-taking application.
 homepage: https://github.com/codexu/note-gen
 license:
   identifier: MIT
   url: https://github.com/codexu/note-gen/blob/main/LICENSE
-url: https://github.com/codexu/note-gen/releases/download/app-v0.8.0/NoteGen_0.8.0_x64_en-US.msi
-hash: ef9a01ce8f9c0347a324dc1f32a85daac2aa9398a76d02820cfc791bf7a72669
+url: https://github.com/codexu/note-gen/releases/download/app-v0.8.1/NoteGen_0.8.1_x64_en-US.msi
+hash: 90699899c8ba7e5933a4b79eb4283e2a4f3dda4d96311d1031493bd85615e365
 extract_dir: PFiles\NoteGen
 shortcuts:
 - - note-gen.exe
