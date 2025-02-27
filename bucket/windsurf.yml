@@ -8,6 +8,8 @@ architecture:
   64bit:
     url: https://windsurf-stable.codeiumdata.com/win32-x64-archive/stable/43976ecab7354ba352849517e15779fe8a4eff88/Windsurf-win32-x64-1.3.9.zip
     hash: a4a368799c3bdbc28a61114b514c1e433bceb98a0341c89f6e1bdd8fa949d767
+bin:
+- bin\windsurf.cmd
 shortcuts:
 - - Windsurf.exe
   - Windsurf
