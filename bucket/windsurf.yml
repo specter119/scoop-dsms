@@ -1,4 +1,4 @@
-version: 1.3.9
+version: 1.3.11
 description: Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.
 homepage: https://codeium.com/windsurf
 license:
@@ -6,8 +6,8 @@ license:
   url: https://codeium.com/terms-of-service-individual
 architecture:
   64bit:
-    url: https://windsurf-stable.codeiumdata.com/win32-x64-archive/stable/43976ecab7354ba352849517e15779fe8a4eff88/Windsurf-win32-x64-1.3.9.zip
-    hash: a4a368799c3bdbc28a61114b514c1e433bceb98a0341c89f6e1bdd8fa949d767
+    url: https://windsurf-stable.codeiumdata.com/win32-x64-archive/stable/0f80b7c19f8b1378a97a1304da23b6b06e767db0/Windsurf-win32-x64-1.3.11.zip
+    hash: 2595c3a5121288fc40f6cc6d4eedfd7674beac17029b1f0be52f993fe3afe35c
 bin:
 - bin\windsurf.cmd
 shortcuts:
