@@ -14,7 +14,9 @@ architecture:
     hash: fce31dcc34bd997b039938281b372d434465811f2bf7a1a5470cd491943ca90c
     extract_dir: '{code_GetDestDir}'
 innosetup: true
-bin: Cursor.exe
+bin:
+- resources\app\bin\cursor.cmd
+- resources\app\bin\cursor-tunnel.exe
 shortcuts:
 - - Cursor.exe
   - Cursor
