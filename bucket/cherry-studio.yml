@@ -1,0 +1,22 @@
+version: 1.1.18
+description: Cherry Studio - AI-powered coding assistant
+homepage: https://cherry-ai.com/
+license:
+  identifier: Proprietary
+url: https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.18/Cherry-Studio-1.1.18-portable.exe
+hash: e13d962ac2e9675f146e2db5044e79ed8b103a9a0dc95f395489815817bcae31
+installer:
+  script: |
+    $exeFile = (Get-ChildItem "$dir" -Filter "Cherry-Studio-*-portable.exe" | Select-Object -First 1).FullName
+    Move-Item -Path "$exeFile" -Destination "$dir\Cherry-Studio.exe" -Force
+
+bin: Cherry-Studio.exe
+shortcuts:
+- - Cherry-Studio.exe
+  - Cherry Studio
+checkver:
+  url: https://api.github.com/repos/CherryHQ/cherry-studio/releases/latest
+  jsonpath: $.tag_name
+  regex: v([\d.]+)
+autoupdate:
+  url: https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-portable.exe
