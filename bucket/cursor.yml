@@ -1,4 +1,4 @@
-version: 0.48.7
+version: 0.48.8
 description: The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.
 homepage: https://cursor.sh/
 license:
@@ -6,12 +6,12 @@ license:
   url: https://www.cursor.com/terms-of-service
 architecture:
   64bit:
-    url: https://downloads.cursor.com/production/66290080aae40d23364ba2371832bda0933a3641/win32/x64/user-setup/CursorUserSetup-x64-0.48.7.exe
-    hash: c8abbf2d7f5929deff1f5d869fba7565c34c1f41c17cb990d6911c7beed4020d
+    url: https://downloads.cursor.com/production/7801a556824585b7f2721900066bc87c4a09b743/win32/x64/user-setup/CursorUserSetup-x64-0.48.8.exe
+    hash: 34e113f5f6c7938dd1d150a4ae9fbabb32e2a634573e6fc7b9d754603b9a15f3
     extract_dir: '{code_GetDestDir}'
   arm64:
-    url: https://downloads.cursor.com/production/66290080aae40d23364ba2371832bda0933a3641/win32/arm64/user-setup/CursorUserSetup-arm64-0.48.7.exe
-    hash: 4196d14b927aab33e53be29cd9285c783af564cf95350659425adb3c504b7a32
+    url: https://downloads.cursor.com/production/7801a556824585b7f2721900066bc87c4a09b743/win32/arm64/user-setup/CursorUserSetup-arm64-0.48.8.exe
+    hash: 76ffa7e45937354fa75dbabe687fa17c296657c46486d03327697b8fb628ee7c
     extract_dir: '{code_GetDestDir}'
 innosetup: true
 bin:
@@ -21,8 +21,8 @@ shortcuts:
 - - Cursor.exe
   - Cursor
 checkver:
-  url: https://raw.githubusercontent.com/oslook/cursor-ai-downloads/refs/heads/main/version-history.json
-  regex: '{\s*"version":\s*"([^"]+)"[^}]*"win32-x64":\s*"https://downloads\.cursor\.com/production/([^/]+)/win32'
+  url: https://raw.githubusercontent.com/oslook/cursor-ai-downloads/main/version-history.json
+  regex: '"version":\s*"([^"]+)"[^}]*"win32-x64-user":\s*"https://downloads\.cursor\.com/production/([^/]+)/win32'
 autoupdate:
   architecture:
     64bit:
