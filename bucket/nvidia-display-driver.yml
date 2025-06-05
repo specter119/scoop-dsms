@@ -4,23 +4,22 @@ homepage: https://www.nvidia.com
 license:
   identifier: Proprietary
   url: https://www.nvidia.com/en-us/about-nvidia/eula-agreement/
-url: https://us.download.nvidia.com/Windows/576.52/576.52-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
+url: https://us.download.nvidia.cn/Windows/576.52/576.52-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
 hash: 5be34ad10b24d3e942088c004e425c45dd3009966e6df35fed7411a922604152
 extract_to: _FullPackage
 pre_install: |
   $srcdir = "$dir\_FullPackage"
   Move-Item ($srcdir + "\Display.Driver") -Destination "$dir" | Out-Null
-  Move-Item ($srcdir + "\Display.Optimus") -Destination "$dir" | Out-Null
+  Move-Item ($srcdir + "\HDAudio") -Destination "$dir" | Out-Null
   Move-Item ($srcdir + "\NVI2") -Destination "$dir" | Out-Null
   Move-Item ($srcdir + "\PhysX") -Destination "$dir" | Out-Null
-  Move-Item ($srcdir + "\EULA.txt") -Destination "$dir" | Out-Null
-  Move-Item ($srcdir + "\ListDevices.txt") -Destination "$dir" | Out-Null
-  Move-Item ($srcdir + "\setup.cfg") -Destination "$dir" | Out-Null
-  Move-Item ($srcdir + "\setup.exe") -Destination "$dir" | Out-Null
-  New-Item "$dir\GFExperience" -Type Directory | Out-Null
-  Move-Item ($srcdir + "\GFExperience\PrivacyPolicy") -Destination "$dir\GFExperience" | Out-Null
-  Move-Item ($srcdir + "\GFExperience\EULA.html") -Destination "$dir\GFExperience" | Out-Null
-  Move-Item ($srcdir + "\GFExperience\FunctionalConsent_*") -Destination "$dir\GFExperience" | Out-Null
+  Move-Item ($srcdir + "\*.txt") -Destination "$dir" | Out-Null
+  Move-Item ($srcdir + "\setup.*") -Destination "$dir" | Out-Null
+  New-Item "$dir\NvApp" -Type Directory | Out-Null
+  Move-Item ($srcdir + "\NvApp\PrivacyPolicy") -Destination "$dir\NvApp" | Out-Null
+  Move-Item ($srcdir + "\NvApp\Unified_EULA") -Destination "$dir\NvApp" | Out-Null
+  Move-Item ($srcdir + "\NvApp\UpgradeConsent") -Destination "$dir\NvApp" | Out-Null
+  Move-Item ($srcdir + "\NvApp\FunctionalConsent*") -Destination "$dir\NvApp" | Out-Null
   Remove-Item $srcdir -Recurse -Force | Out-Null
 post_install: Remove-Item "$dir\*" -Recurse -Force | Out-Null
 installer:
@@ -34,4 +33,4 @@ checkver:
   url: https://www.techpowerup.com/download/nvidia-geforce-graphics-drivers/
   regex: Version History[\s\S]*?(\d+\.\d+)\s+WHQL
 autoupdate:
-  url: https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
+  url: https://us.download.nvidia.cn/Windows/$version/$version-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
