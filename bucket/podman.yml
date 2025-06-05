@@ -1,12 +1,12 @@
-version: 5.5.0
+version: 5.5.1
 description: A tool for managing OCI containers and pods.
 homepage: https://podman.io/
 license: Apache-2.0
 architecture:
   64bit:
-    url: https://github.com/containers/podman/releases/download/v5.5.0/podman-remote-release-windows_amd64.zip
-    hash: ba7ebd9d07001adde6e667d8fcce79b78eecaf6970d2ebcb12031f22822ad02a
-extract_dir: podman-5.5.0
+    url: https://github.com/containers/podman/releases/download/v5.5.1/podman-remote-release-windows_amd64.zip
+    hash: 07dd82aeb602133ffbb4463bfe081e475f60bfc32729467f195ea5a38871fa86
+extract_dir: podman-5.5.1
 pre_install: |
   if (Test-Path "$dir\usr\bin") {
     Move-Item "$dir\usr\bin\*" "$dir" -Force
