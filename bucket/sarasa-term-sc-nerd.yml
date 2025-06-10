@@ -38,7 +38,7 @@ installer:
     $registryKey = "${registryRoot}:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts"
     Get-ChildItem $dir -Filter 'SarasaTermSCNerd-*.ttf' | ForEach-Object {
       $value = if ($global) { $_.Name } else { "$fontInstallDir\$($_.Name)" }
-      $fontName = $_.Name.Replace('SarasaTermSCNerd-', 'SarasaTermSC-').Replace('.ttf', '')
+      $fontName = $_.Name.Replace('SarasaTermSCNerd-', 'Sarasa Term SC ').Replace('.ttf', '')
       New-ItemProperty -Path $registryKey -Name "$fontName (TrueType)" -Value $value -PropertyType String -Force | Out-Null
       Copy-Item -LiteralPath $_.FullName -Destination $fontInstallDir
     }
@@ -74,7 +74,7 @@ uninstaller:
     $registryRoot = if ($global) { "HKLM" } else { "HKCU" }
     $registryKey = "${registryRoot}:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts"
     Get-ChildItem $dir -Filter 'SarasaTermSCNerd-*.ttf' | ForEach-Object {
-      $fontName = $_.Name.Replace('SarasaTermSCNerd-', 'SarasaTermSC-').Replace('.ttf', '')
+      $fontName = $_.Name.Replace('SarasaTermSCNerd-', 'Sarasa Term SC ').Replace('.ttf', '')
       Remove-ItemProperty -Path $registryKey -Name "$fontName (TrueType)" -Force -ErrorAction SilentlyContinue
       Remove-Item "$fontInstallDir\$($_.Name)" -Force -ErrorAction SilentlyContinue
     }
