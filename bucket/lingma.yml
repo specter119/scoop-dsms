@@ -1,0 +1,16 @@
+version: latest
+description: 灵动指间，快码加编，你的智能编码助手
+homepage: https://lingma.aliyun.com/lingma
+license:
+  identifier: Proprietary
+architecture:
+  64bit:
+    url: https://lingma-ide.oss-rg-china-mainland.aliyuncs.com/latest/win32/x64/user-setup/LingmaUserSetup-x64.exe
+    hash: c9126ce37abedbd382b5219addcade8acca2b79b3fad2beed00f1b64825054c5
+    extract_dir: '{code_GetDestDir}'
+innosetup: true
+bin:
+- bin\lingma.cmd
+shortcuts:
+- - Lingma.exe
+  - Lingma
