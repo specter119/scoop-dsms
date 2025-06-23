@@ -17,6 +17,8 @@ shortcuts:
 checkver:
   github: https://github.com/voideditor/binaries
 autoupdate:
-  url: https://github.com/voideditor/binaries/releases/download/$version/Void-win32-x64-$version.zip
-  hash:
-    url: $url.sha256
+  architecture:
+    64bit:
+      url: https://github.com/voideditor/binaries/releases/download/$version/Void-win32-x64-$version.zip
+      hash:
+        url: $url.sha256
