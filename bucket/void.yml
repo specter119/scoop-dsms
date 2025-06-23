@@ -1,4 +1,4 @@
-version: 1.99.30040
+version: 1.99.30043
 description: The open sourceAI code editor.
 homepage: https://voideditor.com/
 license:
@@ -6,8 +6,8 @@ license:
   url: https://github.com/voideditor/void/blob/main/LICENSE.txt
 architecture:
   64bit:
-    url: https://github.com/voideditor/binaries/releases/download/1.99.30040/Void-win32-x64-1.99.30040.zip
-    hash: a29d1d78e999c17a5390a3f77a4dd4442098e5f14572f7e22f41f66bb4618b25
+    url: https://github.com/voideditor/binaries/releases/download/1.99.30043/Void-win32-x64-1.99.30043.zip
+    hash: 9d6fdd8b398548f4b51ffe6057f6cd2d34ac506fc8035a315e6c6c27370afac6
 bin:
 - bin\void.cmd
 - bin\void-tunnel.exe
