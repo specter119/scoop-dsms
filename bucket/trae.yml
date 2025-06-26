@@ -10,7 +10,7 @@ architecture:
 innosetup: true
 bin: bin/trae.cmd
 shortcuts:
-  - Trae.exe
+- - Trae.exe
   - Trae
 checkver:
   url: https://api.trae.ai/icube/api/v1/native/version/trae/latest
