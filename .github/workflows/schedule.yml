@@ -2,8 +2,6 @@ on:
   schedule:
   - cron: '0 * * * *'
 name: Excavator
-env:
-  SCOOP_BRANCH: NEW
 jobs:
   excavate:
     name: Excavator
