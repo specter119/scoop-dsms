@@ -14,5 +14,5 @@ jobs:
         GITH_EMAIL: specter119@gmail.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SKIP_UPDATED: '1'
-        ScoopRepo: https://github.com/shovel-org/Install
+        ScoopRepo: https://github.com/Ash258/Scoop-Core
         ScoopBranch: NEW
