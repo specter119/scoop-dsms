@@ -2,6 +2,9 @@ on:
   schedule:
   - cron: '0 * * * *'
 name: Excavator
+env:
+  ScoopRepo: https://github.com/shovel-org/Install
+  ScoopBranch: NEW
 jobs:
   excavate:
     name: Excavator

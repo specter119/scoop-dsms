@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - name: Verify Issue
-        uses: specter119/ShovelAction@main
+        uses: shovel-org/GithubActions@main
         if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
         env:
           GITH_EMAIL: specter119@gmail.com
