@@ -1,36 +1,31 @@
-version: 5.1.0
-description: Your productive tools set and launcher.
+version: 7.2.1
 homepage: https://u.tools/
-license: Proprietary
+description: 新一代效率工具平台
+license: Freeware
 architecture:
   64bit:
-    url: https://res.u-tools.cn/version2/uTools-5.1.0.exe#/dl.7z
-    hash: sha512:d796d93f66cb5aeedcfdf0e6fbbe5272e4adde4852aa03c13a3debaf99c603ff6366129ededc05c13db932cf5d8a126a64bb49838dab7ecc12d4b2477dd6eb41
+    url: https://open.u-tools.cn/download/uTools-7.2.1.exe#/uTools.7z
+    hash: 7e9e3890a33e83225321f1b3d4f3daf4b5e04bd371dd3a148bf9911bdad1b952
     installer:
-      script: Expand-7zipArchive "$dir\`$PLUGINSDIR/app-64.7z" "$dir"
+      script: 7z x $original_dir/PLUGINSDIR/app-64.7z -o"$original_dir\utools"
   32bit:
-    url: https://res.u-tools.cn/version2/uTools-5.1.0-ia32.exe#/dl.7z
-    hash: sha512:15f692c4578284c0ff88640a90d83ea4ed75e9d20bc8d12fde45712f5a4dcd2cc13c5b75201fbd46c896d36f09d2218e5e8d6dd2b2ebec4c389be7bb10aee0d0
+    url: https://open.u-tools.cn/download/uTools-7.2.1-ia32.exe#/uTools.7z
+    hash: e4ece27d833442e0802237c885228e5535656d95a6a3274fabfc2a13be59cdbd
     installer:
-      script: Expand-7zipArchive "$dir\`$PLUGINSDIR/app-32.7z" "$dir"
-post_install: Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0" -Force -Recurse
+      script: 7z x $original_dir/PLUGINSDIR/app-32.7z -o"$original_dir\utools"
+extract_dir: $PLUGINSDIR
+extract_to: PLUGINSDIR
+post_install: Remove-Item -RECURSE $original_dir/PLUGINSDIR
+bin: utools\uTools.exe
 shortcuts:
-- - uTools.exe
+- - utools\uTools.exe
   - uTools
 checkver:
-  url: https://res.u-tools.cn/version2/latest.yml
-  regex: 'version: ([\d.]+)'
+  url: https://u.tools/download/
+  regex: uTools-(\d+[\.\d]+)\.exe
 autoupdate:
   architecture:
     64bit:
-      url: https://res.u-tools.cn/version2/uTools-$version.exe#/dl.7z
-      hash:
-        url: https://res.u-tools.cn/version2/latest.yml?
-        mode: extract
-        regex: '(?sm)$version.exe.*?sha512: $base64'
+      url: https://open.u-tools.cn/download/uTools-$version.exe#/uTools.7z
     32bit:
-      url: https://res.u-tools.cn/version2/uTools-$version-ia32.exe#/dl.7z
-      hash:
-        url: https://res.u-tools.cn/version2/latest-ia32.yml?
-        mode: extract
-        regex: '(?sm)$version-ia32.exe.*?sha512: $base64'
+      url: https://open.u-tools.cn/download/uTools-$version-ia32.exe#/uTools.7z
