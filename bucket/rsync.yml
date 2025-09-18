@@ -9,9 +9,7 @@ license:
 url: https://github.com/itefixnet/download/releases/download/cwrsync-client-v6.4.5/cwrsync_6.4.5_x64_free.zip
 hash: 2fb0c9d1932c51d98c2ea0f09a581bd093b8a83741f3f933a263ada29007a67a
 extract_dir: cwrsync_6.4.5_x64_free
-bin: bin\rsync.exe
-env_set:
-  RSYHNC_RSH: $dir\bin\ssh.exe
+bin: [["bin/rsync.exe", "rsync", "--rsh=$env:SCOOP/apps/rsync/current/bin/ssh.exe"]]
 checkver:
   url: https://itefix.net/cwrsync/client/releases
   regex: cwRsync client ([\d.]+)
