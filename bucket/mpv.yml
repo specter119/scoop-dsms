@@ -1,12 +1,12 @@
-version: 20250914-git-b9b3106
+version: 20250921-git-f147b13
 description: Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build
 homepage: https://mpv.io
 license: LGPL-2.1-or-later,GPL-2.0-or-later
 notes: You can use Icaros ('nonportable/icaros-np') to enable thumbnails for all media types.
 suggest:
   yt-dlp: yt-dlp
-url: https://sourceforge.net/projects/mpv-player-windows/files/64bit-v3/mpv-x86_64-v3-20250914-git-b9b3106.7z
-hash: 2db619cd6f3bd4c60bed19170287d88f5c72255070aaf60e06f1843f267d7f09
+url: https://sourceforge.net/projects/mpv-player-windows/files/64bit-v3/mpv-x86_64-v3-20250921-git-f147b13.7z
+hash: 721f3ec15e2d478a47f302252cf8a7c709dbfb9968e40ecbd3ff5710f7dc99fb
 bin: mpv.exe
 shortcuts:
 - - mpv.exe
