@@ -1,4 +1,4 @@
-version: 1.74.4
+version: 1.75.0
 description: Heptabase is a visual note-taking app that helps you learn complex topics
 homepage: https://heptabase.com/
 license:
@@ -6,8 +6,8 @@ license:
   url: https://heptabase.com/terms_of_service
 architecture:
   64bit:
-    url: https://github.com/heptameta/project-meta/releases/download/v1.74.4/Heptabase-Setup-1.74.4.exe#/dl.7z
-    hash: sha512:deb8c1bfacc57facc318a61537ec475e31d4af19ace362cccaacc1b275aecab407433fa3a690256299f9e19b7cf0ba217a4b48fd25eae10ebfb8da3eaca144b3
+    url: https://github.com/heptameta/project-meta/releases/download/v1.75.0/Heptabase-Setup-1.75.0.exe#/dl.7z
+    hash: sha512:57dec0d479510a45d87de69a6cd5b4b2f9b5417c471458c02761ed52f7a4968a37b7803b0ca2ab9806941678b8bdec1753b320a6fe676ad343e0aced0eb7aa69
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
     - Remove-Item $dir/`$* -Recurse
