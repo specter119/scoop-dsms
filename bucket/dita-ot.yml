@@ -1,13 +1,13 @@
-version: 4.3.4
+version: 4.3.5
 description: |
   An open-source publishing engine for XML content authored in the Darwin Information Typing Architecture.
 homepage: https://www.dita-ot.org/
 license:
   identifier: Apache-2.0
   url: https://github.com/dita-ot/dita-ot/blob/develop/LICENSE
-url: https://github.com/dita-ot/dita-ot/releases/download/4.3.4/dita-ot-4.3.4.zip
-hash: 011c65bbe55b917f572e8d8e81a5518504cff0706b436f1c8a6565a1d2d98f08
-extract_dir: dita-ot-4.3.4
+url: https://github.com/dita-ot/dita-ot/releases/download/4.3.5/dita-ot-4.3.5.zip
+hash: a2e5a6ce9841e35fffb6363a11c2e5dec23a2f64f3a397940221cbdfe159e21c
+extract_dir: dita-ot-4.3.5
 bin:
 - bin\ant.bat
 - bin\dita.bat
