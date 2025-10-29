@@ -1,4 +1,4 @@
-version: 0.13.19
+version: 0.14.0
 homepage: https://github.com/typstyle-rs/typstyle
 description: A code formatter for Typst
 license:
@@ -6,11 +6,11 @@ license:
   url: https://github.com/typstyle-rs/typstyle/blob/main/LICENSE
 architecture:
   64bit:
-    url: https://github.com/typstyle-rs/typstyle/releases/download/v0.13.19/typstyle-x86_64-pc-windows-msvc.exe#/typstyle.exe
-    hash: e8339a35ccff1dc698a6046f69de1589e9878557007c8726a12fdfbae4d9f583
+    url: https://github.com/typstyle-rs/typstyle/releases/download/v0.14.0/typstyle-x86_64-pc-windows-msvc.exe#/typstyle.exe
+    hash: 217d8aaec235ef00ac38dda60361624c8b86e1e122338cc98520a53d7fa6b86a
   arm64:
-    url: https://github.com/typstyle-rs/typstyle/releases/download/v0.13.19/typstyle-aarch64-pc-windows-msvc.exe#/typstyle.exe
-    hash: f21efca255b47a3897bf7122df94831e7abfc35d9ab0bd14fac6410c18f89b1d
+    url: https://github.com/typstyle-rs/typstyle/releases/download/v0.14.0/typstyle-aarch64-pc-windows-msvc.exe#/typstyle.exe
+    hash: 6bd70cea1b88da5888e07977498de25f90c6b3ad6c5914fd667b4f322c998dae
 bin: typstyle.exe
 checkver: github
 autoupdate:
