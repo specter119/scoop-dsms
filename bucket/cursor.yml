@@ -1,4 +1,4 @@
-version: 2.0.57
+version: 2.0.60
 description: The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.
 homepage: https://cursor.sh/
 license:
@@ -6,12 +6,12 @@ license:
   url: https://www.cursor.com/terms-of-service
 architecture:
   64bit:
-    url: https://downloads.cursor.com/production/eb037ef2bfba33ac568b0da614cb1c7b738455d6/win32/x64/user-setup/CursorUserSetup-x64-2.0.57.exe
-    hash: b1f6e85eef4eb8e8021da39b912efeab85be5b096aabf51ee3468b06807b90a4
+    url: https://downloads.cursor.com/production/c6d93c13f57509f77eb65783b28e75a857b74c03/win32/x64/user-setup/CursorUserSetup-x64-2.0.60.exe
+    hash: 54b9a126ccc04b19ffdf404b93c57544ffccd5fc44e8f124add8db259c3a4f01
     extract_dir: '{code_GetDestDir}'
   arm64:
-    url: https://downloads.cursor.com/production/eb037ef2bfba33ac568b0da614cb1c7b738455d6/win32/arm64/user-setup/CursorUserSetup-arm64-2.0.57.exe
-    hash: 97e6ce5ffdbff7ad214aaa663bcfbba9ef7d87bafb0aa10d955ae803709da7fb
+    url: https://downloads.cursor.com/production/c6d93c13f57509f77eb65783b28e75a857b74c03/win32/arm64/user-setup/CursorUserSetup-arm64-2.0.60.exe
+    hash: eef75b4e8b97c1417e5d1628e49878b11b1b440a4aad552991b7278147ec0f1f
     extract_dir: '{code_GetDestDir}'
 innosetup: true
 bin:
