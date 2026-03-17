@@ -1,0 +1,32 @@
+version: 2.2.1
+description: A local DNS proxy for Windows with caching and custom HOSTS file support for wildcards and regular expressions
+homepage: https://mayakron.altervista.org/support/acrylic/Home.htm
+license: GPL-2.0-only
+url: https://downloads.sourceforge.net/project/acrylic/Acrylic/2.2.1/Acrylic-Portable.zip
+hash: md5:a5cf55cef74b7e702037c3be58bcd40a
+bin:
+- AcrylicUI.exe
+- InstallAcrylicService.bat
+- UninstallAcrylicService.bat
+- StartAcrylicService.bat
+- StopAcrylicService.bat
+- RestartAcrylicService.bat
+- PurgeAcrylicCacheData.bat
+- ActivateAcrylicDebugLog.bat
+- DeactivateAcrylicDebugLog.bat
+- OpenAcrylicConfigurationFile.bat
+- OpenAcrylicHostsFile.bat
+shortcuts:
+- - AcrylicUI.exe
+  - Acrylic DNS Proxy\Acrylic UI
+persist:
+- AcrylicConfiguration.ini
+- AcrylicHosts.txt
+checkver:
+  url: https://sourceforge.net/projects/acrylic/rss?path=/Acrylic
+  regex: /Acrylic/([\d.]+)/Acrylic-Portable\.zip
+autoupdate:
+  url: https://downloads.sourceforge.net/project/acrylic/Acrylic/$version/Acrylic-Portable.zip
+  hash:
+    url: https://sourceforge.net/projects/acrylic/rss?path=/Acrylic
+    regex: /Acrylic/$version/Acrylic-Portable\.zip[\s\S]*?<media:hash algo="md5">([a-f0-9]+)</media:hash>
