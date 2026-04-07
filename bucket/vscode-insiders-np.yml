@@ -1,4 +1,4 @@
-version: 6c8fcf1806fc53b1a1fb8863973ac55842edeb05
+version: d09c516f0dbb4c2992964976425b1926ccda08ad
 description: Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).
 homepage: https://code.visualstudio.com/
 license:
@@ -11,8 +11,8 @@ notes: |
   reg import "$dir\install-associations.reg"
 architecture:
   64bit:
-    url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/6c8fcf1806fc53b1a1fb8863973ac55842edeb05/VSCode-win32-x64-1.115.0-insider.zip#/dl.7z
-    hash: d00bdf0f56f5e45bd63e639070d6b0d306a0ec489d3cc737a0f0ab8ddf931d2e
+    url: https://vscode.download.prss.microsoft.com/dbazure/download/insider/d09c516f0dbb4c2992964976425b1926ccda08ad/VSCode-win32-x64-1.115.0-insider.zip#/dl.7z
+    hash: db5e8c34f64c5b8db2385a9a94fd466459c3c478ffb991b3382b2f1ee01587be
 post_install: |
   $dirpath = "$dir".Replace('\', '\\')
   $exepath = "$dir\Code - Insiders.exe".Replace('\', '\\')
