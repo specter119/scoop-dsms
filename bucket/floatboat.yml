@@ -1,10 +1,10 @@
-version: 0.2.0
+version: 0.2.1
 description: The World's 1st AI Vibe Work Agent. An outcome-oriented, context-native workspace for the AI-Native era.
 homepage: https://floatboat.ai/
 license:
   identifier: Proprietary
-url: https://release.aoe.chat/Floatboat%20Setup%200.2.0.exe#/dl.7z
-hash: sha512:56f2d1039bb28dd6d38930936d7baf15c7055f822467bdb01857d322eea20ea980a571d3f91d3ed577589712ebae312b4ffcead9c10d7c1d74a6a62c2e261159
+url: https://release.aoe.chat/Floatboat%20Setup%200.2.1.exe#/dl.7z
+hash: sha512:c9ce2576f8bd36a3864e8bff1838178659f75db14d28e4d047575b28223f1e107d10a341e0f8c500287cdbc6f031ceb62090366670842f3aa4a93d7eab18c365
 pre_install:
 - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
 - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
