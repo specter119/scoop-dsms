@@ -1,13 +1,13 @@
-version: 1.39.31
+version: 1.44.55
 homepage: https://getquicker.net/
 license: Freeware
 architecture:
   64bit:
     url: https://getquicker.net/download/item/fast_x64#.msi
-    hash: 208e79e7acb1ee84f906ad17b0b45c0a69d11ab1166f42b0d58d46bcc3ffecd4
+    hash: 5dfa30d304dec2569fbee8de7ed0278c7ab25d5c4a0defe47ca5739768c415ac
   32bit:
     url: https://getquicker.net/download/item/fast_x86#.msi
-    hash: 3f2004c594903295aac1988370fd5c637a5ab6f36ebc2b1377ed60f7e8f92b45
+    hash: aea71b5b6dcadc40ef5c4f57715a2cf719b4f1d0fcb4b16d8c057c156e58f191
 extract_dir: Quicker
 checkver:
   url: https://getquicker.net/Download
