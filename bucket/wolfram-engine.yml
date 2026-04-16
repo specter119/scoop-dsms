@@ -10,8 +10,7 @@ extract_dir: Wolfram Research\Wolfram Engine\14.1
 bin: wolframscript.exe
 checkver:
   url: https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/w/WolframResearch/WolframEngine
-  jsonpath: $..[?(@.name)].name
-  regex: (\d+\.\d+\.\d+)
+  regex: '"name"\s*:\s*"(\d+\.\d+\.\d+)"'
   reverse: true
 autoupdate:
   url: http://files.wolframcdn.com/packages/winget/$majorVersion.$minorVersion.0.0/WolframEngine_$majorVersion.$minorVersion.0_WIN.msi

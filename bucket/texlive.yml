@@ -38,7 +38,9 @@ shortcuts:
 - - tl-tray-menu.exe
   - Tex Live Manager
 persist: texmf-config
-checkver: 'Current release: TeX Live ([\d]+)'
+checkver:
+  url: https://tug.org/texlive/
+  regex: TeX Live (\d{4}) is available
 autoupdate:
   url: http://mirror.ctan.org/systems/texlive/tlnet/install-tl.zip
   hash:

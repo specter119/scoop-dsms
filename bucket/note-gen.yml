@@ -12,6 +12,6 @@ shortcuts:
   - NoteGen
 checkver:
   github: https://github.com/codexu/note-gen
-  regex: app-v([\d.]+)
+  regex: note-gen-v([\d.]+)
 autoupdate:
-  url: https://github.com/codexu/note-gen/releases/download/app-v$version/NoteGen_$version_x64_en-US.msi
+  url: https://github.com/codexu/note-gen/releases/download/note-gen-v$version/NoteGen_$version_x64_en-US.msi

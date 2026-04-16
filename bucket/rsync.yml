@@ -14,8 +14,8 @@ bin:
   - rsync
   - --rsh=$env:SCOOP/apps/rsync/current/bin/ssh.exe
 checkver:
-  url: https://itefix.net/cwrsync/client/releases
-  regex: cwRsync client ([\d.]+)
+  github: https://github.com/itefixnet/cwrsync-client
+  regex: v([\d.]+)
 autoupdate:
   url: https://github.com/itefixnet/download/releases/download/cwrsync-client-v$version/cwrsync_$version_x64_free.zip
   hash:
