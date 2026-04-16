@@ -1,4 +1,4 @@
-version: 4ab3ca5546cf2df8c15361f1ebda6444f1e0c7a1
+version: 1.117.0-4ab3ca5546cf2df8c15361f1ebda6444f1e0c7a1
 description: Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).
 homepage: https://code.visualstudio.com/
 license:
@@ -40,6 +40,7 @@ checkver:
   url: https://update.code.visualstudio.com/api/update/win32-x64-archive/insider/latest
   jsonpath: $.url
   regex: insider/([a-f\d]+)/VSCode-win32-x64-([\d.]+)-insider
+  replace: ${2}-${1}
 autoupdate:
   architecture:
     64bit:
