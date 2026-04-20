@@ -16,6 +16,6 @@ checkver: github
 autoupdate:
   architecture:
     64bit:
-      url: https://github.com/typstyle-rs/typstyle/releases/download/v${version}/typstyle-x86_64-pc-windows-msvc.exe#/typstyle.exe
+      url: https://github.com/typstyle-rs/typstyle/releases/download/v$version/typstyle-x86_64-pc-windows-msvc.exe#/typstyle.exe
     arm64:
-      url: https://github.com/typstyle-rs/typstyle/releases/download/v${version}/typstyle-aarch64-pc-windows-msvc.exe#/typstyle.exe
+      url: https://github.com/typstyle-rs/typstyle/releases/download/v$version/typstyle-aarch64-pc-windows-msvc.exe#/typstyle.exe

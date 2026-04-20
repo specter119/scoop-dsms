@@ -1,0 +1,160 @@
+name: Gemini Archive Recommendation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 1 * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Skip when GEMINI_API_KEY is missing
+        if: ${{ secrets.GEMINI_API_KEY == '' }}
+        run: |
+          {
+            echo "## Gemini Archive Recommendation"
+            echo
+            echo "Skipped because \`GEMINI_API_KEY\` is not configured for this repository."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Collect archive signals
+        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p .archive
+          python3 scripts/archive_collector.py \
+            --bucket-dir bucket \
+            --history docs/archive-history.json \
+            --repo "${GITHUB_REPOSITORY}" \
+            --output .archive/archive-signals.json
+
+      - name: Review archive candidates with Gemini
+        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        id: gemini
+        uses: google-github-actions/run-gemini-cli@v0.1.21
+        with:
+          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+          upload_artifacts: true
+          workflow_name: gemini-archive
+          prompt: |
+            You are reviewing archive candidates for the scoop-dsms bucket repository.
+
+            Read these files:
+            - .archive/archive-signals.json
+            - docs/archive-history.json
+            - README.md
+
+            Return JSON only with this exact shape:
+            {
+              "recommendations": [
+                {
+                  "package": "manifest-name",
+                  "should_archive": true,
+                  "confidence": "high",
+                  "reason": "One concise sentence.",
+                  "evidence": ["fact 1", "fact 2"]
+                }
+              ]
+            }
+
+            Constraints:
+            - Recommend at most 5 packages.
+            - Recommend only packages with strong evidence.
+            - Consider previous archive history and previous archive PRs from the signals file.
+            - If no package should be archived, return {"recommendations":[]}.
+            - Do not include Markdown code fences.
+          settings: |-
+            {
+              "tools": {
+                "core": [
+                  "run_shell_command(cat)",
+                  "run_shell_command(echo)",
+                  "run_shell_command(grep)",
+                  "run_shell_command(head)",
+                  "run_shell_command(tail)"
+                ]
+              }
+            }
+
+      - name: Save Gemini recommendations
+        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        env:
+          GEMINI_SUMMARY: ${{ steps.gemini.outputs.summary }}
+        run: |
+          set -euo pipefail
+          printf '%s\n' "${GEMINI_SUMMARY}" > .archive/recommendations.json
+
+      - name: Apply archive recommendations
+        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        run: |
+          set -euo pipefail
+          python3 scripts/apply_archive_recommendations.py \
+            --recommendations .archive/recommendations.json \
+            --history docs/archive-history.json \
+            --bucket-dir bucket \
+            --date "$(date -u +%F)" \
+            --metadata-out .archive/pr-meta.json \
+            --max-candidates 5
+
+      - name: Regenerate README
+        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        run: |
+          set -euo pipefail
+          python3 scripts/generate_readme.py --write
+
+      - name: Read PR metadata
+        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        id: metadata
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          metadata = json.loads(Path('.archive/pr-meta.json').read_text(encoding='utf-8'))
+          output = Path(os.environ['GITHUB_OUTPUT'])
+          with output.open('a', encoding='utf-8') as fh:
+              fh.write(f"selected_count={metadata['selected_count']}\n")
+              fh.write(f"branch={metadata['branch']}\n")
+              fh.write('title<<EOF\n')
+              fh.write(metadata['title'] + '\n')
+              fh.write('EOF\n')
+              fh.write('commit_message<<EOF\n')
+              fh.write(metadata['commit_message'] + '\n')
+              fh.write('EOF\n')
+          PY
+
+      - name: Publish archive summary
+        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        env:
+          GEMINI_SUMMARY: ${{ steps.gemini.outputs.summary }}
+          SELECTED_COUNT: ${{ steps.metadata.outputs.selected_count }}
+        run: |
+          {
+            echo "## Gemini Archive Recommendation"
+            echo
+            echo "Selected candidates: ${SELECTED_COUNT}"
+            echo
+            printf '%s\n' "${GEMINI_SUMMARY}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create archive pull request
+        if: ${{ secrets.GEMINI_API_KEY != '' && steps.metadata.outputs.selected_count != '0' }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: ${{ steps.metadata.outputs.branch }}
+          title: ${{ steps.metadata.outputs.title }}
+          commit-message: ${{ steps.metadata.outputs.commit_message }}
+          body-path: .archive/archive-pr-body.md
+          delete-branch: true

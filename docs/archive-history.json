@@ -1,0 +1,42 @@
+[
+  {
+    "package": "arangodb",
+    "version": "3.11.8",
+    "archived_at": "Pre-automation",
+    "reason": "Pre-existing archive entry.",
+    "evidence": [
+      "The manifest already existed under bucket/old before automation was introduced."
+    ],
+    "source_repo": null
+  },
+  {
+    "package": "feeluown",
+    "version": "3.8.4",
+    "archived_at": "Pre-automation",
+    "reason": "Pre-existing archive entry.",
+    "evidence": [
+      "The manifest already existed under bucket/old before automation was introduced."
+    ],
+    "source_repo": null
+  },
+  {
+    "package": "nvidia-display-driver",
+    "version": "566.14",
+    "archived_at": "Pre-automation",
+    "reason": "Pre-existing archive entry.",
+    "evidence": [
+      "The manifest already existed under bucket/old before automation was introduced."
+    ],
+    "source_repo": null
+  },
+  {
+    "package": "spark",
+    "version": "3.5.0",
+    "archived_at": "Pre-automation",
+    "reason": "Pre-existing archive entry.",
+    "evidence": [
+      "The manifest already existed under bucket/old before automation was introduced."
+    ],
+    "source_repo": null
+  }
+]
