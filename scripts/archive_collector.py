@@ -77,7 +77,9 @@ def fetch_repo_activity(repo: str, token: str | None) -> dict[str, Any]:
         )
         if releases:
             latest_release = releases[0]
-            published_at = latest_release.get("published_at") or latest_release.get("created_at")
+            published_at = latest_release.get("published_at") or latest_release.get(
+                "created_at"
+            )
             metadata["latest_release_published_at"] = published_at
             metadata["latest_release_age_days"] = age_days(published_at)
     except HTTPError as error:
@@ -170,11 +172,15 @@ def fetch_recent_archive_prs(repo: str, token: str | None) -> list[dict[str, Any
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Collect archive recommendation signals.")
+    parser = argparse.ArgumentParser(
+        description="Collect archive recommendation signals."
+    )
     parser.add_argument("--bucket-dir", default="bucket")
     parser.add_argument("--history", default="docs/archive-history.json")
     parser.add_argument("--output", required=True)
-    parser.add_argument("--repo", required=True, help="Current GitHub repository in owner/name format.")
+    parser.add_argument(
+        "--repo", required=True, help="Current GitHub repository in owner/name format."
+    )
     args = parser.parse_args()
 
     token = os.getenv("GITHUB_TOKEN")
@@ -226,7 +232,9 @@ def main() -> int:
 
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    output_path.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     print(f"Wrote {output_path}")
     return 0
 

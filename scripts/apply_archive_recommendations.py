@@ -102,7 +102,9 @@ def build_pr_body(selected: list[dict[str, Any]]) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Apply archive recommendations produced by Gemini.")
+    parser = argparse.ArgumentParser(
+        description="Apply archive recommendations produced by Gemini."
+    )
     parser.add_argument("--recommendations", required=True)
     parser.add_argument("--history", default="docs/archive-history.json")
     parser.add_argument("--bucket-dir", default="bucket")
@@ -111,7 +113,10 @@ def main() -> int:
     parser.add_argument("--max-candidates", type=int, default=5)
     args = parser.parse_args()
 
-    active_manifests = {manifest.package: manifest for manifest in load_active_manifests(Path(args.bucket_dir))}
+    active_manifests = {
+        manifest.package: manifest
+        for manifest in load_active_manifests(Path(args.bucket_dir))
+    }
     history_path = Path(args.history)
     history = load_archive_history(history_path)
     history_index = {(entry["package"], entry["version"]) for entry in history}
@@ -133,7 +138,11 @@ def main() -> int:
             {
                 "package": manifest.package,
                 "version": manifest.version,
-                "reason": str(recommendation.get("reason", "Recommended by Gemini archive review.")),
+                "reason": str(
+                    recommendation.get(
+                        "reason", "Recommended by Gemini archive review."
+                    )
+                ),
                 "confidence": str(recommendation.get("confidence", "unknown")),
                 "evidence": recommendation.get("evidence", []),
                 "source_repo": manifest.github_repo,
@@ -155,7 +164,9 @@ def main() -> int:
     if not selected:
         metadata_path = Path(args.metadata_out)
         metadata_path.parent.mkdir(parents=True, exist_ok=True)
-        metadata_path.write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
+        metadata_path.write_text(
+            json.dumps(metadata, indent=2) + "\n", encoding="utf-8"
+        )
         print("No archive candidates were applied.")
         return 0
 

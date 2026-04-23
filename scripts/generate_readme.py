@@ -17,7 +17,7 @@ README_HEADER = """# Scoop/Shovel dsms Bucket [![Build status](https://ci.appvey
 This bucket contains curated Windows application manifests for Scoop/Shovel.
 The package index below is generated from the manifests stored in this repository.
 
-To refresh this document locally, run `python scripts/generate_readme.py --write`.
+To refresh this document locally, run `uv run scripts/generate_readme.py --write`.
 """
 
 
@@ -25,11 +25,12 @@ def escape_cell(value: str) -> str:
     return value.replace("|", "\\|")
 
 
-def homepage_cell(homepage: str) -> str:
+def description_cell(description: str, homepage: str) -> str:
+    escaped_description = escape_cell(description)
     if not homepage:
-        return "—"
-    escaped = escape_cell(homepage)
-    return f"[Website]({escaped})"
+        return escaped_description
+    escaped_homepage = escape_cell(homepage)
+    return f"{escaped_description}<br>[Homepage]({escaped_homepage})"
 
 
 def render_table(headers: list[str], rows: list[list[str]]) -> str:
@@ -44,8 +45,8 @@ def build_available_packages_section() -> str:
     rows = [
         [
             f"`{manifest.package}`",
-            escape_cell(manifest.description),
-            homepage_cell(manifest.homepage),
+            f"`{escape_cell(manifest.version)}`",
+            description_cell(manifest.description, manifest.homepage),
         ]
         for manifest in manifests
     ]
@@ -55,7 +56,7 @@ def build_available_packages_section() -> str:
         "",
         f"Active manifests: **{len(manifests)}**",
         "",
-        render_table(["Package", "Description", "Homepage"], rows),
+        render_table(["Package", "Version", "Description"], rows),
     ]
     return "\n".join(lines)
 
@@ -92,19 +93,28 @@ def build_archive_history_section() -> str:
 
 
 def build_readme() -> str:
-    return "\n\n".join(
-        [
-            README_HEADER.strip(),
-            build_available_packages_section(),
-            build_archive_history_section(),
-        ]
-    ) + "\n"
+    return (
+        "\n\n".join(
+            [
+                README_HEADER.strip(),
+                build_available_packages_section(),
+                build_archive_history_section(),
+            ]
+        )
+        + "\n"
+    )
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Generate README.md from bucket manifests.")
-    parser.add_argument("--write", action="store_true", help="Write the generated README to disk.")
-    parser.add_argument("--check", action="store_true", help="Fail if README.md is out of date.")
+    parser = argparse.ArgumentParser(
+        description="Generate README.md from bucket manifests."
+    )
+    parser.add_argument(
+        "--write", action="store_true", help="Write the generated README to disk."
+    )
+    parser.add_argument(
+        "--check", action="store_true", help="Fail if README.md is out of date."
+    )
     args = parser.parse_args()
 
     readme_path = Path("README.md")
