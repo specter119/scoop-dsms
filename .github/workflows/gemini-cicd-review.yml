@@ -1,4 +1,17 @@
 name: Gemini CI Review
+run-name: >-
+  ${{
+    github.event_name == 'workflow_run'
+    && format(
+      'Gemini CI Review · {0} #{1}',
+      github.event.workflow_run.name,
+      github.event.workflow_run.run_number
+    )
+    || format(
+      'Gemini CI Review · manual · run {0}',
+      inputs.run_id != '' && inputs.run_id || 'unspecified'
+    )
+  }}
 
 on:
   workflow_dispatch:
@@ -25,13 +38,16 @@ permissions:
 jobs:
   review:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion != 'success' }}
+    name: Analyze Failed Run
     runs-on: ubuntu-latest
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Skip when GEMINI_API_KEY is missing
-        if: ${{ secrets.GEMINI_API_KEY == '' }}
+        if: ${{ env.GEMINI_API_KEY == '' }}
         run: |
           {
             echo "## Gemini CI Review"
@@ -40,7 +56,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Resolve run ID
-        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' }}
         id: resolve
         env:
           INPUT_RUN_ID: ${{ inputs.run_id }}
@@ -57,7 +73,7 @@ jobs:
           fi
 
       - name: Collect CI context
-        if: ${{ secrets.GEMINI_API_KEY != '' && steps.resolve.outputs.run_id != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' && steps.resolve.outputs.run_id != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
           RUN_ID: ${{ steps.resolve.outputs.run_id }}
@@ -72,11 +88,11 @@ jobs:
           cp .appveyor.yml .ci/appveyor.yml
 
       - name: Review CI failure with Gemini
-        if: ${{ secrets.GEMINI_API_KEY != '' && steps.resolve.outputs.run_id != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' && steps.resolve.outputs.run_id != '' }}
         id: gemini
         uses: google-github-actions/run-gemini-cli@v0.1.21
         with:
-          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+          gemini_api_key: ${{ env.GEMINI_API_KEY }}
           upload_artifacts: true
           workflow_name: gemini-ci-review
           prompt: |
@@ -114,7 +130,7 @@ jobs:
             }
 
       - name: Publish Gemini summary
-        if: ${{ secrets.GEMINI_API_KEY != '' && steps.resolve.outputs.run_id != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' && steps.resolve.outputs.run_id != '' }}
         run: |
           {
             echo "## Gemini CI Review"
@@ -125,7 +141,7 @@ jobs:
           GEMINI_SUMMARY: ${{ steps.gemini.outputs.summary }}
 
       - name: Comment on pull request
-        if: ${{ secrets.GEMINI_API_KEY != '' && github.event_name == 'workflow_run' && github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.pull_requests[0].number != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' && github.event_name == 'workflow_run' && github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.pull_requests[0].number != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}

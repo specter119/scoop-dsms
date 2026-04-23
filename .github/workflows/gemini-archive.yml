@@ -1,4 +1,10 @@
 name: Gemini Archive Recommendation
+run-name: >-
+  ${{
+    github.event_name == 'schedule'
+    && 'Gemini Archive Recommendation · monthly scan'
+    || 'Gemini Archive Recommendation · manual run'
+  }}
 
 on:
   workflow_dispatch:
@@ -11,13 +17,16 @@ permissions:
 
 jobs:
   archive:
+    name: Review Archive Candidates
     runs-on: ubuntu-latest
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Skip when GEMINI_API_KEY is missing
-        if: ${{ secrets.GEMINI_API_KEY == '' }}
+        if: ${{ env.GEMINI_API_KEY == '' }}
         run: |
           {
             echo "## Gemini Archive Recommendation"
@@ -26,7 +35,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Collect archive signals
-        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
@@ -39,11 +48,11 @@ jobs:
             --output .archive/archive-signals.json
 
       - name: Review archive candidates with Gemini
-        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' }}
         id: gemini
         uses: google-github-actions/run-gemini-cli@v0.1.21
         with:
-          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+          gemini_api_key: ${{ env.GEMINI_API_KEY }}
           upload_artifacts: true
           workflow_name: gemini-archive
           prompt: |
@@ -87,7 +96,7 @@ jobs:
             }
 
       - name: Save Gemini recommendations
-        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' }}
         env:
           GEMINI_SUMMARY: ${{ steps.gemini.outputs.summary }}
         run: |
@@ -95,7 +104,7 @@ jobs:
           printf '%s\n' "${GEMINI_SUMMARY}" > .archive/recommendations.json
 
       - name: Apply archive recommendations
-        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' }}
         run: |
           set -euo pipefail
           python3 scripts/apply_archive_recommendations.py \
@@ -107,13 +116,13 @@ jobs:
             --max-candidates 5
 
       - name: Regenerate README
-        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' }}
         run: |
           set -euo pipefail
           python3 scripts/generate_readme.py --write
 
       - name: Read PR metadata
-        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' }}
         id: metadata
         run: |
           set -euo pipefail
@@ -136,7 +145,7 @@ jobs:
           PY
 
       - name: Publish archive summary
-        if: ${{ secrets.GEMINI_API_KEY != '' }}
+        if: ${{ env.GEMINI_API_KEY != '' }}
         env:
           GEMINI_SUMMARY: ${{ steps.gemini.outputs.summary }}
           SELECTED_COUNT: ${{ steps.metadata.outputs.selected_count }}
@@ -150,7 +159,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Create archive pull request
-        if: ${{ secrets.GEMINI_API_KEY != '' && steps.metadata.outputs.selected_count != '0' }}
+        if: ${{ env.GEMINI_API_KEY != '' && steps.metadata.outputs.selected_count != '0' }}
         uses: peter-evans/create-pull-request@v7
         with:
           branch: ${{ steps.metadata.outputs.branch }}
