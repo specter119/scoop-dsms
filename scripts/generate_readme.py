@@ -25,12 +25,14 @@ def escape_cell(value: str) -> str:
     return value.replace("|", "\\|")
 
 
-def description_cell(description: str, homepage: str) -> str:
+def description_cell(description: str, version: str, homepage: str) -> str:
     escaped_description = escape_cell(description)
+    lines = [escaped_description, f"Version: `{escape_cell(version)}`"]
     if not homepage:
-        return escaped_description
+        return "<br>".join(lines)
     escaped_homepage = escape_cell(homepage)
-    return f"{escaped_description}<br>[Homepage]({escaped_homepage})"
+    lines.append(f"[Homepage]({escaped_homepage})")
+    return "<br>".join(lines)
 
 
 def render_table(headers: list[str], rows: list[list[str]]) -> str:
@@ -45,8 +47,11 @@ def build_available_packages_section() -> str:
     rows = [
         [
             f"`{manifest.package}`",
-            f"`{escape_cell(manifest.version)}`",
-            description_cell(manifest.description, manifest.homepage),
+            description_cell(
+                manifest.description,
+                manifest.version,
+                manifest.homepage,
+            ),
         ]
         for manifest in manifests
     ]
@@ -56,7 +61,7 @@ def build_available_packages_section() -> str:
         "",
         f"Active manifests: **{len(manifests)}**",
         "",
-        render_table(["Package", "Version", "Description"], rows),
+        render_table(["Package", "Description"], rows),
     ]
     return "\n".join(lines)
 
