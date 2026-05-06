@@ -41,7 +41,7 @@ Active manifests: **47**
 | `quicker` | Quicker is a productivity toolbox and launcher for Windows.<br>Version: `1.44.55`<br>[Homepage](https://getquicker.net/) |
 | `ripgrep-all` | ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.<br>Version: `0.10.9`<br>[Homepage](https://github.com/phiresky/ripgrep-all) |
 | `rotz` | Fully cross platform dotfile manager and dev environment bootstrapper written in Rust<br>Version: `1.2.1`<br>[Homepage](https://volllly.github.io/rotz) |
-| `rsync` | rsync is an open source utility that provides fast incremental file transfer. cwRsync is a packaging of Rsync (link is external) for Windows.<br>Version: `6.4.6`<br>[Homepage](https://www.itefix.net/cwrsync) |
+| `rsync` | rsync is an open source utility that provides fast incremental file transfer. cwRsync is a packaging of Rsync (link is external) for Windows.<br>Version: `6.4.8`<br>[Homepage](https://www.itefix.net/cwrsync) |
 | `rustup-msvc-np` | The Rust toolchain installer<br>Version: `1.29.0`<br>[Homepage](https://github.com/rust-lang-nursery/rustup.rs) |
 | `s3browser` | A freeware Windows client for Amazon S3 and Amazon CloudFront.<br>Version: `13.2.5`<br>[Homepage](https://s3browser.com/) |
 | `sarasa-term-sc-nerd` | Nerd Fonts patched 'Sarasa-Term-SC' Font family. (Monospace version, Nerd Fonts Symbol/Icon will be always 1 cell wide)<br>Version: `2.3.1`<br>[Homepage](https://github.com/laishulu/Sarasa-Term-SC-Nerd) |
