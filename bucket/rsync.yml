@@ -12,7 +12,7 @@ hash: 7f9d6ec80b174a04fe42768a4df369bccc98674e6d139f853229871869e5c707
 bin:
 - - bin/rsync.exe
   - rsync
-  - --rsh=$env:SCOOP/apps/rsync/current/bin/ssh.exe
+  - --rsh=$dir/bin/ssh.exe
 checkver:
   github: https://github.com/itefixnet/cwrsync-client
   regex: v([\d.]+)
