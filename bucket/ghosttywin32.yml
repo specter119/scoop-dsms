@@ -1,0 +1,18 @@
+version: 0.2.2
+description: Windows host for Ghostty terminal emulator (DirectX 11)
+homepage: https://github.com/i999rri/GhosttyWin32
+license: MIT
+architecture:
+  64bit:
+    url: https://github.com/i999rri/GhosttyWin32/releases/download/v0.2.2/GhosttyWin32-v0.2.2-x64.zip
+    hash: fcf6edf8f4a66c5ac53cb5dd9636fdfbd92690da0c801fc1c2c4505121d8c16c
+bin: GhosttyWin32\GhosttyWin32.exe
+shortcuts:
+- - GhosttyWin32\GhosttyWin32.exe
+  - Ghostty
+checkver:
+  github: https://github.com/i999rri/GhosttyWin32
+autoupdate:
+  architecture:
+    64bit:
+      url: https://github.com/i999rri/GhosttyWin32/releases/download/v$version/GhosttyWin32-v$version-x64.zip
