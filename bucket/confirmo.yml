@@ -1,12 +1,12 @@
-version: 1.0.92
+version: 1.0.95
 description: A desktop pet developed for Claude Code users.
 homepage: https://github.com/yetone/confirmo-releases
 license:
   identifier: Proprietary
 architecture:
   64bit:
-    url: https://github.com/yetone/confirmo-releases/releases/download/v1.0.92/confirmo-1.0.92-setup.exe#/dl.7z
-    hash: sha512:665b412606c62e20fc9bb7fb2b2ecc5c1c0388c46efa0df069f140e128d05af39e1e8393362af14a23f2dbcddd054d2ec31c8ecb81806f989b4a92a3f80eb5f6
+    url: https://github.com/yetone/confirmo-releases/releases/download/v1.0.95/confirmo-1.0.95-setup.exe#/dl.7z
+    hash: sha512:3f66447050cd7eb2739915865db9f1caa15411484e336c597a544fe6203a97e4ea1c5e2e0b54ab4610931e5b192528f6b1d32e91d3babb3416e5cf0a4de92722
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
