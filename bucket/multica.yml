@@ -1,0 +1,36 @@
+version: 0.2.30
+description: The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.
+homepage: https://github.com/multica-ai/multica
+license:
+  identifier: MIT
+  url: https://github.com/multica-ai/multica/blob/main/LICENSE
+architecture:
+  64bit:
+    url: https://github.com/multica-ai/multica/releases/download/v0.2.30/multica-desktop-0.2.30-windows-x64.exe#/dl.7z
+    hash: sha512:4c05592633bfb61bb7f850938dae45e1d9b4f9e6bc23cfaf72964fa5ab5cd2cb033298ea62ebc3d077f2e52ede93ff14ee26f00758925961d324d9b2848a7b3a
+    pre_install:
+    - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
+    - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
+  arm64:
+    url: https://github.com/multica-ai/multica/releases/download/v0.2.30/multica-desktop-0.2.30-windows-arm64.exe#/dl.7z
+    hash: sha512:df41e1c89a41fcca01fd1efd96869e924573683bb7572e9da03dbae641eef52959d927aecf308b812d3ad321d4752a27a1c64bda76839794602af5ff8f454be7
+    pre_install:
+    - Expand-7zipArchive $dir/`$PLUGINSDIR/app-arm64.7z $dir -Removal
+    - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
+shortcuts:
+- - Multica.exe
+  - Multica
+checkver:
+  github: https://github.com/multica-ai/multica
+autoupdate:
+  architecture:
+    64bit:
+      url: https://github.com/multica-ai/multica/releases/download/v$version/multica-desktop-$version-windows-x64.exe#/dl.7z
+      hash:
+        url: $baseurl/latest.yml
+        regex: sha512:\s+$base64
+    arm64:
+      url: https://github.com/multica-ai/multica/releases/download/v$version/multica-desktop-$version-windows-arm64.exe#/dl.7z
+      hash:
+        url: $baseurl/latest-arm64.yml
+        regex: sha512:\s+$base64
