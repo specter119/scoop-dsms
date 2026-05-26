@@ -1,4 +1,4 @@
-version: 42.0.1
+version: 42.2.0
 description: Build cross-platform desktop apps with JavaScript, HTML, and CSS.
 homepage: https://www.electronjs.org/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://github.com/electron/electron?tab=MIT-1-ov-file
 architecture:
   64bit:
-    url: https://github.com/electron/electron/releases/download/v42.0.1/electron-v42.0.1-win32-x64.zip
-    hash: 260351302fe1adac1d85a87ac8d7b3d2a3b0e5b95b051dee5ecf5d4555b86c79
+    url: https://github.com/electron/electron/releases/download/v42.2.0/electron-v42.2.0-win32-x64.zip
+    hash: 6e034b748ad5ed9445bd3da4b7d0792ed49556774a541217b507c156b00dd69a
   32bit:
-    url: https://github.com/electron/electron/releases/download/v42.0.1/electron-v42.0.1-win32-ia32.zip
-    hash: fe3b56b030436b06c508ad5a390b4f18f9f42c797c06ced3f9c31c93afadd826
+    url: https://github.com/electron/electron/releases/download/v42.2.0/electron-v42.2.0-win32-ia32.zip
+    hash: 1a866e0634ff95f83a043c7c6738e148f38362ed0afa60aa5eb8dcab16def7b5
 bin: electron.exe
 checkver:
   github: https://github.com/electron/electron
