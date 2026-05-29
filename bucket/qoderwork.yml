@@ -1,0 +1,26 @@
+version: 0.5.5
+description: Qoder Work - AI-powered autonomous development workstation for real-world software engineering.
+homepage: https://qoder.com
+license:
+  identifier: Proprietary
+  url: https://qoder.com
+architecture:
+  64bit:
+    url: https://download.qoder.com.cn/qoder-work/releases/latest/QoderWork-Setup-User-x64.exe#/dl.7z
+    hash: 393084abae9b016724b0e3ca23cbdd8637800d884b23453d5b642bc7cd709af3
+    pre_install:
+    - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
+    - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
+shortcuts:
+- - QoderWork.exe
+  - QoderWork
+checkver:
+  url: https://download.qoder.com.cn/qoder-work/releases/latest.yml
+  regex: 'version:\s*([\d.]+)'
+autoupdate:
+  architecture:
+    64bit:
+      url: https://download.qoder.com.cn/qoder-work/releases/latest/QoderWork-Setup-User-x64.exe#/dl.7z
+      hash:
+        url: https://download.qoder.com.cn/qoder-work/releases/latest.yml
+        regex: sha512:\s+$base64

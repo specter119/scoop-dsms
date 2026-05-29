@@ -1,0 +1,26 @@
+version: 0.5.5
+description: Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台
+homepage: https://qoder.com.cn
+license:
+  identifier: Proprietary
+  url: https://qoder.com.cn
+architecture:
+  64bit:
+    url: https://static.qoder.com.cn/qoder-work-cn/releases/latest/QoderWorkCN-Setup-User-x64.exe#/dl.7z
+    hash: 0ea70988f247b90a0c435be97c10a64766bdd87f88a9975f6eefe9ea8c929e51
+    pre_install:
+    - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
+    - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
+shortcuts:
+- - QoderWork CN.exe
+  - QoderWork CN
+checkver:
+  url: https://static.qoder.com.cn/qoder-work-cn/releases/latest.yml
+  regex: 'version:\s*([\d.]+)'
+autoupdate:
+  architecture:
+    64bit:
+      url: https://static.qoder.com.cn/qoder-work-cn/releases/latest/QoderWorkCN-Setup-User-x64.exe#/dl.7z
+      hash:
+        url: https://static.qoder.com.cn/qoder-work-cn/releases/latest.yml
+        regex: sha512:\s+$base64
