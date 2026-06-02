@@ -1,11 +1,11 @@
-version: 2.6.2-1
+version: 2.7.0-0
 description: Micromamba is a tiny version of mamba, the fast conda package installer.
 homepage: https://github.com/mamba-org/mamba
 license:
   identifier: BSD-3-Clause
   url: https://github.com/mamba-org/mamba/blob/main/LICENSE
-url: https://github.com/mamba-org/micromamba-releases/releases/download/2.6.2-1/micromamba-win-64.tar.bz2
-hash: af63b3c3061aa150bf520a59f3ebce3a8d10ae730f624872b1cfe3997dd803c9
+url: https://github.com/mamba-org/micromamba-releases/releases/download/2.7.0-0/micromamba-win-64.tar.bz2
+hash: aa763f3c7fc7ef529d79f170d1d134569995f08fe54a8c545ef20e01e0dc7046
 extract_dir: Library\bin
 bin: micromamba.exe
 env_set:
