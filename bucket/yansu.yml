@@ -9,8 +9,8 @@ architecture:
     url: https://github.com/Isoform/yansu-desktop-releases/releases/download/v0.1.324/Yansu-0.1.324-windows-x64.zip
     hash: 2cec364c5c84b6260ae8e6d93d8da388eb96046f097ce7d2d25f279553658238
 shortcuts:
-- - Yansu.exe
-  - Yansu Desktop
+  - - Yansu.exe
+    - Yansu
 checkver:
   github: https://github.com/Isoform/yansu-desktop-releases
   regex: v([\d.]+)
