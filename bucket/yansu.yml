@@ -1,4 +1,4 @@
-version: 0.1.328
+version: 0.1.329
 description: Yansu is a proactive AI agent that observes how you work and ships bespoke software on your behalf.
 homepage: https://yansu.ai
 license:
@@ -6,8 +6,8 @@ license:
   url: https://yansu.ai/terms
 architecture:
   64bit:
-    url: https://github.com/Isoform/yansu-desktop-releases/releases/download/v0.1.328/Yansu-0.1.328-windows-x64.zip
-    hash: f9f5f70c15aae375b65c3ffebe06d0db591b3524e0967fbc98978cf70436210f
+    url: https://github.com/Isoform/yansu-desktop-releases/releases/download/v0.1.329/Yansu-0.1.329-windows-x64.zip
+    hash: 175079c6bce69be1cac21f01e4c2c43cc7b4de373a35a17d52151d757f067020
 shortcuts:
 - - Yansu.exe
   - Yansu
