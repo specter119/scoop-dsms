@@ -1,4 +1,4 @@
-version: 0.5.9
+version: 0.5.8
 description: Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台
 homepage: https://qoder.com.cn
 license:
@@ -7,7 +7,7 @@ license:
 architecture:
   64bit:
     url: https://static.qoder.com.cn/qoder-work-cn/releases/latest/QoderWorkCN-Setup-User-x64.exe#/dl.7z
-    hash: sha512:a8d16c4c43273c06350f757320ceadfeb7fd7b4431ca4f8cca4ee00ec93ac9b9d87eefe26ac674ecf48738f8019ea99c477f5e00283380b4bb125c07c0c9937f
+    hash: sha512:1185c1a06584581378138195706f17a5ccc8fc9b6850f07333857bd9bc809975e16061ce6206f5ac76971a7045bc19a685860e45fc446fb59fba7f574ba07f71
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
