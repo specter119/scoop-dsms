@@ -1,12 +1,12 @@
-version: 1.11.1
+version: 1.11.2
 description: Podman Terminal UI
 homepage: https://github.com/containers/podman-tui
 license:
   identifier: Apache-2.0
   url: https://github.com/containers/podman-tui/blob/main/LICENSE
-url: https://github.com/containers/podman-tui/releases/download/v1.11.1/podman-tui-release-windows_amd64.zip
-hash: 0658feb4e6dc75fc4c1e5465ff2eb74c49d63a8860b41b8f2753ff28ee367de8
-extract_dir: podman-tui-release-windows_amd64\podman-tui-1.11.1
+url: https://github.com/containers/podman-tui/releases/download/v1.11.2/podman-tui-release-windows_amd64.zip
+hash: 4d4aa6acc36933bdba87f7bb7f63969bf441194be447830948797cfcf2c00cb4
+extract_dir: podman-tui-release-windows_amd64\podman-tui-1.11.2
 post_install: Remove-Item "$dir\podman-tui-release-windows_amd64" -Force
 bin: podman-tui.exe
 checkver: github
