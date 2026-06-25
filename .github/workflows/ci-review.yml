@@ -1,0 +1,172 @@
+name: CI Review
+run-name: >-
+  ${{
+    github.event_name == 'workflow_run'
+    && format(
+      'CI Review · {0} #{1}',
+      github.event.workflow_run.name,
+      github.event.workflow_run.run_number
+    )
+    || format(
+      'CI Review · manual · run {0}',
+      inputs.run_id != '' && inputs.run_id || 'unspecified'
+    )
+  }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: GitHub Actions run ID to inspect
+        required: false
+        type: string
+  workflow_run:
+    workflows:
+      - Pull Requests
+      - Excavator
+      - Issues
+      - Commented Pull Request
+    types:
+      - completed
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+  pull-requests: write
+  models: read
+
+jobs:
+  review:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion != 'success' }}
+    name: Analyze Failed Run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Resolve run ID
+        id: resolve
+        env:
+          INPUT_RUN_ID: ${{ inputs.run_id }}
+          EVENT_NAME: ${{ github.event_name }}
+          WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          set -euo pipefail
+          if [[ -n "${INPUT_RUN_ID}" ]]; then
+            echo "run_id=${INPUT_RUN_ID}" >> "$GITHUB_OUTPUT"
+          elif [[ "${EVENT_NAME}" == "workflow_run" ]]; then
+            echo "run_id=${WORKFLOW_RUN_ID}" >> "$GITHUB_OUTPUT"
+          else
+            echo "run_id=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Collect CI context
+        if: ${{ steps.resolve.outputs.run_id != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ steps.resolve.outputs.run_id }}
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_PAYLOAD: ${{ toJSON(github.event) }}
+        run: |
+          set -euo pipefail
+          mkdir -p .ci
+          printf '%s\n' "${EVENT_PAYLOAD}" > .ci/event.json
+          gh run view "${RUN_ID}" --json name,displayTitle,event,status,conclusion,headBranch,headSha,url,createdAt,updatedAt > .ci/run.json
+          gh run view "${RUN_ID}" --log-failed > .ci/failed.log || gh run view "${RUN_ID}" --log > .ci/full.log || true
+          cp .appveyor.yml .ci/appveyor.yml
+
+      - name: Build review prompt
+        if: ${{ steps.resolve.outputs.run_id != '' }}
+        run: |
+          {
+            echo "You are reviewing a failed CI/CD run for the scoop-dsms bucket repository."
+            echo
+            echo "## Run information"
+            echo '```json'
+            cat .ci/run.json
+            echo '```'
+            echo
+            echo "## Failed log"
+            if [ -f .ci/failed.log ]; then
+              head -c 30000 .ci/failed.log
+            else
+              echo "No failed log available."
+            fi
+            echo
+            echo "## Full log (if no failed log)"
+            if [ ! -f .ci/failed.log ] && [ -f .ci/full.log ]; then
+              head -c 30000 .ci/full.log
+            else
+              echo "Not available."
+            fi
+            echo
+            echo "## Event payload"
+            echo '```json'
+            head -c 10000 .ci/event.json
+            echo '```'
+            echo
+            echo "## AppVeyor config"
+            echo '```yaml'
+            cat .ci/appveyor.yml
+            echo '```'
+            echo
+            echo "## Workflow files"
+            for f in .github/workflows/*.yml; do
+              echo "### $f"
+              echo '```yaml'
+              cat "$f"
+              echo '```'
+            done
+            echo
+            echo "Produce a concise Markdown report with these sections:"
+            echo "1. Summary"
+            echo "2. Most likely root cause"
+            echo "3. Affected scope"
+            echo "4. Recommended next actions"
+            echo
+            echo "Important constraints:"
+            echo "- Focus only on CI/CD failure analysis."
+            echo "- Do not propose README updates."
+            echo "- Do not modify any files."
+          } > .ci/prompt.txt
+
+      - name: Review CI failure with AI
+        if: ${{ steps.resolve.outputs.run_id != '' }}
+        id: ai
+        uses: actions/ai-inference@v2
+        with:
+          model: openai/gpt-4o-mini
+          prompt-file: .ci/prompt.txt
+          system-prompt: |
+            You are a CI/CD failure analysis assistant for the scoop-dsms bucket repository.
+            Produce a concise Markdown report.
+          temperature: "0.2"
+          max-completion-tokens: "2000"
+
+      - name: Publish summary
+        if: ${{ steps.resolve.outputs.run_id != '' }}
+        run: |
+          {
+            echo "## CI Review"
+            echo
+            printf '%s\n' "${AI_RESPONSE}"
+          } >> "$GITHUB_STEP_SUMMARY"
+        env:
+          AI_RESPONSE: ${{ steps.ai.outputs.response }}
+
+      - name: Comment on pull request
+        if: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.pull_requests[0].number != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}
+          AI_RESPONSE: ${{ steps.ai.outputs.response }}
+        run: |
+          set -euo pipefail
+          mkdir -p .ci
+          {
+            echo "## CI Review"
+            echo
+            printf '%s\n' "${AI_RESPONSE}"
+          } > .ci/pr-comment.md
+          gh pr comment "${PR_NUMBER}" --body-file .ci/pr-comment.md

@@ -1,0 +1,156 @@
+name: Archive Recommendation
+run-name: >-
+  ${{
+    github.event_name == 'schedule'
+    && 'Archive Recommendation · monthly scan'
+    || 'Archive Recommendation · manual run'
+  }}
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 1 * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+  models: read
+
+jobs:
+  archive:
+    name: Review Archive Candidates
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Collect archive signals
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p .archive
+          python3 scripts/archive_collector.py \
+            --bucket-dir bucket \
+            --history docs/archive-history.json \
+            --repo "${GITHUB_REPOSITORY}" \
+            --output .archive/archive-signals.json
+
+      - name: Build archive review prompt
+        run: |
+          {
+            echo "You are reviewing archive candidates for the scoop-dsms bucket repository."
+            echo
+            echo "## Archive signals"
+            echo '```json'
+            head -c 50000 .archive/archive-signals.json
+            echo '```'
+            echo
+            echo "## Archive history"
+            echo '```json'
+            cat docs/archive-history.json
+            echo '```'
+            echo
+            echo "## Current README"
+            cat README.md
+            echo
+            echo "Return JSON only with this exact shape:"
+            echo '{'
+            echo '  "recommendations": ['
+            echo '    {'
+            echo '      "package": "manifest-name",'
+            echo '      "should_archive": true,'
+            echo '      "confidence": "high",'
+            echo '      "reason": "One concise sentence.",'
+            echo '      "evidence": ["fact 1", "fact 2"]'
+            echo '    }'
+            echo '  ]'
+            echo '}'
+            echo
+            echo "Constraints:"
+            echo "- Recommend at most 5 packages."
+            echo "- Recommend only packages with strong evidence."
+            echo "- Consider previous archive history and previous archive PRs from the signals file."
+            echo '- If no package should be archived, return {"recommendations":[]}.'
+            echo "- Do not include Markdown code fences."
+          } > .archive/prompt.txt
+
+      - name: Review archive candidates with AI
+        id: ai
+        uses: actions/ai-inference@v2
+        with:
+          model: openai/gpt-4o-mini
+          prompt-file: .archive/prompt.txt
+          system-prompt: |
+            You are an archive recommendation assistant for a Scoop bucket repository.
+            Return JSON only, no Markdown code fences.
+          temperature: "0.2"
+          max-completion-tokens: "1500"
+
+      - name: Save AI recommendations
+        env:
+          AI_RESPONSE: ${{ steps.ai.outputs.response }}
+        run: |
+          set -euo pipefail
+          printf '%s\n' "${AI_RESPONSE}" > .archive/recommendations.json
+
+      - name: Apply archive recommendations
+        run: |
+          set -euo pipefail
+          python3 scripts/apply_archive_recommendations.py \
+            --recommendations .archive/recommendations.json \
+            --history docs/archive-history.json \
+            --bucket-dir bucket \
+            --date "$(date -u +%F)" \
+            --metadata-out .archive/pr-meta.json \
+            --max-candidates 5
+
+      - name: Regenerate README
+        run: |
+          set -euo pipefail
+          python3 scripts/generate_readme.py --write
+
+      - name: Read PR metadata
+        id: metadata
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          metadata = json.loads(Path('.archive/pr-meta.json').read_text(encoding='utf-8'))
+          output = Path(os.environ['GITHUB_OUTPUT'])
+          with output.open('a', encoding='utf-8') as fh:
+              fh.write(f"selected_count={metadata['selected_count']}\n")
+              fh.write(f"branch={metadata['branch']}\n")
+              fh.write('title<<EOF\n')
+              fh.write(metadata['title'] + '\n')
+              fh.write('EOF\n')
+              fh.write('commit_message<<EOF\n')
+              fh.write(metadata['commit_message'] + '\n')
+              fh.write('EOF\n')
+          PY
+
+      - name: Publish archive summary
+        env:
+          AI_RESPONSE: ${{ steps.ai.outputs.response }}
+          SELECTED_COUNT: ${{ steps.metadata.outputs.selected_count }}
+        run: |
+          {
+            echo "## Archive Recommendation"
+            echo
+            echo "Selected candidates: ${SELECTED_COUNT}"
+            echo
+            printf '%s\n' "${AI_RESPONSE}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create archive pull request
+        if: ${{ steps.metadata.outputs.selected_count != '0' }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: ${{ steps.metadata.outputs.branch }}
+          title: ${{ steps.metadata.outputs.title }}
+          commit-message: ${{ steps.metadata.outputs.commit_message }}
+          body-path: .archive/archive-pr-body.md
+          delete-branch: true
