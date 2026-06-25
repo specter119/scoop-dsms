@@ -43,8 +43,8 @@ Active manifests: **55**
 | `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `576.52`<br>[Homepage](https://www.nvidia.com) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.0.0`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `1.11.2`<br>[Homepage](https://github.com/containers/podman-tui) |
-| `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.6.4`<br>[Homepage](https://qoder.com) |
-| `qoderwork-cn` | Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台<br>Version: `0.6.4`<br>[Homepage](https://qoder.com.cn) |
+| `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.6.5`<br>[Homepage](https://qoder.com) |
+| `qoderwork-cn` | Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台<br>Version: `0.6.5`<br>[Homepage](https://qoder.com.cn) |
 | `quicker` | Quicker is a productivity toolbox and launcher for Windows.<br>Version: `1.45.5`<br>[Homepage](https://getquicker.net/) |
 | `ripgrep-all` | ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.<br>Version: `0.10.9`<br>[Homepage](https://github.com/phiresky/ripgrep-all) |
 | `rotz` | Fully cross platform dotfile manager and dev environment bootstrapper written in Rust<br>Version: `1.2.1`<br>[Homepage](https://volllly.github.io/rotz) |
