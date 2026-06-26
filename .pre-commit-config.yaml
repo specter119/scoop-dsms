@@ -19,7 +19,7 @@ repos:
     hooks:
       - id: generate-readme
         name: generate-readme
-        entry: python scripts/generate_readme.py --write
+        entry: uv run scripts/generate_readme.py --write
         language: system
         pass_filenames: false
         files: '^(bucket/|docs/archive-history\.json$|scripts/(generate_readme|manifest_utils)\.py$)'
