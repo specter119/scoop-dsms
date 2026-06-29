@@ -61,7 +61,7 @@ Active manifests: **55**
 | `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.127.0-3161b0d4062e57cece92760e0260ff6030ac7777`<br>[Homepage](https://code.visualstudio.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.127.0-628f6de50e89b20c7688c66ac2923cce2862c1b0`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
 | `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |

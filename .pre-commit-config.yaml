@@ -12,7 +12,7 @@ repos:
         exclude: .vscode
       - id: trailing-whitespace
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.15
+    rev: v0.15.20
     hooks:
       - id: ruff-format
   - repo: local
