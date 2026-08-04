@@ -9,7 +9,7 @@ To refresh this document locally, run `uv run scripts/generate_readme.py --write
 
 ## Available Packages
 
-Active manifests: **55**
+Active manifests: **56**
 
 | Package | Description |
 | --- | --- |
@@ -61,6 +61,7 @@ Active manifests: **55**
 | `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
+| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `1.4.2`<br>[Homepage](https://xiguasay.com/) |
 | `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.127.0-628f6de50e89b20c7688c66ac2923cce2862c1b0`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
