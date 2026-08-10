@@ -9,7 +9,7 @@ To refresh this document locally, run `uv run scripts/generate_readme.py --write
 
 ## Available Packages
 
-Active manifests: **54**
+Active manifests: **55**
 
 | Package | Description |
 | --- | --- |
@@ -26,6 +26,7 @@ Active manifests: **54**
 | `dita-ot` | An open-source publishing engine for XML content authored in the Darwin Information Typing Architecture.<br>Version: `4.4`<br>[Homepage](https://www.dita-ot.org/) |
 | `dream3d` | An open source, cross-platform and modular software package that allows users to reconstruct, instantiate, quantify, mesh, handle and visualize multidimensional, multimodal data.<br>Version: `6.5.171`<br>[Homepage](http://dream3d.bluequartz.net/) |
 | `electron` | Build cross-platform desktop apps with JavaScript, HTML, and CSS.<br>Version: `43.3.0`<br>[Homepage](https://www.electronjs.org/) |
+| `feeluown` | FeelUOwn music player (with common plugins)<br>Version: `5.1.2`<br>[Homepage](https://feeluown.readthedocs.io) |
 | `floatboat` | The World's 1st AI Vibe Work Agent. An outcome-oriented, context-native workspace for the AI-Native era.<br>Version: `0.2.3`<br>[Homepage](https://floatboat.ai/) |
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.74.2`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
@@ -76,5 +77,4 @@ This section tracks manifests that have already been moved to `bucket/old`.
 | --- | --- | --- | --- |
 | `spark` | `3.5.0` | Pre-automation | Pre-existing archive entry. |
 | `nvidia-display-driver` | `566.14` | Pre-automation | Pre-existing archive entry. |
-| `feeluown` | `3.8.4` | Pre-automation | Pre-existing archive entry. |
 | `arangodb` | `3.11.8` | Pre-automation | Pre-existing archive entry. |
