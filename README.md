@@ -9,7 +9,7 @@ To refresh this document locally, run `uv run scripts/generate_readme.py --write
 
 ## Available Packages
 
-Active manifests: **56**
+Active manifests: **54**
 
 | Package | Description |
 | --- | --- |
@@ -28,7 +28,6 @@ Active manifests: **56**
 | `electron` | Build cross-platform desktop apps with JavaScript, HTML, and CSS.<br>Version: `43.3.0`<br>[Homepage](https://www.electronjs.org/) |
 | `floatboat` | The World's 1st AI Vibe Work Agent. An outcome-oriented, context-native workspace for the AI-Native era.<br>Version: `0.2.3`<br>[Homepage](https://floatboat.ai/) |
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.74.2`<br>[Homepage](https://github.com/junegunn/fzf) |
-| `ghosttywin32` | Windows host for Ghostty terminal emulator (DirectX 11)<br>Version: `0.2.2`<br>[Homepage](https://github.com/i999rri/GhosttyWin32) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.102.0`<br>[Homepage](https://heptabase.com/) |
 | `lingma` | 灵动指间，快码加编，你的智能编码助手<br>Version: `latest`<br>[Homepage](https://lingma.aliyun.com/lingma) |
@@ -39,7 +38,6 @@ Active manifests: **56**
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20260809-git-dd5d17d328`<br>[Homepage](https://mpv.io) |
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.4.21`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.34.1`<br>[Homepage](https://github.com/codexu/note-gen) |
-| `nvicat-premium-lite` | Navicat Premium Lite is a compact version of Navicat, packed with the core features needed for users who primarily need to perform basic database operations. It allows you to simultaneously connect to a variety of database platforms, including MySQL, PostgreSQL, SQL Server, Oracle, MariaDB, as well as NoSQL databases like Redis and MongoDB, all from a single application.<br>Version: `17`<br>[Homepage](https://www.navicat.com/en/products/navicat-premium-lite) |
 | `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `576.52`<br>[Homepage](https://www.nvidia.com) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.0.2`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `1.11.3`<br>[Homepage](https://github.com/containers/podman-tui) |
