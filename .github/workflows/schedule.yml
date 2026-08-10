@@ -14,7 +14,7 @@ jobs:
       - name: Excavate
         uses: specter119/Shovel-GithubActions@main
         with:
-          post_update_commands: uvx prek -a
+          post_update_commands: uv run scripts/generate_readme.py --write && uvx prek -a
         env:
           GITH_EMAIL: specter119@gmail.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
