@@ -40,7 +40,7 @@ Active manifests: **55**
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.4.24`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.34.1`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `576.52`<br>[Homepage](https://www.nvidia.com) |
-| `podman` | A tool for managing OCI containers and pods.<br>Version: `6.0.2`<br>[Homepage](https://podman.io/) |
+| `podman` | A tool for managing OCI containers and pods.<br>Version: `6.1.0`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `1.11.3`<br>[Homepage](https://github.com/containers/podman-tui) |
 | `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.12`<br>[Homepage](https://qoder.com) |
 | `qoderwork-cn` | Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台<br>Version: `0.9.12`<br>[Homepage](https://qoder.com.cn) |
