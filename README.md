@@ -14,7 +14,7 @@ Active manifests: **55**
 | Package | Description |
 | --- | --- |
 | `acrylic-dns` | A local DNS proxy for Windows with caching and custom HOSTS file support for wildcards and regular expressions<br>Version: `2.2.1`<br>[Homepage](https://mayakron.altervista.org/support/acrylic/Home.htm) |
-| `anystorage` | Desktop client for S3-compatible storage, WebDAV, SFTP, and local files.<br>Version: `0.2.21`<br>[Homepage](https://anystorage.dev/) |
+| `anystorage` | Desktop client for S3-compatible storage, WebDAV, SFTP, and local files.<br>Version: `0.2.22`<br>[Homepage](https://anystorage.dev/) |
 | `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.45.0`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
 | `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `1.1.18`<br>[Homepage](https://cherry-ai.com/) |
 | `choose` | A human-friendly and fast alternative to cut (and sometimes awk)<br>Version: `1.3.7`<br>[Homepage](https://github.com/theryangeary/choose) |
@@ -37,7 +37,7 @@ Active manifests: **55**
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.9.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20260809-git-dd5d17d328`<br>[Homepage](https://mpv.io) |
-| `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.4.23`<br>[Homepage](https://github.com/multica-ai/multica) |
+| `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.4.24`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.34.1`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `576.52`<br>[Homepage](https://www.nvidia.com) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.0.2`<br>[Homepage](https://podman.io/) |
