@@ -61,7 +61,7 @@ Active manifests: **55**
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
 | `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `1.5.3`<br>[Homepage](https://xiguasay.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.134.0-57bd491152b02dbf860469e75271c8e65c583ca9`<br>[Homepage](https://code.visualstudio.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.134.0-f871d4fa7ddb8957f3630870d87c28bf632872d1`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
 | `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |
