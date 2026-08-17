@@ -28,7 +28,7 @@ Active manifests: **55**
 | `electron` | Build cross-platform desktop apps with JavaScript, HTML, and CSS.<br>Version: `43.4.0`<br>[Homepage](https://www.electronjs.org/) |
 | `feeluown` | FeelUOwn music player (with common plugins)<br>Version: `5.1.2`<br>[Homepage](https://feeluown.readthedocs.io) |
 | `floatboat` | The World's 1st AI Vibe Work Agent. An outcome-oriented, context-native workspace for the AI-Native era.<br>Version: `0.2.3`<br>[Homepage](https://floatboat.ai/) |
-| `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.74.2`<br>[Homepage](https://github.com/junegunn/fzf) |
+| `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.74.3`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.103.0`<br>[Homepage](https://heptabase.com/) |
 | `lingma` | 灵动指间，快码加编，你的智能编码助手<br>Version: `latest`<br>[Homepage](https://lingma.aliyun.com/lingma) |
