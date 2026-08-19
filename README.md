@@ -25,12 +25,12 @@ Active manifests: **55**
 | `cytoscape` | An open source software platform for visualizing complex networks and integrating these with any type of attribute data.<br>Version: `3.10.4`<br>[Homepage](https://cytoscape.org/index.html) |
 | `dita-ot` | An open-source publishing engine for XML content authored in the Darwin Information Typing Architecture.<br>Version: `4.4`<br>[Homepage](https://www.dita-ot.org/) |
 | `dream3d` | An open source, cross-platform and modular software package that allows users to reconstruct, instantiate, quantify, mesh, handle and visualize multidimensional, multimodal data.<br>Version: `6.5.171`<br>[Homepage](http://dream3d.bluequartz.net/) |
-| `electron` | Build cross-platform desktop apps with JavaScript, HTML, and CSS.<br>Version: `43.4.0`<br>[Homepage](https://www.electronjs.org/) |
+| `electron` | Build cross-platform desktop apps with JavaScript, HTML, and CSS.<br>Version: `43.4.1`<br>[Homepage](https://www.electronjs.org/) |
 | `feeluown` | FeelUOwn music player (with common plugins)<br>Version: `5.1.2`<br>[Homepage](https://feeluown.readthedocs.io) |
 | `floatboat` | The World's 1st AI Vibe Work Agent. An outcome-oriented, context-native workspace for the AI-Native era.<br>Version: `0.2.3`<br>[Homepage](https://floatboat.ai/) |
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.74.3`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
-| `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.103.0`<br>[Homepage](https://heptabase.com/) |
+| `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.104.0`<br>[Homepage](https://heptabase.com/) |
 | `lingma` | 灵动指间，快码加编，你的智能编码助手<br>Version: `latest`<br>[Homepage](https://lingma.aliyun.com/lingma) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
 | `lody` | Manage all your code agents in one place.<br>Version: `0.82.0`<br>[Homepage](https://lody.ai/) |
