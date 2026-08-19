@@ -1,11 +1,13 @@
-version: "576.52"
+version: "610.88"
 description: Display driver for Nvidia graphics cards
 homepage: https://www.nvidia.com
 license:
   identifier: Proprietary
   url: https://www.nvidia.com/en-us/about-nvidia/eula-agreement/
-url: https://us.download.nvidia.cn/Windows/576.52/576.52-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
-hash: 5be34ad10b24d3e942088c004e425c45dd3009966e6df35fed7411a922604152
+url: https://us.download.nvidia.cn/Windows/610.88/610.88-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
+hash: 576a90c6f6eea47748db1defcbca1746c81fe4eb972f3132d30878778cee0b09
+download_headers:
+  Referer: https://www.nvidia.com/en-us/drivers/
 extract_to: _FullPackage
 pre_install: |
   $srcdir = "$dir\_FullPackage"
@@ -30,7 +32,11 @@ installer:
 uninstaller:
   script: Write-Host "To remove this driver, please use Display Driver Uninstaller 'scoop install ddu' -ForegroundColor Magenta"
 checkver:
-  url: https://gfwsl.geforce.com/services_toolkit/services/com/nvidia/services/AjaxDriverService.php?func=DriverManualLookup&psid=101&pfid=816&osID=57&languageCode=1033&beta=0&isWHQL=1&dltype=-1&dch=1&upCRD=0&qnf=0&sort1=0&numberOfResults=1
-  jsonpath: $.IDS[0].downloadInfo.Version
+  url: https://gfwsl.geforce.com/services_toolkit/services/com/nvidia/services/AjaxDriverService.php?func=DriverManualLookup&psid=131&osID=57&languageCode=1033&beta=0&isWHQL=1&dltype=-1&dch=1&upCRD=0&sort1=0&numberOfResults=1
+  regex: '"Version"\s?:\s?"(?<version>[\d.]+)"[\s\S]*?"DownloadURL"\s?:\s?"https://us\.download\.nvidia\.com/(?<path>[^"]+)"'
+  replace: ${version}
 autoupdate:
-  url: https://us.download.nvidia.cn/Windows/$version/$version-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
+  url: https://us.download.nvidia.cn/$matchPath#/dl.7z
+  hash:
+    url: https://www.techpowerup.com/download/nvidia-geforce-graphics-drivers/
+    regex: '[\s\S]*?<div class="filename"[^>]*>$basename</div>[\s\S]*?<div class="hash-name">SHA256:</div>\s*<div class="hash-value">([a-fA-F\d]{64})'
