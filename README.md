@@ -38,8 +38,8 @@ Active manifests: **55**
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.9.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20260809-git-dd5d17d328`<br>[Homepage](https://mpv.io) |
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.4.35`<br>[Homepage](https://github.com/multica-ai/multica) |
-| `note-gen` | A free and open source note-taking application.<br>Version: `0.35.1`<br>[Homepage](https://github.com/codexu/note-gen) |
-| `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `610.88`<br>[Homepage](https://www.nvidia.com) |
+| `note-gen` | A free and open source note-taking application.<br>Version: `0.36.0`<br>[Homepage](https://github.com/codexu/note-gen) |
+| `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `616.56`<br>[Homepage](https://www.nvidia.com) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.1.0`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `1.11.3`<br>[Homepage](https://github.com/containers/podman-tui) |
 | `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.15`<br>[Homepage](https://qoder.com) |
