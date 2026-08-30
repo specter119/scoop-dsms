@@ -18,7 +18,7 @@ Active manifests: **55**
 | `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.45.0`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
 | `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `1.1.18`<br>[Homepage](https://cherry-ai.com/) |
 | `choose` | A human-friendly and fast alternative to cut (and sometimes awk)<br>Version: `1.3.7`<br>[Homepage](https://github.com/theryangeary/choose) |
-| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.89`<br>[Homepage](https://con.nowledge.co/) |
+| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.90`<br>[Homepage](https://con.nowledge.co/) |
 | `confirmo` | A desktop pet developed for Claude Code users.<br>Version: `1.0.96`<br>[Homepage](https://github.com/yetone/confirmo-releases) |
 | `cuda` | A parallel computing platform and programming model invented by NVIDIA.<br>Version: `13.3.1`<br>[Homepage](https://developer.nvidia.com/cuda-toolkit) |
 | `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.18.9`<br>[Homepage](https://cursor.sh/) |
