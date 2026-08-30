@@ -36,7 +36,7 @@ Active manifests: **55**
 | `lody` | Manage all your code agents in one place.<br>Version: `0.88.1`<br>[Homepage](https://lody.ai/) |
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.9.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
-| `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20260809-git-dd5d17d328`<br>[Homepage](https://mpv.io) |
+| `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20260830-git-e8673660ab`<br>[Homepage](https://mpv.io) |
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.4.36`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.36.0`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `616.56`<br>[Homepage](https://www.nvidia.com) |
