@@ -15,7 +15,7 @@ Active manifests: **55**
 | --- | --- |
 | `acrylic-dns` | A local DNS proxy for Windows with caching and custom HOSTS file support for wildcards and regular expressions<br>Version: `2.2.1`<br>[Homepage](https://mayakron.altervista.org/support/acrylic/Home.htm) |
 | `anystorage` | Desktop client for S3-compatible storage, WebDAV, SFTP, and local files.<br>Version: `0.2.22`<br>[Homepage](https://anystorage.dev/) |
-| `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.45.0`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
+| `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.46.0`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
 | `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `1.1.18`<br>[Homepage](https://cherry-ai.com/) |
 | `choose` | A human-friendly and fast alternative to cut (and sometimes awk)<br>Version: `1.3.7`<br>[Homepage](https://github.com/theryangeary/choose) |
 | `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.92`<br>[Homepage](https://con.nowledge.co/) |
