@@ -1,4 +1,4 @@
-version: 0.4.39
+version: 0.4.40
 description: The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.
 homepage: https://github.com/multica-ai/multica
 license:
@@ -6,14 +6,14 @@ license:
   url: https://github.com/multica-ai/multica/blob/main/LICENSE
 architecture:
   64bit:
-    url: https://github.com/multica-ai/multica/releases/download/v0.4.39/multica-desktop-0.4.39-windows-x64.exe#/dl.7z
-    hash: sha512:5ff8f2459e40d29a19656401ba0164e9270b022907eb76f1ae94ec1b29986ee46e9d0b43ee98fec5e14ae8be6d7bd525163e185bb41646c19f4707023038b64a
+    url: https://github.com/multica-ai/multica/releases/download/v0.4.40/multica-desktop-0.4.40-windows-x64.exe#/dl.7z
+    hash: sha512:bd0833a0f2f340db747d2e359dcf21a49aabf8e07c93641a950a28b5459f231a35fd8abc19e57b18d1f0886e2ebac1ed91b3e34aadeba8237901cb53f16c4854
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
   arm64:
-    url: https://github.com/multica-ai/multica/releases/download/v0.4.39/multica-desktop-0.4.39-windows-arm64.exe#/dl.7z
-    hash: sha512:6a2480dd3f0b07c8575bb510e290135f4b93b4d6a9cf74a03d8868886fee154a85da8f2f242570cf949a798beda29199716e61b09fc3606e6dddf1f6b1574729
+    url: https://github.com/multica-ai/multica/releases/download/v0.4.40/multica-desktop-0.4.40-windows-arm64.exe#/dl.7z
+    hash: sha512:7bbc3796a3be30acdbe9d3f588d00dd25077c88d1fada14358c6d536ca4afd51613a43e7c686480a7caf59daca0fddbd402ea495968394764112eb48e855ab3a
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-arm64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
