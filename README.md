@@ -30,7 +30,7 @@ Active manifests: **55**
 | `floatboat` | The World's 1st AI Vibe Work Agent. An outcome-oriented, context-native workspace for the AI-Native era.<br>Version: `0.2.3`<br>[Homepage](https://floatboat.ai/) |
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.74.3`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
-| `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.108.0`<br>[Homepage](https://heptabase.com/) |
+| `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.108.1`<br>[Homepage](https://heptabase.com/) |
 | `lingma` | 灵动指间，快码加编，你的智能编码助手<br>Version: `latest`<br>[Homepage](https://lingma.aliyun.com/lingma) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
 | `lody` | Manage all your code agents in one place.<br>Version: `0.90.1`<br>[Homepage](https://lody.ai/) |
@@ -42,8 +42,8 @@ Active manifests: **55**
 | `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `616.56`<br>[Homepage](https://www.nvidia.com) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.1.1`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `1.11.3`<br>[Homepage](https://github.com/containers/podman-tui) |
-| `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.15`<br>[Homepage](https://qoder.com) |
-| `qoderwork-cn` | Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台<br>Version: `0.9.15`<br>[Homepage](https://qoder.com.cn) |
+| `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.16`<br>[Homepage](https://qoder.com) |
+| `qoderwork-cn` | Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台<br>Version: `0.9.16`<br>[Homepage](https://qoder.com.cn) |
 | `quicker` | Quicker is a productivity toolbox and launcher for Windows.<br>Version: `1.45.5`<br>[Homepage](https://getquicker.net/) |
 | `ripgrep-all` | ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.<br>Version: `0.10.9`<br>[Homepage](https://github.com/phiresky/ripgrep-all) |
 | `rotz` | Fully cross platform dotfile manager and dev environment bootstrapper written in Rust<br>Version: `1.2.1`<br>[Homepage](https://volllly.github.io/rotz) |
