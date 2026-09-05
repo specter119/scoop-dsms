@@ -1,10 +1,10 @@
-version: 0.90.1
+version: 0.91.0
 description: Manage all your code agents in one place.
 homepage: https://lody.ai/
 license:
   identifier: Proprietary
-url: https://updates.lody.ai/production/Lody-0.90.1-x64-setup.exe#/dl.7z
-hash: sha512:5570febd81d2b16c9cfa626488e0695585f12fbbd46c233d0784e71b081c467f36112c39af7119e6c68872fdeec2b2a25f86a090a8bb5091ed3c34f6ed9b2979
+url: https://updates.lody.ai/production/Lody-0.91.0-x64-setup.exe#/dl.7z
+hash: sha512:4e2acf79d9439576d1fac130996111a08789782c3e42721a730555567fc6de5fd8b907e64d3bb9dc1aafed2198ae62b389ad45623274a91906aa40c3bf6bf405
 pre_install:
 - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
 - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
