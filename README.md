@@ -41,7 +41,7 @@ Active manifests: **55**
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.36.0`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `616.64`<br>[Homepage](https://www.nvidia.com) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.1.1`<br>[Homepage](https://podman.io/) |
-| `podman-tui` | Podman Terminal UI<br>Version: `1.11.3`<br>[Homepage](https://github.com/containers/podman-tui) |
+| `podman-tui` | Podman Terminal UI<br>Version: `2.0.0`<br>[Homepage](https://github.com/containers/podman-tui) |
 | `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.16`<br>[Homepage](https://qoder.com) |
 | `qoderwork-cn` | Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台<br>Version: `0.9.16`<br>[Homepage](https://qoder.com.cn) |
 | `quicker` | Quicker is a productivity toolbox and launcher for Windows.<br>Version: `1.45.5`<br>[Homepage](https://getquicker.net/) |
