@@ -42,8 +42,8 @@ Active manifests: **55**
 | `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `616.64`<br>[Homepage](https://www.nvidia.com) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.1.1`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `2.0.0`<br>[Homepage](https://github.com/containers/podman-tui) |
-| `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.16`<br>[Homepage](https://qoder.com) |
-| `qoderwork-cn` | Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台<br>Version: `0.9.16`<br>[Homepage](https://qoder.com.cn) |
+| `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.17`<br>[Homepage](https://qoder.com) |
+| `qoderwork-cn` | Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台<br>Version: `0.9.17`<br>[Homepage](https://qoder.com.cn) |
 | `quicker` | Quicker is a productivity toolbox and launcher for Windows.<br>Version: `1.45.5`<br>[Homepage](https://getquicker.net/) |
 | `ripgrep-all` | ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.<br>Version: `0.10.9`<br>[Homepage](https://github.com/phiresky/ripgrep-all) |
 | `rotz` | Fully cross platform dotfile manager and dev environment bootstrapper written in Rust<br>Version: `1.2.1`<br>[Homepage](https://volllly.github.io/rotz) |
@@ -61,7 +61,7 @@ Active manifests: **55**
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
 | `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `1.5.14`<br>[Homepage](https://xiguasay.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.137.0-94b021b519e8e3e99777a1ff72c77e32e0d4b1d3`<br>[Homepage](https://code.visualstudio.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.137.0-023b8803f23ea6451959d09a05c4e2ff90fedc34`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
 | `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |
