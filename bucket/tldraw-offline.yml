@@ -1,4 +1,4 @@
-version: 1.16.0
+version: 1.18.0
 description: A desktop app for drawing, diagramming, and whiteboarding with local files.
 homepage: https://offline.tldraw.com/
 license:
@@ -6,14 +6,14 @@ license:
   url: https://github.com/tldraw/tldraw-offline#license
 architecture:
   64bit:
-    url: https://github.com/tldraw/tldraw-offline/releases/download/v1.16.0/tldraw-offline-win-x64.exe#/dl.7z
-    hash: a7ff68018d0edb9fcfa7891c15fe8042e3ff89a4458a62ab8ddf26bed2b9867e
+    url: https://github.com/tldraw/tldraw-offline/releases/download/v1.18.0/tldraw-offline-win-x64.exe#/dl.7z
+    hash: sha512:0781d177a97eb3227a6510bf66c505ba3fdf7047ddc4b2436940ff9ce6acbab62c22c73eeb33dcb107a459667e7ae389772e43fc12ce1f381e22273c508bb5e7
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
   arm64:
-    url: https://github.com/tldraw/tldraw-offline/releases/download/v1.16.0/tldraw-offline-win-arm64.exe#/dl.7z
-    hash: f0ebfa1bf5fe03ae82eb8be6dff3c48dce3dafa064ae7c3ca9a5093c69c3c530
+    url: https://github.com/tldraw/tldraw-offline/releases/download/v1.18.0/tldraw-offline-win-arm64.exe#/dl.7z
+    hash: sha512:1b7cd1b2184362f1ff8cc36be20a42f4e13bde0f7fd7162533d77b16ae31e3ba401332d75a93cd6528b0ee416e25ff02cfd1922ffbd396971f3339b1ebfcdf35
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-arm64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue

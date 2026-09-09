@@ -55,7 +55,7 @@ Active manifests: **56**
 | `terminus-player` | A free Media Player for Emby and Jellyfin.<br>Version: `1.7.1-221122`<br>[Homepage](https://github.com/Terminus-Media/jellyfin-media-player) |
 | `texlive` | TeX Live is a cross-platform, free software distribution for the TeX typesetting system<br>Version: `2026`<br>[Homepage](https://tug.org/texlive/) |
 | `tigervnc-viewer` | TigerVNC Viewer is a VNC (Virtual Network Computing) client implementation that allows users to launch and interact with graphical applications on remote machines.<br>Version: `1.16.2`<br>[Homepage](http://tigervnc.org) |
-| `tldraw-offline` | A desktop app for drawing, diagramming, and whiteboarding with local files.<br>Version: `1.16.0`<br>[Homepage](https://offline.tldraw.com/) |
+| `tldraw-offline` | A desktop app for drawing, diagramming, and whiteboarding with local files.<br>Version: `1.18.0`<br>[Homepage](https://offline.tldraw.com/) |
 | `trae-cn` | Trae，致力于成为真正的 AI 工程师（The Real AI Engineer）。<br>Version: `2.3.24299`<br>[Homepage](https://www.trae.cn) |
 | `typstyle` | A code formatter for Typst<br>Version: `0.15.1`<br>[Homepage](https://github.com/typstyle-rs/typstyle) |
 | `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
