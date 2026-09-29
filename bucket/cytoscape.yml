@@ -1,4 +1,4 @@
-version: 3.10.4
+version: 3.10.5
 description: |
   An open source software platform for visualizing complex networks and integrating these with any type of attribute data.
 homepage: https://cytoscape.org/index.html
@@ -9,9 +9,9 @@ suggest:
   java:
   - java/oraclejre8
   - java/openjdk11
-url: https://github.com/cytoscape/cytoscape/releases/download/3.10.4/cytoscape-windows-3.10.4.zip
-hash: f0e8ad9ec68a19e19d212a6cc8c5da0060742b6a04db080598b98832b0478924
-extract_dir: cytoscape-windows-3.10.4
+url: https://github.com/cytoscape/cytoscape/releases/download/3.10.5/cytoscape-windows-3.10.5.zip
+hash: 79c6668abb96bfe3750a53293f950544bdbe879f55d7108a3e3bf1f99eeef615
+extract_dir: cytoscape-windows-3.10.5
 shortcuts:
 - - cytoscape.bat
   - Cytoscape
