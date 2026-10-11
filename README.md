@@ -18,7 +18,7 @@ Active manifests: **56**
 | `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.46.0`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
 | `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `1.1.18`<br>[Homepage](https://cherry-ai.com/) |
 | `choose` | A human-friendly and fast alternative to cut (and sometimes awk)<br>Version: `1.3.7`<br>[Homepage](https://github.com/theryangeary/choose) |
-| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.124`<br>[Homepage](https://con.nowledge.co/) |
+| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.125`<br>[Homepage](https://con.nowledge.co/) |
 | `confirmo` | A desktop pet developed for Claude Code users.<br>Version: `1.0.96`<br>[Homepage](https://github.com/yetone/confirmo-releases) |
 | `cuda` | A parallel computing platform and programming model invented by NVIDIA.<br>Version: `13.3.1`<br>[Homepage](https://developer.nvidia.com/cuda-toolkit) |
 | `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.24.12`<br>[Homepage](https://cursor.sh/) |
@@ -28,7 +28,7 @@ Active manifests: **56**
 | `electron` | Build cross-platform desktop apps with JavaScript, HTML, and CSS.<br>Version: `43.4.1`<br>[Homepage](https://www.electronjs.org/) |
 | `feeluown` | FeelUOwn music player (with common plugins)<br>Version: `5.1.2`<br>[Homepage](https://feeluown.readthedocs.io) |
 | `floatboat` | The World's 1st AI Vibe Work Agent. An outcome-oriented, context-native workspace for the AI-Native era.<br>Version: `0.2.3`<br>[Homepage](https://floatboat.ai/) |
-| `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.74.4`<br>[Homepage](https://github.com/junegunn/fzf) |
+| `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.74.5`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.112.3`<br>[Homepage](https://heptabase.com/) |
 | `lingma` | 灵动指间，快码加编，你的智能编码助手<br>Version: `latest`<br>[Homepage](https://lingma.aliyun.com/lingma) |
@@ -61,7 +61,7 @@ Active manifests: **56**
 | `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
-| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `1.6.0`<br>[Homepage](https://xiguasay.com/) |
+| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `1.6.1`<br>[Homepage](https://xiguasay.com/) |
 | `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.142.0-dab4f45f6cbfbd55ff3de3ac3a328fb7d6d2f642`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
