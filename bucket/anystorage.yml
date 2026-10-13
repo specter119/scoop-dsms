@@ -1,9 +1,9 @@
-version: 0.2.29
+version: 0.2.30
 description: Desktop client for S3-compatible storage, WebDAV, SFTP, and local files.
 homepage: https://anystorage.dev/
 license: Unknown
-url: https://github.com/Kilerd/anystorage-release/releases/download/v0.2.29/AnyStorage_0.2.29_x64_en-US.msi
-hash: 6eb057eb3e6ce39bc07b57d40be7b327445cb09070ecbb73a803725846592cdf
+url: https://github.com/Kilerd/anystorage-release/releases/download/v0.2.30/AnyStorage_0.2.30_x64_en-US.msi
+hash: c9265a7f02ea32b8a56e13f79ca604dfb8fc5df39d96c3ec9366063f76ac6d78
 extract_dir: PFiles\AnyStorage
 bin: AnyStorage.exe
 shortcuts:
