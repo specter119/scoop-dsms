@@ -18,7 +18,7 @@ Active manifests: **56**
 | `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.46.0`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
 | `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `1.1.18`<br>[Homepage](https://cherry-ai.com/) |
 | `choose` | A human-friendly and fast alternative to cut (and sometimes awk)<br>Version: `1.3.7`<br>[Homepage](https://github.com/theryangeary/choose) |
-| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.140`<br>[Homepage](https://con.nowledge.co/) |
+| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.141`<br>[Homepage](https://con.nowledge.co/) |
 | `confirmo` | A desktop pet developed for Claude Code users.<br>Version: `1.0.96`<br>[Homepage](https://github.com/yetone/confirmo-releases) |
 | `cuda` | A parallel computing platform and programming model invented by NVIDIA.<br>Version: `13.3.1`<br>[Homepage](https://developer.nvidia.com/cuda-toolkit) |
 | `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.25.9`<br>[Homepage](https://cursor.sh/) |
@@ -36,9 +36,9 @@ Active manifests: **56**
 | `lody` | Manage all your code agents in one place.<br>Version: `0.106.0`<br>[Homepage](https://lody.ai/) |
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.9.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
-| `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261011-git-accb7b2821`<br>[Homepage](https://mpv.io) |
+| `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261018-git-01e2533f31`<br>[Homepage](https://mpv.io) |
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.6.3`<br>[Homepage](https://github.com/multica-ai/multica) |
-| `note-gen` | A free and open source note-taking application.<br>Version: `0.38.2`<br>[Homepage](https://github.com/codexu/note-gen) |
+| `note-gen` | A free and open source note-taking application.<br>Version: `0.38.3`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `617.42`<br>[Homepage](https://www.nvidia.com) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.1.4`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `2.0.0`<br>[Homepage](https://github.com/containers/podman-tui) |
