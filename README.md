@@ -9,7 +9,7 @@ To refresh this document locally, run `uv run scripts/generate_readme.py --write
 
 ## Available Packages
 
-Active manifests: **56**
+Active manifests: **57**
 
 | Package | Description |
 | --- | --- |
@@ -53,6 +53,7 @@ Active manifests: **56**
 | `sarasa-term-sc-nerd` | Nerd Fonts patched 'Sarasa-Term-SC' Font family. (Monospace version, Nerd Fonts Symbol/Icon will be always 1 cell wide)<br>Version: `2.3.1`<br>[Homepage](https://github.com/laishulu/Sarasa-Term-SC-Nerd) |
 | `spark` | A unified analytics engine for large-scale data processing.<br>Version: `4.2.0`<br>[Homepage](https://spark.apache.org/) |
 | `terminus-player` | A free Media Player for Emby and Jellyfin.<br>Version: `1.7.1-221122`<br>[Homepage](https://github.com/Terminus-Media/jellyfin-media-player) |
+| `testmem5` | A RAM stress test tool for Windows<br>Version: `0.13.1`<br>[Homepage](https://github.com/CoolCmd/TestMem5) |
 | `texlive` | TeX Live is a cross-platform, free software distribution for the TeX typesetting system<br>Version: `2026`<br>[Homepage](https://tug.org/texlive/) |
 | `tigervnc-viewer` | TigerVNC Viewer is a VNC (Virtual Network Computing) client implementation that allows users to launch and interact with graphical applications on remote machines.<br>Version: `1.16.2`<br>[Homepage](http://tigervnc.org) |
 | `tldraw-offline` | A desktop app for drawing, diagramming, and whiteboarding with local files.<br>Version: `1.22.0`<br>[Homepage](https://offline.tldraw.com/) |
