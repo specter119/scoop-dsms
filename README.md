@@ -39,7 +39,7 @@ Active manifests: **57**
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261018-git-01e2533f31`<br>[Homepage](https://mpv.io) |
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.6.5`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.38.3`<br>[Homepage](https://github.com/codexu/note-gen) |
-| `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `617.42`<br>[Homepage](https://www.nvidia.com) |
+| `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `621.01`<br>[Homepage](https://www.nvidia.com) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.1.4`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `2.0.0`<br>[Homepage](https://github.com/containers/podman-tui) |
 | `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.18`<br>[Homepage](https://qoder.com) |
@@ -63,7 +63,7 @@ Active manifests: **57**
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
 | `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `1.6.3`<br>[Homepage](https://xiguasay.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.143.0-087f03b7b82a0c89753986603421c3d24a24cd41`<br>[Homepage](https://code.visualstudio.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.144.0-5170ebe909381b6990cd686dc47da9c854bc5946`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
 | `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |
