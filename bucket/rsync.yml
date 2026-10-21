@@ -1,4 +1,4 @@
-version: 6.4.8
+version: 6.5.0
 description: |
   rsync is an open source utility that provides fast incremental file transfer.
   cwRsync is a packaging of Rsync (link is external) for Windows.
@@ -6,16 +6,19 @@ homepage: https://www.itefix.net/cwrsync
 license:
   identifier: GPL-3.0-or-later
   url: https://rsync.samba.org/GPL.html
-url: https://github.com/itefixnet/cwrsync-client/releases/download/v6.4.8/cwrsync_6.4.8_x64_free.zip
-hash: 8798363513b05c355ad87f8f3efbb15b7b6433996b652efec712efd52d7c8336
-# extract_dir: cwrsync_6.4.8_x64_free
+url: https://itefix.net/downloads/cwrsync/cwrsync_6.5.0_x64_free.zip
+hash: 8dc20afec889908c05c2abaa21d37f3fcad3e7ea5f3f37e95b25e6178f6b983a
+# extract_dir: cwrsync_6.5.0_x64_free
 bin:
 - - bin/rsync.exe
   - rsync
   - --rsh=$dir\bin\ssh.exe
 checkver:
-  github: https://github.com/itefixnet/cwrsync-client
-  regex: v([\d.]+)
+  url: https://itefix.net/cwrsync/client/releases
+  regex: cwrsync_([\d.]+)_x64_free\.zip
 autoupdate:
-  url: https://github.com/itefixnet/cwrsync-client/releases/download/v$version/cwrsync_$version_x64_free.zip
+  url: https://itefix.net/downloads/cwrsync/cwrsync_$version_x64_free.zip
+  hash:
+    url: https://itefix.net/cwrsync/client/releases
+    regex: <strong>cwrsync_$version_x64_free\.zip</strong><code>([a-fA-F0-9]{64})</code>
   # extract_dir: cwrsync_$version_x64_free
