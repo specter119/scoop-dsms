@@ -58,14 +58,14 @@ Active manifests: **59**
 | `testmem5` | A RAM stress test tool for Windows<br>Version: `0.13.1`<br>[Homepage](https://github.com/CoolCmd/TestMem5) |
 | `texlive` | TeX Live is a cross-platform, free software distribution for the TeX typesetting system<br>Version: `2026`<br>[Homepage](https://tug.org/texlive/) |
 | `tigervnc-viewer` | TigerVNC Viewer is a VNC (Virtual Network Computing) client implementation that allows users to launch and interact with graphical applications on remote machines.<br>Version: `1.16.2`<br>[Homepage](http://tigervnc.org) |
-| `tldraw-offline` | A desktop app for drawing, diagramming, and whiteboarding with local files.<br>Version: `1.22.0`<br>[Homepage](https://offline.tldraw.com/) |
+| `tldraw-offline` | A desktop app for drawing, diagramming, and whiteboarding with local files.<br>Version: `1.23.0`<br>[Homepage](https://offline.tldraw.com/) |
 | `trae-cn` | Trae，致力于成为真正的 AI 工程师（The Real AI Engineer）。<br>Version: `2.3.24299`<br>[Homepage](https://www.trae.cn) |
 | `typstyle` | A code formatter for Typst<br>Version: `0.15.2`<br>[Homepage](https://github.com/typstyle-rs/typstyle) |
 | `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
 | `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `1.6.4`<br>[Homepage](https://xiguasay.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.144.0-c8f3fd17f6b3caad6ccf9dec1fc45b5e155c16c2`<br>[Homepage](https://code.visualstudio.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.144.0-58173d0ebc1838579e3c331e0a47e365904a6456`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
 | `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |
