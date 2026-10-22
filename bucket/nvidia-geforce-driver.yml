@@ -1,5 +1,5 @@
 version: "621.01"
-description: Display driver for Nvidia graphics cards
+description: NVIDIA GeForce Game Ready driver for GeForce graphics cards
 homepage: https://www.nvidia.com
 license:
   identifier: Proprietary

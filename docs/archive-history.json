@@ -10,7 +10,7 @@
     "source_repo": null
   },
   {
-    "package": "nvidia-display-driver",
+    "package": "nvidia-geforce-driver",
     "version": "566.14",
     "archived_at": "Pre-automation",
     "reason": "Pre-existing archive entry.",

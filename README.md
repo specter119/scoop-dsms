@@ -9,7 +9,7 @@ To refresh this document locally, run `uv run scripts/generate_readme.py --write
 
 ## Available Packages
 
-Active manifests: **57**
+Active manifests: **59**
 
 | Package | Description |
 | --- | --- |
@@ -39,7 +39,9 @@ Active manifests: **57**
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261018-git-01e2533f31`<br>[Homepage](https://mpv.io) |
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.6.5`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.38.3`<br>[Homepage](https://github.com/codexu/note-gen) |
-| `nvidia-display-driver` | Display driver for Nvidia graphics cards<br>Version: `621.01`<br>[Homepage](https://www.nvidia.com) |
+| `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.01`<br>[Homepage](https://www.nvidia.com) |
+| `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `597.16`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
+| `nvidia-rtx-driver-qnf` | NVIDIA RTX Enterprise driver, New Feature Branch (QNF), for RTX PRO / Quadro workstation GPUs<br>Version: `616.92`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.1.4`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `2.0.0`<br>[Homepage](https://github.com/containers/podman-tui) |
 | `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.18`<br>[Homepage](https://qoder.com) |
@@ -78,5 +80,5 @@ This section tracks manifests that have already been moved to `bucket/old`.
 | Package | Version | Archived At | Reason |
 | --- | --- | --- | --- |
 | `spark` | `3.5.0` | Pre-automation | Pre-existing archive entry. |
-| `nvidia-display-driver` | `566.14` | Pre-automation | Pre-existing archive entry. |
+| `nvidia-geforce-driver` | `566.14` | Pre-automation | Pre-existing archive entry. |
 | `arangodb` | `3.11.8` | Pre-automation | Pre-existing archive entry. |
