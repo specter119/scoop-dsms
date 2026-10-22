@@ -4,7 +4,7 @@ homepage: https://www.nvidia.com/en-us/drivers/
 license:
   identifier: Proprietary
   url: https://www.nvidia.com/en-us/about-nvidia/eula-agreement/
-url: https://us.download.nvidia.cn/Windows/Quadro_Certified/616.92/616.92-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe#/dl.7z
+url: https://cn.download.nvidia.cn/Windows/Quadro_Certified/616.92/616.92-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe#/dl.7z
 hash: e48b8820bfc6a6bf85fe7abc84f8f711faeb864c6ab540024073ecf50336641a
 download_headers:
   Referer: https://www.nvidia.com/en-us/drivers/
@@ -17,9 +17,9 @@ installer:
 uninstaller:
   script: Write-Host "To remove this driver, please use Display Driver Uninstaller 'scoop install ddu'" -ForegroundColor Magenta
 checkver:
-  url: https://gfwsl.geforce.com/services_toolkit/services/com/nvidia/services/AjaxDriverService.php?func=DriverManualLookup&psid=132&pfid=1082&osID=135&languageCode=1033&beta=0&isWHQL=0&dltype=-1&dch=1&upCRD=0&qnf=1&sort1=0&numberOfResults=1
+  url: https://gfwsl.geforce.cn/services_toolkit/services/com/nvidia/services/AjaxDriverService.php?func=DriverManualLookup&psid=132&pfid=1082&osID=135&languageCode=1033&beta=0&isWHQL=0&dltype=-1&dch=1&upCRD=0&qnf=1&sort1=0&numberOfResults=1
   jsonpath: $.IDS[0].downloadInfo.Version
 autoupdate:
-  url: https://us.download.nvidia.cn/Windows/Quadro_Certified/$version/$version-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe#/dl.7z
+  url: https://cn.download.nvidia.cn/Windows/Quadro_Certified/$version/$version-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe#/dl.7z
   hash:
     mode: download
