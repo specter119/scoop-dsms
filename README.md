@@ -30,7 +30,7 @@ Active manifests: **59**
 | `floatboat` | The World's 1st AI Vibe Work Agent. An outcome-oriented, context-native workspace for the AI-Native era.<br>Version: `0.2.3`<br>[Homepage](https://floatboat.ai/) |
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.74.5`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
-| `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.112.7`<br>[Homepage](https://heptabase.com/) |
+| `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.112.8`<br>[Homepage](https://heptabase.com/) |
 | `lingma` | 灵动指间，快码加编，你的智能编码助手<br>Version: `latest`<br>[Homepage](https://lingma.aliyun.com/lingma) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
 | `lody` | Manage all your code agents in one place.<br>Version: `0.107.2`<br>[Homepage](https://lody.ai/) |
@@ -40,7 +40,7 @@ Active manifests: **59**
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.6.5`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.38.3`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.01`<br>[Homepage](https://www.nvidia.com) |
-| `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `597.16`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
+| `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `597.30`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
 | `nvidia-rtx-driver-qnf` | NVIDIA RTX Enterprise driver, New Feature Branch (QNF), for RTX PRO / Quadro workstation GPUs<br>Version: `616.92`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.1.4`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `2.0.0`<br>[Homepage](https://github.com/containers/podman-tui) |
@@ -64,7 +64,7 @@ Active manifests: **59**
 | `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
-| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `1.6.3`<br>[Homepage](https://xiguasay.com/) |
+| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `1.6.4`<br>[Homepage](https://xiguasay.com/) |
 | `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.144.0-c8f3fd17f6b3caad6ccf9dec1fc45b5e155c16c2`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
