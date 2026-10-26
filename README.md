@@ -9,7 +9,7 @@ To refresh this document locally, run `uv run scripts/generate_readme.py --write
 
 ## Available Packages
 
-Active manifests: **59**
+Active manifests: **60**
 
 | Package | Description |
 | --- | --- |
@@ -24,6 +24,7 @@ Active manifests: **59**
 | `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.27.14`<br>[Homepage](https://cursor.sh/) |
 | `cytoscape` | An open source software platform for visualizing complex networks and integrating these with any type of attribute data.<br>Version: `3.10.5`<br>[Homepage](https://cytoscape.org/index.html) |
 | `dita-ot` | An open-source publishing engine for XML content authored in the Darwin Information Typing Architecture.<br>Version: `4.4.1`<br>[Homepage](https://www.dita-ot.org/) |
+| `ditto` | An enhanced clipboard manager<br>Version: `3.25.113.0`<br>[Homepage](https://ditto-cp.sourceforge.io) |
 | `dream3d` | An open source, cross-platform and modular software package that allows users to reconstruct, instantiate, quantify, mesh, handle and visualize multidimensional, multimodal data.<br>Version: `6.5.171`<br>[Homepage](http://dream3d.bluequartz.net/) |
 | `electron` | Build cross-platform desktop apps with JavaScript, HTML, and CSS.<br>Version: `43.4.1`<br>[Homepage](https://www.electronjs.org/) |
 | `feeluown` | FeelUOwn music player (with common plugins)<br>Version: `5.1.2`<br>[Homepage](https://feeluown.readthedocs.io) |
