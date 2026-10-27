@@ -18,10 +18,10 @@ Active manifests: **60**
 | `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.46.0`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
 | `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `1.1.18`<br>[Homepage](https://cherry-ai.com/) |
 | `choose` | A human-friendly and fast alternative to cut (and sometimes awk)<br>Version: `1.3.7`<br>[Homepage](https://github.com/theryangeary/choose) |
-| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.159`<br>[Homepage](https://con.nowledge.co/) |
+| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.160`<br>[Homepage](https://con.nowledge.co/) |
 | `confirmo` | A desktop pet developed for Claude Code users.<br>Version: `1.0.96`<br>[Homepage](https://github.com/yetone/confirmo-releases) |
 | `cuda` | A parallel computing platform and programming model invented by NVIDIA.<br>Version: `13.3.1`<br>[Homepage](https://developer.nvidia.com/cuda-toolkit) |
-| `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.27.14`<br>[Homepage](https://cursor.sh/) |
+| `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.27.22`<br>[Homepage](https://cursor.sh/) |
 | `cytoscape` | An open source software platform for visualizing complex networks and integrating these with any type of attribute data.<br>Version: `3.10.5`<br>[Homepage](https://cytoscape.org/index.html) |
 | `dita-ot` | An open-source publishing engine for XML content authored in the Darwin Information Typing Architecture.<br>Version: `4.4.1`<br>[Homepage](https://www.dita-ot.org/) |
 | `ditto` | An enhanced clipboard manager<br>Version: `3.25.113.0`<br>[Homepage](https://ditto-cp.sourceforge.io) |
