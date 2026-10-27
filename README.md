@@ -54,7 +54,7 @@ Active manifests: **60**
 | `rustup-msvc-np` | The Rust toolchain installer<br>Version: `1.29.0`<br>[Homepage](https://github.com/rust-lang-nursery/rustup.rs) |
 | `s3browser` | A freeware Windows client for Amazon S3 and Amazon CloudFront.<br>Version: `13.3.5`<br>[Homepage](https://s3browser.com/) |
 | `sarasa-term-sc-nerd` | Nerd Fonts patched 'Sarasa-Term-SC' Font family. (Monospace version, Nerd Fonts Symbol/Icon will be always 1 cell wide)<br>Version: `2.3.1`<br>[Homepage](https://github.com/laishulu/Sarasa-Term-SC-Nerd) |
-| `spark` | A unified analytics engine for large-scale data processing.<br>Version: `4.2.0`<br>[Homepage](https://spark.apache.org/) |
+| `spark` | A unified analytics engine for large-scale data processing.<br>Version: `4.2.1`<br>[Homepage](https://spark.apache.org/) |
 | `terminus-player` | A free Media Player for Emby and Jellyfin.<br>Version: `1.7.1-221122`<br>[Homepage](https://github.com/Terminus-Media/jellyfin-media-player) |
 | `testmem5` | A RAM stress test tool for Windows<br>Version: `0.13.1`<br>[Homepage](https://github.com/CoolCmd/TestMem5) |
 | `texlive` | TeX Live is a cross-platform, free software distribution for the TeX typesetting system<br>Version: `2026`<br>[Homepage](https://tug.org/texlive/) |
