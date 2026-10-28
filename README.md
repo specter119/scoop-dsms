@@ -21,7 +21,7 @@ Active manifests: **60**
 | `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.160`<br>[Homepage](https://con.nowledge.co/) |
 | `confirmo` | A desktop pet developed for Claude Code users.<br>Version: `1.0.96`<br>[Homepage](https://github.com/yetone/confirmo-releases) |
 | `cuda` | A parallel computing platform and programming model invented by NVIDIA.<br>Version: `13.3.1`<br>[Homepage](https://developer.nvidia.com/cuda-toolkit) |
-| `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.27.22`<br>[Homepage](https://cursor.sh/) |
+| `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.28.5`<br>[Homepage](https://cursor.sh/) |
 | `cytoscape` | An open source software platform for visualizing complex networks and integrating these with any type of attribute data.<br>Version: `3.10.5`<br>[Homepage](https://cytoscape.org/index.html) |
 | `dita-ot` | An open-source publishing engine for XML content authored in the Darwin Information Typing Architecture.<br>Version: `4.4.1`<br>[Homepage](https://www.dita-ot.org/) |
 | `ditto` | An enhanced clipboard manager<br>Version: `3.25.113.0`<br>[Homepage](https://ditto-cp.sourceforge.io) |
