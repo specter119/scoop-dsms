@@ -18,7 +18,7 @@ Active manifests: **60**
 | `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.46.0`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
 | `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `1.1.18`<br>[Homepage](https://cherry-ai.com/) |
 | `choose` | A human-friendly and fast alternative to cut (and sometimes awk)<br>Version: `1.3.7`<br>[Homepage](https://github.com/theryangeary/choose) |
-| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.164`<br>[Homepage](https://con.nowledge.co/) |
+| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.165`<br>[Homepage](https://con.nowledge.co/) |
 | `confirmo` | A desktop pet developed for Claude Code users.<br>Version: `1.0.96`<br>[Homepage](https://github.com/yetone/confirmo-releases) |
 | `cuda` | A parallel computing platform and programming model invented by NVIDIA.<br>Version: `13.3.1`<br>[Homepage](https://developer.nvidia.com/cuda-toolkit) |
 | `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.28.5`<br>[Homepage](https://cursor.sh/) |
@@ -38,7 +38,7 @@ Active manifests: **60**
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.10.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261018-git-01e2533f31`<br>[Homepage](https://mpv.io) |
-| `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.7.1`<br>[Homepage](https://github.com/multica-ai/multica) |
+| `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.7.2`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.39.1`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.01`<br>[Homepage](https://www.nvidia.com) |
 | `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `597.30`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
@@ -66,7 +66,7 @@ Active manifests: **60**
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
 | `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `1.6.6`<br>[Homepage](https://xiguasay.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.145.0-f8c98dc6a2efcf8e86977254e1d4cf56b2542dbc`<br>[Homepage](https://code.visualstudio.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.145.0-cd2259bdf72ec7421e70ae80999ceb46f8bd86fe`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
 | `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |
