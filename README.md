@@ -18,7 +18,7 @@ Active manifests: **60**
 | `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.47.0`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
 | `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `1.1.18`<br>[Homepage](https://cherry-ai.com/) |
 | `choose` | A human-friendly and fast alternative to cut (and sometimes awk)<br>Version: `1.3.7`<br>[Homepage](https://github.com/theryangeary/choose) |
-| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.165`<br>[Homepage](https://con.nowledge.co/) |
+| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.166`<br>[Homepage](https://con.nowledge.co/) |
 | `confirmo` | A desktop pet developed for Claude Code users.<br>Version: `1.0.96`<br>[Homepage](https://github.com/yetone/confirmo-releases) |
 | `cuda` | A parallel computing platform and programming model invented by NVIDIA.<br>Version: `13.3.1`<br>[Homepage](https://developer.nvidia.com/cuda-toolkit) |
 | `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.28.5`<br>[Homepage](https://cursor.sh/) |
@@ -71,7 +71,7 @@ Active manifests: **60**
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
 | `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |
 | `yansu` | Yansu is a proactive AI agent that observes how you work and ships bespoke software on your behalf.<br>Version: `0.1.353`<br>[Homepage](https://yansu.ai) |
-| `zeal` | An offline documentation browser for software developers<br>Version: `0.9.1`<br>[Homepage](https://zealdocs.org) |
+| `zeal` | An offline documentation browser for software developers<br>Version: `0.9.2`<br>[Homepage](https://zealdocs.org) |
 | `zen-browser-optimized` | Experience tranquillity while browsing the web without people tracking you!<br>Version: `1.0.1-a.22`<br>[Homepage](https://zen-browser.app/) |
 
 ## Pinned Archive History

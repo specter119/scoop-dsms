@@ -1,12 +1,12 @@
-version: 0.9.1
+version: 0.9.2
 description: An offline documentation browser for software developers
 homepage: https://zealdocs.org
 license:
   identifier: GPL-3.0-only
   url: https://github.com/zealdocs/zeal/blob/main/COPYING
-url: https://github.com/zealdocs/zeal/releases/download/v0.9.1/zeal-0.9.1-portable-windows-x64.7z
-hash: 0b86278bce6850813394d6fba7e43e6bdb54dbd5e452bbe59e9c367ad51de449
-extract_dir: zeal-0.9.1-portable-windows-x64
+url: https://github.com/zealdocs/zeal/releases/download/v0.9.2/zeal-0.9.2-portable-windows-x64.7z
+hash: da1343cd7f30abb78a2e09d25c7ddf92a3996201b9407e3abb2a663b40d457b8
+extract_dir: zeal-0.9.2-portable-windows-x64
 pre_install: |
   if (Test-Path "$persist_dir\zeal.ini") {
     Copy-Item "$persist_dir\zeal.ini" "$dir" -ErrorAction 'SilentlyContinue' -Force
