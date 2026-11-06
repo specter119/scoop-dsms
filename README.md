@@ -34,7 +34,7 @@ Active manifests: **60**
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.116.0`<br>[Homepage](https://heptabase.com/) |
 | `lingma` | 灵动指间，快码加编，你的智能编码助手<br>Version: `latest`<br>[Homepage](https://lingma.aliyun.com/lingma) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
-| `lody` | Manage all your code agents in one place.<br>Version: `0.109.0`<br>[Homepage](https://lody.ai/) |
+| `lody` | Manage all your code agents in one place.<br>Version: `0.110.0`<br>[Homepage](https://lody.ai/) |
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.10.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261101-git-48fca90e8c`<br>[Homepage](https://mpv.io) |
