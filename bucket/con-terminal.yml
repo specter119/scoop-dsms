@@ -1,4 +1,4 @@
-version: 0.1.0-beta.172
+version: 0.1.0-beta.175
 description: The terminal emulator with AI harness, nothing more.
 homepage: https://con.nowledge.co/
 license:
@@ -6,8 +6,8 @@ license:
   url: https://github.com/nowledge-co/con-terminal/blob/main/LICENSE
 architecture:
   64bit:
-    url: https://github.com/nowledge-co/con-terminal/releases/download/v0.1.0-beta.172/con-0.1.0-beta.172-windows-x86_64.zip
-    hash: beaa865116a35b9fadd794143486bfdea1b53f1e622d6e1e7514c2aa7deac3cb
+    url: https://github.com/nowledge-co/con-terminal/releases/download/v0.1.0-beta.175/con-0.1.0-beta.175-windows-x86_64.zip
+    hash: 66a8d38ec1982ad5ff2a0664af256c777347f8794b9603814c303b51854037bd
 bin:
 - con-app.exe
 - con-cli.exe
