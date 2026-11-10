@@ -43,7 +43,7 @@ Active manifests: **60**
 | `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.14`<br>[Homepage](https://www.nvidia.com) |
 | `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `621.14`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
 | `nvidia-rtx-driver-qnf` | NVIDIA RTX Enterprise driver, New Feature Branch (QNF), for RTX PRO / Quadro workstation GPUs<br>Version: `616.92`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
-| `podman` | A tool for managing OCI containers and pods.<br>Version: `6.1.4`<br>[Homepage](https://podman.io/) |
+| `podman` | A tool for managing OCI containers and pods.<br>Version: `6.2.0`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `2.0.0`<br>[Homepage](https://github.com/containers/podman-tui) |
 | `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.18`<br>[Homepage](https://qoder.com) |
 | `qoderwork-cn` | Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台<br>Version: `0.9.18`<br>[Homepage](https://qoder.com.cn) |
