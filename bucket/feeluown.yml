@@ -1,4 +1,4 @@
-version: 5.1.2
+version: 5.1.3
 description: FeelUOwn music player (with common plugins)
 homepage: https://feeluown.readthedocs.io
 license:
@@ -6,8 +6,8 @@ license:
   url: https://github.com/feeluown/FeelUOwn/blob/master/LICENSE
 architecture:
   64bit:
-    url: https://github.com/feeluown/FeelUOwn/releases/download/v5.1.2/FeelUOwn-windows.zip
-    hash: c1adbb344126f309663ada3c7c7b41edaa2f5572c75ff5ac7511362b5c87fdfa
+    url: https://github.com/feeluown/FeelUOwn/releases/download/v5.1.3/FeelUOwn-windows.zip
+    hash: e0c4951f2951ff2e4590b7c3050c016fc6f0dfe2d7e3cf15a635e0a1fe3ddf55
 extract_dir: FeelUOwn
 bin:
 - - FeelUOwn.exe
