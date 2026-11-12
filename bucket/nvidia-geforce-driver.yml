@@ -1,11 +1,11 @@
-version: "621.14"
+version: "621.24"
 description: NVIDIA GeForce Game Ready driver for GeForce graphics cards
 homepage: https://www.nvidia.com
 license:
   identifier: Proprietary
   url: https://www.nvidia.com/en-us/about-nvidia/eula-agreement/
-url: https://cn.download.nvidia.cn/Windows/621.14/621.14-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
-hash: 9867b0c8689972c419885935bb386d999afffa33afd514cadb384ee84efcd3d3
+url: https://cn.download.nvidia.cn/Windows/621.24/621.24-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z
+hash: affd77016f389ac44c4f3dddaf937d66403af80c5f6b537ed98ac923ad0f5c81
 download_headers:
   Referer: https://www.nvidia.com/en-us/drivers/
 extract_to: _FullPackage
