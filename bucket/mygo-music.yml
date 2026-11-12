@@ -1,0 +1,30 @@
+version: 0.1.24
+description: A native music player you extend with plugins.
+homepage: https://music.egoist.dev/
+license:
+  identifier: AGPL-3.0-or-later
+  url: https://github.com/egoist/mygo-music/blob/main/LICENSE
+architecture:
+  64bit:
+    url: https://github.com/egoist/mygo-music/releases/download/v0.1.24/mygo-music-0.1.24-windows-amd64.tar.gz
+    hash: 27f4ae76de758ad2fb4f1bd83001f6fd2ef764352a630705bd6f2a0a842e19b6
+  arm64:
+    url: https://github.com/egoist/mygo-music/releases/download/v0.1.24/mygo-music-0.1.24-windows-arm64.tar.gz
+    hash: fe12b9412af2d8606253e598438baa46b154503a46002356d8029b82804e097d
+bin:
+- - MyGo Music.exe
+  - mygo-music
+shortcuts:
+- - MyGo Music.exe
+  - MyGo Music
+checkver:
+  github: https://github.com/egoist/mygo-music
+autoupdate:
+  architecture:
+    64bit:
+      url: https://github.com/egoist/mygo-music/releases/download/v$version/mygo-music-$version-windows-amd64.tar.gz
+    arm64:
+      url: https://github.com/egoist/mygo-music/releases/download/v$version/mygo-music-$version-windows-arm64.tar.gz
+  hash:
+    url: https://github.com/egoist/mygo-music/releases/download/v$version/SHA256SUMS
+    regex: (?m)^([a-f0-9]{64})\s+$basename$

@@ -9,7 +9,7 @@ To refresh this document locally, run `uv run scripts/generate_readme.py --write
 
 ## Available Packages
 
-Active manifests: **60**
+Active manifests: **62**
 
 | Package | Description |
 | --- | --- |
@@ -32,6 +32,7 @@ Active manifests: **60**
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.75.0`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.117.1`<br>[Homepage](https://heptabase.com/) |
+| `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.34.1`<br>[Homepage](https://kaze.build/) |
 | `lingma` | 灵动指间，快码加编，你的智能编码助手<br>Version: `latest`<br>[Homepage](https://lingma.aliyun.com/lingma) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
 | `lody` | Manage all your code agents in one place.<br>Version: `0.111.1`<br>[Homepage](https://lody.ai/) |
@@ -39,6 +40,7 @@ Active manifests: **60**
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.10.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261108-git-55d3feb45c`<br>[Homepage](https://mpv.io) |
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.8.2`<br>[Homepage](https://github.com/multica-ai/multica) |
+| `mygo-music` | A native music player you extend with plugins.<br>Version: `0.1.24`<br>[Homepage](https://music.egoist.dev/) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.39.2`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.14`<br>[Homepage](https://www.nvidia.com) |
 | `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `621.14`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
