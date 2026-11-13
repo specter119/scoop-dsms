@@ -1,11 +1,11 @@
-version: 0.35.0
+version: 0.36.0
 description: A calm, quick browser with an agent that works in your tabs.
 homepage: https://kaze.build/
 license:
   identifier: Proprietary
   url: https://kaze.build/
-url: https://github.com/jackwener/Kaze/releases/download/v0.35.0/Kaze-0.35.0-win-x64.exe#/dl.7z
-hash: sha512:aaa2003b4abff4a74bf0dbbd4f3651aa3a763f72e39eb49a01c1b582d3539f606f1822e8321ba6bb8b574ff6a7512f032bcd88f24b285983cb716242a7e3c62f
+url: https://github.com/jackwener/Kaze/releases/download/v0.36.0/Kaze-0.36.0-win-x64.exe#/dl.7z
+hash: sha512:42ecee5ee9e826d7e6d1558ef9a9a4f8d151a6cb57ecd85e3e7f234dd568c8d17572f0123c7eea0e8e52d106946a87c974890caa4a1bc0196b5f733a5de7af59
 pre_install:
 - Expand-7zipArchive "$dir/`$PLUGINSDIR/app-64.7z" "$dir" -Removal
 - Remove-Item "$dir/`$PLUGINSDIR", "$dir/`$R0" -Recurse -Force -ErrorAction SilentlyContinue
