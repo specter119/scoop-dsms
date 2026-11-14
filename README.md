@@ -23,7 +23,7 @@ Active manifests: **60**
 | `cuda` | A parallel computing platform and programming model invented by NVIDIA.<br>Version: `13.3.1`<br>[Homepage](https://developer.nvidia.com/cuda-toolkit) |
 | `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.30.14`<br>[Homepage](https://cursor.sh/) |
 | `cytoscape` | An open source software platform for visualizing complex networks and integrating these with any type of attribute data.<br>Version: `3.10.5`<br>[Homepage](https://cytoscape.org/index.html) |
-| `dita-ot` | An open-source publishing engine for XML content authored in the Darwin Information Typing Architecture.<br>Version: `4.4.1`<br>[Homepage](https://www.dita-ot.org/) |
+| `dita-ot` | An open-source publishing engine for XML content authored in the Darwin Information Typing Architecture.<br>Version: `4.4.2`<br>[Homepage](https://www.dita-ot.org/) |
 | `ditto` | An enhanced clipboard manager<br>Version: `3.25.113.0`<br>[Homepage](https://ditto-cp.sourceforge.io) |
 | `dream3d` | An open source, cross-platform and modular software package that allows users to reconstruct, instantiate, quantify, mesh, handle and visualize multidimensional, multimodal data.<br>Version: `6.5.171`<br>[Homepage](http://dream3d.bluequartz.net/) |
 | `feeluown` | FeelUOwn music player (with common plugins)<br>Version: `5.1.3`<br>[Homepage](https://feeluown.readthedocs.io) |
@@ -38,7 +38,7 @@ Active manifests: **60**
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.10.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261108-git-55d3feb45c`<br>[Homepage](https://mpv.io) |
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.9.0`<br>[Homepage](https://github.com/multica-ai/multica) |
-| `mygo-music` | A native music player you extend with plugins.<br>Version: `0.1.24`<br>[Homepage](https://music.egoist.dev/) |
+| `mygo-music` | A native music player you extend with plugins.<br>Version: `0.1.25`<br>[Homepage](https://music.egoist.dev/) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.39.2`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.24`<br>[Homepage](https://www.nvidia.com) |
 | `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `621.14`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
