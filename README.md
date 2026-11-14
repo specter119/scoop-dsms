@@ -31,7 +31,7 @@ Active manifests: **60**
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.75.0`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.117.1`<br>[Homepage](https://heptabase.com/) |
-| `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.36.0`<br>[Homepage](https://kaze.build/) |
+| `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.37.0`<br>[Homepage](https://kaze.build/) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
 | `lody` | Manage all your code agents in one place.<br>Version: `0.112.0`<br>[Homepage](https://lody.ai/) |
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
