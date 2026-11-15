@@ -61,7 +61,7 @@ Active manifests: **60**
 | `tigervnc-viewer` | TigerVNC Viewer is a VNC (Virtual Network Computing) client implementation that allows users to launch and interact with graphical applications on remote machines.<br>Version: `1.16.2`<br>[Homepage](http://tigervnc.org) |
 | `tldraw-offline` | A desktop app for drawing, diagramming, and whiteboarding with local files.<br>Version: `1.23.1`<br>[Homepage](https://offline.tldraw.com/) |
 | `trae-cn` | Trae，致力于成为真正的 AI 工程师（The Real AI Engineer）。<br>Version: `2.3.24299`<br>[Homepage](https://www.trae.cn) |
-| `typstyle` | A code formatter for Typst<br>Version: `0.15.2`<br>[Homepage](https://github.com/typstyle-rs/typstyle) |
+| `typstyle` | A code formatter for Typst<br>Version: `0.15.3`<br>[Homepage](https://github.com/typstyle-rs/typstyle) |
 | `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
