@@ -31,7 +31,7 @@ Active manifests: **60**
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.75.0`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.117.1`<br>[Homepage](https://heptabase.com/) |
-| `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.37.0`<br>[Homepage](https://kaze.build/) |
+| `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.38.0`<br>[Homepage](https://kaze.build/) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
 | `lody` | Manage all your code agents in one place.<br>Version: `0.112.0`<br>[Homepage](https://lody.ai/) |
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
@@ -65,8 +65,8 @@ Active manifests: **60**
 | `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
-| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `2.0.14`<br>[Homepage](https://xiguasay.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.147.0-95906867e0763b595ee0c8814ba93fea96798d3e`<br>[Homepage](https://code.visualstudio.com/) |
+| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `2.0.15`<br>[Homepage](https://xiguasay.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.147.0-8a14f0cc1b08d531eb83255ea3764ae22aa932b5`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.1.25156`<br>[Homepage](http://winfsp.dev) |
 | `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |
