@@ -1,12 +1,12 @@
-version: 2.0.15
+version: 2.0.16
 description: Vokie，立志做最快的AI语音输入法（西瓜说/Butter）
 homepage: https://xiguasay.com/
 license:
   identifier: Proprietary
 architecture:
   64bit:
-    url: https://xiguasay.echooai.com/vokie/win/zh/vokie-2.0.15-x64.exe#/dl.7z
-    hash: sha512:1fad0e07ff388a9872091cceee3bd272c1a2800008bbe5ffb2ea30adfcc3f5eeab2e877935f1d1414a2976b41abae504bc9624be28a52032fbb445ffdcf2bbad
+    url: https://xiguasay.echooai.com/vokie/win/zh/vokie-2.0.16-x64.exe#/dl.7z
+    hash: sha512:a2620d7cec304c270c222ed18074f5e361860ca962592e12a271c7b6478bb6af9b25f78078b6d60d49f4418c98acf42b4aac150dd3dfadccdcaee1e95311f51a
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0" -Recurse -Force -ErrorAction SilentlyContinue
