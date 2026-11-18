@@ -31,7 +31,7 @@ Active manifests: **60**
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.75.0`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.117.1`<br>[Homepage](https://heptabase.com/) |
-| `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.39.0`<br>[Homepage](https://kaze.build/) |
+| `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.40.0`<br>[Homepage](https://kaze.build/) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
 | `lody` | Manage all your code agents in one place.<br>Version: `0.113.1`<br>[Homepage](https://lody.ai/) |
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
@@ -41,7 +41,7 @@ Active manifests: **60**
 | `mygo-music` | A native music player you extend with plugins.<br>Version: `0.1.25`<br>[Homepage](https://music.egoist.dev/) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.39.2`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.24`<br>[Homepage](https://www.nvidia.com) |
-| `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `621.14`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
+| `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `621.24`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
 | `nvidia-rtx-driver-qnf` | NVIDIA RTX Enterprise driver, New Feature Branch (QNF), for RTX PRO / Quadro workstation GPUs<br>Version: `616.92`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
 | `podman` | A tool for managing OCI containers and pods.<br>Version: `6.2.0`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `2.0.0`<br>[Homepage](https://github.com/containers/podman-tui) |
