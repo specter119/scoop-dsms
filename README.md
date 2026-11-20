@@ -65,7 +65,7 @@ Active manifests: **60**
 | `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
-| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `2.0.16`<br>[Homepage](https://xiguasay.com/) |
+| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `2.0.17`<br>[Homepage](https://xiguasay.com/) |
 | `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.148.0-a0be5bebd4de2e0f08408e135abd93881d7f00df`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.2.26323`<br>[Homepage](http://winfsp.dev) |
