@@ -30,14 +30,14 @@ Active manifests: **60**
 | `floatboat` | The World's 1st AI Vibe Work Agent. An outcome-oriented, context-native workspace for the AI-Native era.<br>Version: `0.2.3`<br>[Homepage](https://floatboat.ai/) |
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.75.0`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
-| `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.118.0`<br>[Homepage](https://heptabase.com/) |
-| `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.42.0`<br>[Homepage](https://kaze.build/) |
+| `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.118.1`<br>[Homepage](https://heptabase.com/) |
+| `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.43.0`<br>[Homepage](https://kaze.build/) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
-| `lody` | Manage all your code agents in one place.<br>Version: `0.113.1`<br>[Homepage](https://lody.ai/) |
+| `lody` | Manage all your code agents in one place.<br>Version: `0.114.1`<br>[Homepage](https://lody.ai/) |
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.10.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261108-git-55d3feb45c`<br>[Homepage](https://mpv.io) |
-| `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.11.1`<br>[Homepage](https://github.com/multica-ai/multica) |
+| `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.12.1`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `mygo-music` | A native music player you extend with plugins.<br>Version: `0.1.25`<br>[Homepage](https://music.egoist.dev/) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.39.2`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.24`<br>[Homepage](https://www.nvidia.com) |
@@ -66,7 +66,7 @@ Active manifests: **60**
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
 | `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `2.0.17`<br>[Homepage](https://xiguasay.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.148.0-0d15d4d60248e35fac1a3fe234d74ed780e15691`<br>[Homepage](https://code.visualstudio.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.148.0-ade7f1b62fe6890ef4fee08ea5a8ebb0e7c002f8`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.2.26323`<br>[Homepage](http://winfsp.dev) |
 | `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |
