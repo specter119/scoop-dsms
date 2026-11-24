@@ -1,11 +1,11 @@
-version: "621.24"
+version: "621.40"
 description: NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs
 homepage: https://www.nvidia.com/en-us/drivers/
 license:
   identifier: Proprietary
   url: https://www.nvidia.com/en-us/about-nvidia/eula-agreement/
-url: https://cn.download.nvidia.cn/Windows/Quadro_Certified/621.24/621.24-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe#/dl.7z
-hash: 3d13b8caa13b39e25475a7bbf602aa9b3536d8fed4166f0ffea6683ee8a8d131
+url: https://cn.download.nvidia.cn/Windows/Quadro_Certified/621.40/621.40-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe#/dl.7z
+hash: fa5f56a2bb08fe52995c8c6825816250109366917d7d323d9ac0905f9980c756
 download_headers:
   Referer: https://www.nvidia.com/en-us/drivers/
 post_install: Remove-Item "$dir\*" -Recurse -Force | Out-Null

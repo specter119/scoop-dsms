@@ -33,17 +33,17 @@ Active manifests: **60**
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.118.1`<br>[Homepage](https://heptabase.com/) |
 | `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.43.0`<br>[Homepage](https://kaze.build/) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
-| `lody` | Manage all your code agents in one place.<br>Version: `0.115.1`<br>[Homepage](https://lody.ai/) |
+| `lody` | Manage all your code agents in one place.<br>Version: `0.116.0`<br>[Homepage](https://lody.ai/) |
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.10.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261108-git-55d3feb45c`<br>[Homepage](https://mpv.io) |
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.12.1`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `mygo-music` | A native music player you extend with plugins.<br>Version: `0.1.25`<br>[Homepage](https://music.egoist.dev/) |
 | `note-gen` | A free and open source note-taking application.<br>Version: `0.39.2`<br>[Homepage](https://github.com/codexu/note-gen) |
-| `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.24`<br>[Homepage](https://www.nvidia.com) |
-| `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `621.24`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
+| `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.40`<br>[Homepage](https://www.nvidia.com) |
+| `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `621.40`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
 | `nvidia-rtx-driver-qnf` | NVIDIA RTX Enterprise driver, New Feature Branch (QNF), for RTX PRO / Quadro workstation GPUs<br>Version: `616.92`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
-| `podman` | A tool for managing OCI containers and pods.<br>Version: `6.2.0`<br>[Homepage](https://podman.io/) |
+| `podman` | A tool for managing OCI containers and pods.<br>Version: `6.2.1`<br>[Homepage](https://podman.io/) |
 | `podman-tui` | Podman Terminal UI<br>Version: `2.0.0`<br>[Homepage](https://github.com/containers/podman-tui) |
 | `qoderwork` | Qoder Work - AI-powered autonomous development workstation for real-world software engineering.<br>Version: `0.9.18`<br>[Homepage](https://qoder.com) |
 | `qoderwork-cn` | Qoder Work CN - 为真实软件开发而生的智能体自主开发工作台<br>Version: `0.9.18`<br>[Homepage](https://qoder.com.cn) |
@@ -65,8 +65,8 @@ Active manifests: **60**
 | `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
-| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `2.0.17`<br>[Homepage](https://xiguasay.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.148.0-dec73890cb0bc7fd437520dbc7e74c55df259cd3`<br>[Homepage](https://code.visualstudio.com/) |
+| `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `2.0.18`<br>[Homepage](https://xiguasay.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.148.0-661626d0e72f97806550790a98fb87116c9db825`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.2.26323`<br>[Homepage](http://winfsp.dev) |
 | `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |
