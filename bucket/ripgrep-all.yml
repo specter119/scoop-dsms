@@ -13,8 +13,8 @@ bin:
 - rga.exe
 - rga-preproc.exe
 checkver:
-  github: https://github.com/phiresky/ripgrep-all
-  regex: v(\d[\d.]+[.\-\w]*)
+  url: https://api.github.com/repos/phiresky/ripgrep-all/releases
+  regex: (?s)"tag_name":\s*"v([\d.]+)"(?:(?!"tag_name").)*?x86_64-pc-windows-msvc\.zip
 autoupdate:
   url: https://github.com/phiresky/ripgrep-all/releases/download/v$version/ripgrep_all-v$version-x86_64-pc-windows-msvc.zip
   extract_dir: ripgrep_all-v$version-x86_64-pc-windows-msvc

@@ -9,14 +9,14 @@ To refresh this document locally, run `uv run scripts/generate_readme.py --write
 
 ## Available Packages
 
-Active manifests: **60**
+Active manifests: **58**
 
 | Package | Description |
 | --- | --- |
 | `acrylic-dns` | A local DNS proxy for Windows with caching and custom HOSTS file support for wildcards and regular expressions<br>Version: `2.2.1`<br>[Homepage](https://mayakron.altervista.org/support/acrylic/Home.htm) |
 | `anystorage` | Desktop client for S3-compatible storage, WebDAV, SFTP, and local files.<br>Version: `0.2.33`<br>[Homepage](https://anystorage.dev/) |
 | `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.47.1`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
-| `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `1.1.18`<br>[Homepage](https://cherry-ai.com/) |
+| `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `2.2.3`<br>[Homepage](https://cherry-ai.com/) |
 | `choose` | A human-friendly and fast alternative to cut (and sometimes awk)<br>Version: `1.3.7`<br>[Homepage](https://github.com/theryangeary/choose) |
 | `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.186`<br>[Homepage](https://con.nowledge.co/) |
 | `confirmo` | A desktop pet developed for Claude Code users.<br>Version: `1.0.96`<br>[Homepage](https://github.com/yetone/confirmo-releases) |
@@ -27,13 +27,12 @@ Active manifests: **60**
 | `ditto` | An enhanced clipboard manager<br>Version: `3.25.113.0`<br>[Homepage](https://ditto-cp.sourceforge.io) |
 | `dream3d` | An open source, cross-platform and modular software package that allows users to reconstruct, instantiate, quantify, mesh, handle and visualize multidimensional, multimodal data.<br>Version: `6.5.171`<br>[Homepage](http://dream3d.bluequartz.net/) |
 | `feeluown` | FeelUOwn music player (with common plugins)<br>Version: `5.1.3`<br>[Homepage](https://feeluown.readthedocs.io) |
-| `floatboat` | The World's 1st AI Vibe Work Agent. An outcome-oriented, context-native workspace for the AI-Native era.<br>Version: `0.2.3`<br>[Homepage](https://floatboat.ai/) |
 | `fzf` | A general-purpose command-line fuzzy finder<br>Version: `0.75.0`<br>[Homepage](https://github.com/junegunn/fzf) |
 | `gsudo` | A Sudo for Windows<br>Version: `2.6.1`<br>[Homepage](https://gerardog.github.io/gsudo) |
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.118.1`<br>[Homepage](https://heptabase.com/) |
 | `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.43.0`<br>[Homepage](https://kaze.build/) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
-| `lody` | Manage all your code agents in one place.<br>Version: `0.116.0`<br>[Homepage](https://lody.ai/) |
+| `lody` | Manage all your code agents in one place.<br>Version: `0.116.1`<br>[Homepage](https://lody.ai/) |
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.10.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261108-git-55d3feb45c`<br>[Homepage](https://mpv.io) |
@@ -51,7 +50,7 @@ Active manifests: **60**
 | `ripgrep-all` | ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.<br>Version: `0.10.9`<br>[Homepage](https://github.com/phiresky/ripgrep-all) |
 | `rotz` | Fully cross platform dotfile manager and dev environment bootstrapper written in Rust<br>Version: `1.2.1`<br>[Homepage](https://volllly.github.io/rotz) |
 | `rsync` | rsync is an open source utility that provides fast incremental file transfer. cwRsync is a packaging of Rsync (link is external) for Windows.<br>Version: `6.5.0`<br>[Homepage](https://www.itefix.net/cwrsync) |
-| `rustup-msvc-np` | The Rust toolchain installer<br>Version: `1.29.0`<br>[Homepage](https://github.com/rust-lang-nursery/rustup.rs) |
+| `rustup-msvc-np` | The Rust toolchain installer<br>Version: `1.29.3`<br>[Homepage](https://github.com/rust-lang-nursery/rustup.rs) |
 | `s3browser` | A freeware Windows client for Amazon S3 and Amazon CloudFront.<br>Version: `13.3.5`<br>[Homepage](https://s3browser.com/) |
 | `sarasa-term-sc-nerd` | Nerd Fonts patched 'Sarasa-Term-SC' Font family. (Monospace version, Nerd Fonts Symbol/Icon will be always 1 cell wide)<br>Version: `2.3.1`<br>[Homepage](https://github.com/laishulu/Sarasa-Term-SC-Nerd) |
 | `spark` | A unified analytics engine for large-scale data processing.<br>Version: `4.3.0`<br>[Homepage](https://spark.apache.org/) |
@@ -59,20 +58,19 @@ Active manifests: **60**
 | `testmem5` | A RAM stress test tool for Windows<br>Version: `0.13.1`<br>[Homepage](https://github.com/CoolCmd/TestMem5) |
 | `texlive` | TeX Live is a cross-platform, free software distribution for the TeX typesetting system<br>Version: `2026`<br>[Homepage](https://tug.org/texlive/) |
 | `tigervnc-viewer` | TigerVNC Viewer is a VNC (Virtual Network Computing) client implementation that allows users to launch and interact with graphical applications on remote machines.<br>Version: `1.16.2`<br>[Homepage](http://tigervnc.org) |
-| `tldraw-offline` | A desktop app for drawing, diagramming, and whiteboarding with local files.<br>Version: `1.23.1`<br>[Homepage](https://offline.tldraw.com/) |
+| `tldraw-offline` | A desktop app for drawing, diagramming, and whiteboarding with local files.<br>Version: `1.24.1`<br>[Homepage](https://offline.tldraw.com/) |
 | `trae-cn` | Trae，致力于成为真正的 AI 工程师（The Real AI Engineer）。<br>Version: `2.3.24299`<br>[Homepage](https://www.trae.cn) |
 | `typstyle` | A code formatter for Typst<br>Version: `0.15.3`<br>[Homepage](https://github.com/typstyle-rs/typstyle) |
-| `utools` | 新一代效率工具平台<br>Version: `7.8.0`<br>[Homepage](https://u.tools/) |
+| `utools` | 新一代效率工具平台<br>Version: `8.0.2`<br>[Homepage](https://u.tools/) |
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
 | `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `2.0.18`<br>[Homepage](https://xiguasay.com/) |
 | `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.148.0-661626d0e72f97806550790a98fb87116c9db825`<br>[Homepage](https://code.visualstudio.com/) |
 | `windsurf` | Windsurf is Codeium's next-generation AI IDE built to keep you in the flow.<br>Version: `2.3.15`<br>[Homepage](https://codeium.com/windsurf) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.2.26323`<br>[Homepage](http://winfsp.dev) |
-| `wolfram-engine` | Locally downloadable Wolfram Engine to put computational intelligence into your applications.<br>Version: `14.1.0`<br>[Homepage](https://www.wolfram.com/engine) |
 | `yansu` | Yansu is a proactive AI agent that observes how you work and ships bespoke software on your behalf.<br>Version: `0.1.353`<br>[Homepage](https://yansu.ai) |
 | `zeal` | An offline documentation browser for software developers<br>Version: `0.9.2`<br>[Homepage](https://zealdocs.org) |
-| `zen-browser-optimized` | Experience tranquillity while browsing the web without people tracking you!<br>Version: `1.0.1-a.22`<br>[Homepage](https://zen-browser.app/) |
+| `zen-browser-optimized` | Experience tranquillity while browsing the web without people tracking you!<br>Version: `1.24.3b`<br>[Homepage](https://zen-browser.app/) |
 
 ## Pinned Archive History
 
@@ -80,6 +78,8 @@ This section tracks manifests that have already been moved to `bucket/old`.
 
 | Package | Version | Archived At | Reason |
 | --- | --- | --- | --- |
+| `wolfram-engine` | `14.1.0` | 2026-11-25 | Upstream stopped publishing the MSI package this manifest extracts; 15.x ships only a 3 GB zip wrapping a WiX burn bundle, which cannot be installed portably. |
+| `floatboat` | `0.2.3` | 2026-11-25 | Deleted at the maintainer's request; the vendor download endpoint rejects direct requests, so the manifest can no longer be installed or updated. |
 | `spark` | `3.5.0` | Pre-automation | Pre-existing archive entry. |
 | `nvidia-geforce-driver` | `566.14` | Pre-automation | Pre-existing archive entry. |
 | `arangodb` | `3.11.8` | Pre-automation | Pre-existing archive entry. |

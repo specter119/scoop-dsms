@@ -28,5 +28,28 @@
       "The manifest already existed under bucket/old before automation was introduced."
     ],
     "source_repo": null
+  },
+  {
+    "package": "wolfram-engine",
+    "version": "14.1.0",
+    "archived_at": "2026-11-25",
+    "reason": "Upstream stopped publishing the MSI package this manifest extracts; 15.x ships only a 3 GB zip wrapping a WiX burn bundle, which cannot be installed portably.",
+    "evidence": [
+      "WolframEngine_14.1.0_WIN.msi still resolves, but WolframEngine_15.0.0_WIN.msi returns HTTP 404 (checked 2026-11-25).",
+      "The winget manifest for WolframEngine 15.0.0 switched to InstallerType zip with NestedInstallerType burn, pointing at WolframEngine_15.0.0_WIN.zip.",
+      "Excavator autoupdate failed with 'URL .../15.0.0.0/WolframEngine_15.0.0_WIN.msi is not valid' on every hourly run."
+    ],
+    "source_repo": null
+  },
+  {
+    "package": "floatboat",
+    "version": "0.2.3",
+    "archived_at": "2026-11-25",
+    "reason": "Deleted at the maintainer's request; the vendor download endpoint rejects direct requests, so the manifest can no longer be installed or updated.",
+    "evidence": [
+      "https://release.aoe.chat/Floatboat%20Setup%200.6.7.exe returns HTTP 403 and Excavator reported the URL as invalid.",
+      "latest.yml still advertises 0.6.7 while the manifest is at 0.2.3, so every run attempted and failed the update."
+    ],
+    "source_repo": null
   }
 ]

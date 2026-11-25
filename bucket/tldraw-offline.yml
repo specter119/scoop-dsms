@@ -1,36 +1,36 @@
-version: 1.23.1
+version: 1.24.1
 description: A desktop app for drawing, diagramming, and whiteboarding with local files.
 homepage: https://offline.tldraw.com/
 license:
   identifier: Proprietary
-  url: https://github.com/tldraw/tldraw-offline#license
+  url: https://github.com/tldraw/tldraw-office#license
 architecture:
   64bit:
-    url: https://github.com/tldraw/tldraw-offline/releases/download/v1.23.1/tldraw-offline-win-x64.exe#/dl.7z
-    hash: sha512:cd249d15b3b39e2c4902531ff3719121665799d92aedfc96c1bb68ac291bbd58a1693cd3e8d317c842c9795cd1df9959e55fad3158abdd61bc7b9560d86b9ba5
+    url: https://github.com/tldraw/tldraw-office/releases/download/v1.24.1/tldraw-office-win-x64.exe#/dl.7z
+    hash: sha512:1aa74c714f7049c77d06eac071a61c77ec68cc64dba7aa53ca52a9b141a4001145684c78681c3f283ada03c54619b91b7a596c198f6934fd3ee486608bbc4c47
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
   arm64:
-    url: https://github.com/tldraw/tldraw-offline/releases/download/v1.23.1/tldraw-offline-win-arm64.exe#/dl.7z
-    hash: sha512:c678689f2904fcf5910a67b63a56f3b832f115e84b002d9b652321dd7f536a3fd1c648bdeebc21b82d9c5cb3f167f1d788666d53e64301cfa99736ff8b139d37
+    url: https://github.com/tldraw/tldraw-office/releases/download/v1.24.1/tldraw-office-win-arm64.exe#/dl.7z
+    hash: sha512:1805f8d70eaf63b20b1623aae75da3eb10f353d008a327691adc55499dddde41c33aeb8a22190bc853a1b5ef4ac7793e1b3aa845a22445d0acfe080d94a1c95a
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-arm64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
 shortcuts:
-- - tldraw offline.exe
-  - tldraw offline
+- - tldraw office.exe
+  - tldraw office
 checkver:
-  github: https://github.com/tldraw/tldraw-offline
+  github: https://github.com/tldraw/tldraw-office
 autoupdate:
   architecture:
     64bit:
-      url: https://github.com/tldraw/tldraw-offline/releases/download/v$version/tldraw-offline-win-x64.exe#/dl.7z
+      url: https://github.com/tldraw/tldraw-office/releases/download/v$version/tldraw-office-win-x64.exe#/dl.7z
       hash:
-        url: https://github.com/tldraw/tldraw-offline/releases/download/v$version/latest.yml
-        regex: tldraw-offline-win-x64\.exe\s+sha512:\s+$base64
+        url: https://github.com/tldraw/tldraw-office/releases/download/v$version/latest.yml
+        regex: tldraw-office-win-x64\.exe\s+sha512:\s+$base64
     arm64:
-      url: https://github.com/tldraw/tldraw-offline/releases/download/v$version/tldraw-offline-win-arm64.exe#/dl.7z
+      url: https://github.com/tldraw/tldraw-office/releases/download/v$version/tldraw-office-win-arm64.exe#/dl.7z
       hash:
-        url: https://github.com/tldraw/tldraw-offline/releases/download/v$version/latest.yml
-        regex: tldraw-offline-win-arm64\.exe\s+sha512:\s+$base64
+        url: https://github.com/tldraw/tldraw-office/releases/download/v$version/latest.yml
+        regex: tldraw-office-win-arm64\.exe\s+sha512:\s+$base64

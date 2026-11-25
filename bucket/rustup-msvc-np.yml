@@ -1,18 +1,18 @@
-version: 1.29.0
+version: 1.29.3
 description: The Rust toolchain installer
 homepage: https://github.com/rust-lang-nursery/rustup.rs
 license: MIT|Apache-2.0
 notes: 'To use the MSVC ABI without Visual Studio 2015 (or higher) installed, you will need the Visual Studio 2019 Build Tools: https://www.visualstudio.com/downloads/'
 architecture:
   64bit:
-    url: https://static.rust-lang.org/rustup/archive/1.29.0/x86_64-pc-windows-msvc/rustup-init.exe
-    hash: 86478e53f769379d7f0ebfa7c9aa97cb76ca92233f79aa2cc0dbee2efaac73c7
+    url: https://static.rust-lang.org/rustup/archive/1.29.3/x86_64-pc-windows-msvc/rustup-init.exe
+    hash: 38027d51d69a5d05493627a0634dbea52d6cd793c8f072d2373d3f4163eec7db
   32bit:
-    url: https://static.rust-lang.org/rustup/archive/1.29.0/i686-pc-windows-msvc/rustup-init.exe
-    hash: f574ea2bd6d798b6072b3a45e3053f3cabcc2cb48d6b4bd59b661b41d675b31a
+    url: https://static.rust-lang.org/rustup/archive/1.29.3/i686-pc-windows-msvc/rustup-init.exe
+    hash: fa448cc3839d6fbacb5ed1954c16f60c4d16e7e6476677a66fffb34dc91bd201
 checkver:
-  url: https://raw.githubusercontent.com/rust-lang-nursery/rustup.rs/master/Cargo.toml
-  regex: version = "([\d.]+)"
+  url: https://static.rust-lang.org/rustup/release-stable.toml
+  regex: (?m)^version = '([\d.]+)'
 autoupdate:
   architecture:
     64bit:
