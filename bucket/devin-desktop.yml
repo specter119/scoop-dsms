@@ -1,0 +1,27 @@
+version: 3.14.30833
+description: Devin Desktop (formerly Windsurf) is an AI IDE that keeps you in the flow.
+homepage: https://codeium.com/windsurf
+license:
+  identifier: Proprietary
+  url: https://codeium.com/terms-of-service-individual
+architecture:
+  64bit:
+    url: https://windsurf-stable.codeiumdata.com/win32-x64-archive/stable/a165b2eb0a68542b92a3c89cc68b4700e819a409/Devin-win32-x64-3.14.30833.zip
+    hash: 637c5dec6bfa008bced1daa00aeb1d1e5bf77a17cd3252805227549402e59b26
+bin:
+- bin\devin-desktop.cmd
+shortcuts:
+- - Devin.exe
+  - Devin
+checkver:
+  url: https://windsurf-stable.codeium.com/api/update/win32-x64-archive/stable/latest
+  jsonpath: $.url
+  regex: stable/([a-f\d]+)/Devin-win32-x64-([\d.]+).zip
+  replace: ${2}
+autoupdate:
+  architecture:
+    64bit:
+      url: https://windsurf-stable.codeiumdata.com/win32-x64-archive/stable/$match1/Devin-win32-x64-$match2.zip
+      hash:
+        url: https://windsurf-stable.codeium.com/api/update/win32-x64-archive/stable/latest
+        jsonpath: $.sha256hash

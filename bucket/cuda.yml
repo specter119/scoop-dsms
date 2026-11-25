@@ -1,11 +1,11 @@
-version: 13.3.1
+version: 13.5.0
 description: A parallel computing platform and programming model invented by NVIDIA.
 homepage: https://developer.nvidia.com/cuda-toolkit
 license:
   identifier: Freeware
   url: https://docs.nvidia.com/cuda/eula/index.html
-url: http://developer.download.nvidia.com/compute/cuda/13.3.1/local_installers/cuda_13.3.1_windows.exe#/dl.7z
-hash: md5:f5a1806cd4f1b2d140ac37e3a09d1ca8
+url: https://developer.download.nvidia.com/compute/cuda/13.5.0/local_installers/cuda_13.5.0_windows_x86_64.exe#/dl.7z
+hash: md5:7edd4d268e61571e06fe13acb676ce0d
 installer:
   script: |
     $names = @(Get-ChildItem -Path "$dir" -Directory -Name -Depth 2 | Where-Object
@@ -20,9 +20,9 @@ env_add_path:
 env_set:
   CUDA_PATH: $dir
 checkver:
-  url: https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
-  regex: cuda_([\d._]+)_windows\.exe
+  url: https://developer.nvidia.com/cuda-toolkit-archive
+  regex: CUDA Toolkit\s*(\d[\d.]+)
 autoupdate:
-  url: http://developer.download.nvidia.com/compute/cuda/$matchHead/local_installers/cuda_$version_windows.exe#/dl.7z
+  url: https://developer.download.nvidia.com/compute/cuda/$version/local_installers/cuda_$version_windows_x86_64.exe#/dl.7z
   hash:
-    url: https://developer.download.nvidia.com/compute/cuda/$matchHead/docs/sidebar/md5sum.txt
+    url: https://developer.download.nvidia.com/compute/cuda/$version/docs/sidebar/md5sum.txt

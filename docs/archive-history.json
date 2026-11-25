@@ -51,5 +51,17 @@
       "latest.yml still advertises 0.6.7 while the manifest is at 0.2.3, so every run attempted and failed the update."
     ],
     "source_repo": null
+  },
+  {
+    "package": "dream3d",
+    "version": "6.5.171",
+    "archived_at": "2026-11-25",
+    "reason": "Upstream declared 6.5.171 the final release, removed the public binaries and now hands out download links on request only; DREAM3D-NX is the supported successor.",
+    "evidence": [
+      "https://dream3d.bluequartz.net/Download/ states '6.5.171 is the final release of DREAM.3D. There is no further development and no support. It is available on request'.",
+      "DREAM3D-6.5.171-Win64.zip returns HTTP 404 over both http and https, so the manifest url no longer installs.",
+      "BlueQuartzSoftware/DREAM3D publishes no GitHub releases with Windows assets; DREAM3D-NX (dream3d.io) is a separate product."
+    ],
+    "source_repo": "BlueQuartzSoftware/DREAM3D"
   }
 ]
