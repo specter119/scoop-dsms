@@ -1,4 +1,4 @@
-version: 1.24.1
+version: 1.25.0
 description: A desktop app for drawing, diagramming, and whiteboarding with local files.
 homepage: https://offline.tldraw.com/
 license:
@@ -6,14 +6,14 @@ license:
   url: https://github.com/tldraw/tldraw-office#license
 architecture:
   64bit:
-    url: https://github.com/tldraw/tldraw-office/releases/download/v1.24.1/tldraw-office-win-x64.exe#/dl.7z
-    hash: sha512:1aa74c714f7049c77d06eac071a61c77ec68cc64dba7aa53ca52a9b141a4001145684c78681c3f283ada03c54619b91b7a596c198f6934fd3ee486608bbc4c47
+    url: https://github.com/tldraw/tldraw-office/releases/download/v1.25.0/tldraw-office-win-x64.exe#/dl.7z
+    hash: sha512:7ce4db94eaa8fc117aec64b4e0d91c312b1a85b1c8e06981c603c416690c35f7e0d1a98a0cb1d0f936a17fda344449f407a2e968ab2a27e3a8f720f8f0f00253
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
   arm64:
-    url: https://github.com/tldraw/tldraw-office/releases/download/v1.24.1/tldraw-office-win-arm64.exe#/dl.7z
-    hash: sha512:1805f8d70eaf63b20b1623aae75da3eb10f353d008a327691adc55499dddde41c33aeb8a22190bc853a1b5ef4ac7793e1b3aa845a22445d0acfe080d94a1c95a
+    url: https://github.com/tldraw/tldraw-office/releases/download/v1.25.0/tldraw-office-win-arm64.exe#/dl.7z
+    hash: sha512:40291507ab779218573e2f51efc02f52b7c88f4ea5cc168641ffbbd4d52a792bfffdf98768814c94c50ddc6a0ac38602caa4a5c89706d0faddd9d2fe4ad660e2
     pre_install:
     - Expand-7zipArchive $dir/`$PLUGINSDIR/app-arm64.7z $dir -Removal
     - Remove-Item "$dir\`$PLUGINSDIR", "$dir\`$R0", "$dir\uninstallerIcon.ico" -Recurse -Force -ErrorAction SilentlyContinue
