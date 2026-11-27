@@ -18,7 +18,7 @@ Active manifests: **56**
 | `azurestorageexplorer` | Easily manage the contents of Azure storage account.<br>Version: `1.47.1`<br>[Homepage](https://azure.microsoft.com/en-us/features/storage-explorer/) |
 | `cherry-studio` | Cherry Studio - AI-powered coding assistant<br>Version: `2.2.3`<br>[Homepage](https://cherry-ai.com/) |
 | `choose` | A human-friendly and fast alternative to cut (and sometimes awk)<br>Version: `1.3.7`<br>[Homepage](https://github.com/theryangeary/choose) |
-| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.190`<br>[Homepage](https://con.nowledge.co/) |
+| `con-terminal` | The terminal emulator with AI harness, nothing more.<br>Version: `0.1.0-beta.191`<br>[Homepage](https://con.nowledge.co/) |
 | `confirmo` | A desktop pet developed for Claude Code users.<br>Version: `1.0.96`<br>[Homepage](https://github.com/yetone/confirmo-releases) |
 | `cuda` | A parallel computing platform and programming model invented by NVIDIA.<br>Version: `13.5.0`<br>[Homepage](https://developer.nvidia.com/cuda-toolkit) |
 | `cursor` | The AI-first code editor with powerful AI features for code completion, refactoring, and chat assistance.<br>Version: `3.32.10`<br>[Homepage](https://cursor.sh/) |
@@ -32,13 +32,13 @@ Active manifests: **56**
 | `heptabase` | Heptabase is a visual note-taking app that helps you learn complex topics<br>Version: `1.118.1`<br>[Homepage](https://heptabase.com/) |
 | `kaze` | A calm, quick browser with an agent that works in your tabs.<br>Version: `0.43.0`<br>[Homepage](https://kaze.build/) |
 | `lm-studio` | LM Studio is a desktop application for running local LLMs on your computer.<br>Version: `0.2.18`<br>[Homepage](https://lmstudio.ai/) |
-| `lody` | Manage all your code agents in one place.<br>Version: `0.116.1`<br>[Homepage](https://lody.ai/) |
+| `lody` | Manage all your code agents in one place.<br>Version: `0.117.0`<br>[Homepage](https://lody.ai/) |
 | `ltex-ls` | LTEX LS — LTEX Language Server<br>Version: `16.0.0`<br>[Homepage](https://github.com/valentjn/ltex-ls) |
 | `micromamba` | Micromamba is a tiny version of mamba, the fast conda package installer.<br>Version: `2.10.0-0`<br>[Homepage](https://github.com/mamba-org/mamba) |
 | `mpv` | Video player based on MPlayer/mplayer2 (builds by shinchiro) x86_64-v3 build<br>Version: `20261108-git-55d3feb45c`<br>[Homepage](https://mpv.io) |
 | `multica` | The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.<br>Version: `0.13.0`<br>[Homepage](https://github.com/multica-ai/multica) |
 | `mygo-music` | A native music player you extend with plugins.<br>Version: `0.1.26`<br>[Homepage](https://music.egoist.dev/) |
-| `note-gen` | A free and open source note-taking application.<br>Version: `0.39.2`<br>[Homepage](https://github.com/codexu/note-gen) |
+| `note-gen` | A free and open source note-taking application.<br>Version: `0.40.0`<br>[Homepage](https://github.com/codexu/note-gen) |
 | `nvidia-geforce-driver` | NVIDIA GeForce Game Ready driver for GeForce graphics cards<br>Version: `621.40`<br>[Homepage](https://www.nvidia.com) |
 | `nvidia-rtx-driver-ode` | NVIDIA RTX Enterprise driver, Production Branch (ODE), for RTX PRO / Quadro workstation GPUs<br>Version: `621.40`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
 | `nvidia-rtx-driver-qnf` | NVIDIA RTX Enterprise driver, New Feature Branch (QNF), for RTX PRO / Quadro workstation GPUs<br>Version: `616.92`<br>[Homepage](https://www.nvidia.com/en-us/drivers/) |
@@ -64,7 +64,7 @@ Active manifests: **56**
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
 | `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `2.0.18`<br>[Homepage](https://xiguasay.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.149.0-c9e45a55a0bfce9628d281fb38e43de7fd138818`<br>[Homepage](https://code.visualstudio.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.149.0-e8b6d8b546735371b1d04237b0a7c40558ad82a6`<br>[Homepage](https://code.visualstudio.com/) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.2.26323`<br>[Homepage](http://winfsp.dev) |
 | `yansu` | Yansu is a proactive AI agent that observes how you work and ships bespoke software on your behalf.<br>Version: `0.1.353`<br>[Homepage](https://yansu.ai) |
 | `zeal` | An offline documentation browser for software developers<br>Version: `0.9.2`<br>[Homepage](https://zealdocs.org) |
