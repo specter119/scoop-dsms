@@ -64,7 +64,7 @@ Active manifests: **56**
 | `vesta` | A 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.<br>Version: `3.5.8`<br>[Homepage](https://jp-minerals.org/vesta/en/) |
 | `void` | The open sourceAI code editor.<br>Version: `1.99.30044`<br>[Homepage](https://voideditor.com/) |
 | `vokie` | Vokie，立志做最快的AI语音输入法（西瓜说/Butter）<br>Version: `2.0.18`<br>[Homepage](https://xiguasay.com/) |
-| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.149.0-e8b6d8b546735371b1d04237b0a7c40558ad82a6`<br>[Homepage](https://code.visualstudio.com/) |
+| `vscode-insiders-np` | Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).<br>Version: `1.149.0-d7885d3da4a36d9ce6e51a1ee2d4710883450396`<br>[Homepage](https://code.visualstudio.com/) |
 | `winfsp` | Windows File System Proxy - FUSE for Windows<br>Version: `2.2.26323`<br>[Homepage](http://winfsp.dev) |
 | `yansu` | Yansu is a proactive AI agent that observes how you work and ships bespoke software on your behalf.<br>Version: `0.1.353`<br>[Homepage](https://yansu.ai) |
 | `zeal` | An offline documentation browser for software developers<br>Version: `0.9.2`<br>[Homepage](https://zealdocs.org) |
